@@ -3,6 +3,7 @@ description: Computer Scientist, teacher, published author, freelance programmer
 theme: just-the-docs
 favicon_ico: "/assets/favicon.ico"
 url: "https://paulbaumgarten.github.io/pbaumgarten-2025/"
+layout: default
 
 aux_links:
   "Coding Quest": "https://codingquest.io"
