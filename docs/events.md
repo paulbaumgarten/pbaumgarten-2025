@@ -1,9 +1,10 @@
 ---
-title: Competitions etc
+title: Competitions
 layout: default
 nav_order: 5
 ---
 
+- TOC
 {:toc} 
 
 # Competitions
@@ -95,6 +96,16 @@ The puzzles start straight-forward and then get more complex as the days progres
 Join the internal STC competition leaderboard with this code on the website: 1219353-dde8b797
 
 * Website: https://adventofcode.com/
+
+## ESF Co Co
+
+Organized by current ESF students to encourage and influence student interest in computer science from a young age. Renowned Industry leaders and institutes host interactive workshops and deliver informative talks to invoke your interest and passion for technology and computing. Additionally, a large-scale Hackathon will challenge your creativity and innovation.
+
+* Website: esf-coco.com
+
+## NASA Space Apps Challenge
+
+The NASA international SpaceApps challenge is an annual 48 hours hackathon organized by NASA and local hosts around the globe. The challenge addresses the great challenges we are facing on Earth and in space by connecting NASA's data with coders, makers, designers and dreamers around the world. Occurs over 2 days, October 1 & 2, 2022. Registrations in July.
 
 # Research opportunities
 
