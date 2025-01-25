@@ -21,8 +21,8 @@ Content will be start to be posted once the syllabus is officially released.
 * [Course brief](https://www.ibo.org/university-admission/latest-curriculum-updates/computer-science-updates/)
 * Course syllabus/guide
 * IB teacher support materials portal
-* [Hachette Learning, Computer Science for the IB Diploma](https://www.hachettelearning.com/computing-and-it/computer-science-for-the-ib-diploma). Textbook by Paul Baumgarten, Ioana Ganea, Carl Turland
-* Indicative teaching schedule
+* [Computer Science for the IB Diploma](https://www.hachettelearning.com/computing-and-it/computer-science-for-the-ib-diploma) textbook by Baumgarten, Ganea, & Turland; published by Hachette Learning. ISBN 9781036009007.
+* Teaching schedule (1st draft)
 
 ## A1 Computer fundamentals
 
@@ -43,6 +43,15 @@ Content will be start to be posted once the syllabus is officially released.
 ## Case study
 
 ## Internal assessment
+
+The Hachette textbook contains a 40 page guide to the Internal Assessment. For every criteria, it includes:
+
+* IB assessment criteria
+* Top tips and common mistakes
+* Exemplar samples (separate to the IB authored samples)
+* A checklist
+
+For those who found my guide to the IA for the previous syllabus useful, you will find the chapter in the Hachette textbook very helpful. 
 
 ## External examinations
 
