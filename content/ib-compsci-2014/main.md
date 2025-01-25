@@ -1,5 +1,6 @@
 ---
 title: IB Computer Science 2014
+layout: default
 nav_order: 3
 ---
 
