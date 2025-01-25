@@ -5,6 +5,7 @@ nav_order: 7
 ---
 
 # Competitions and other extension opportunities
+{: .no_toc }
 
 - TOC
 {:toc} 
