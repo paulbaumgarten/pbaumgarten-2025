@@ -3,33 +3,35 @@ title: Home
 layout: home
 ---
 
-This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
+I am a Secondary Computer Science teacher, currently working at an international school in Hong Kong where I teach Computer Science through the IB Diploma, IGCSE and MYP. Previously I have also lived and worked in Lausanne Switzerland, and Perth Australia, which is where I was raised.
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
+## Current projects
 
-More specifically, the created site:
+### Published textbook for IB Diploma Computer Science
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
+In collaboration with Carl Turland and Ioana Ganea, I have authored a book for the new IB Diploma Computer Science syllabus published by [Hachette Learning (formerly Hodder Education)](https://www.hachettelearning.com/computing-and-it/computer-science-for-the-ib-diploma). It is also available on [Amazon](https://www.amazon.com/Computer-Science-Diploma-Paul-Baumgarten/dp/1036009009).
 
-Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
+### Code Hers HK
 
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
+Computer Science, as a subject and a profession, remains heavily male dominated. Code Hers is a collaboration of 11 International Schools within Hong Kong that aims to address this disparity by providing a safe, supporting and encouraging environment for girls to have a go. The ultimate aim is to normalise the presence of women in tech, making the need for such events obsolete. Until that day comes, however, events like Code Hers are critically important and serve an important role.
 
-To get started with creating a site, simply:
+The inaugural event in 2024 attracted over 300 girls in attendance, and we are hoping for 500 at our 2025 event on 15 March. 
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+For more information, check out [https://codehershk.org](codehershk.org).
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
+### Coding Quest
 
-----
+Coding Quest is an annual competition specifically for secondary students to showcase their knowledge and understanding of algorithm design, data structures and computational thinking.
 
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
+There are no prizes, just bragging rights. Coding Quest exists mostly for students to compete against themselves.
 
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[Jekyll]: https://jekyllrb.com
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+Coding Quest was a project I started during the Covid era, and it has gathered pace since. Last year over 100 schools had students participate!
+
+For more information, check out [https://codingquest.io](codingquest.io).
+
+---
+
+Computer Science is a fascinating industry of unending change and learning. There are so many exciting technologies emerging at the moment, it is a great time to learn CS no matter who you are!
+
+Paul Baumgarten
+January 2025
