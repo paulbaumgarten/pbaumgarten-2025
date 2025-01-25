@@ -1,7 +1,7 @@
 ---
 title: Fundamentals
 layout: default
-nav_order: 5
+nav_order: 7
 ---
 
 Various tutorials and programming exercises for those students who would like a little extra practice and support. These are resources that previous students of mine have found helpful.
@@ -36,3 +36,9 @@ Exercism’s Java Track for access to 148 exercises grouped into 25 Java Concept
 
 * Java (148 exercises, 25 concepts): https://exercism.org/tracks/java/exercises
 * Python (140 exercises, 17 concepts): https://exercism.org/tracks/python
+
+## Time 2 code
+
+Time2code has been specifically written for the IGCSE course and is used by 100s of schools. Each lesson has written material, video demonstrations, example code to replicate, and exercises. Put aside a couple of hours a week to work through the online course and share your results with me.
+
+* Python: https://time2code.today/python-course

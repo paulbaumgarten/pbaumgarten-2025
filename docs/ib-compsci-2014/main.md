@@ -7,5 +7,5 @@ nav_order: 3
 # IB Computer Science 2014-2026
 
 {: .important }
-Coming soon!
+Archive of resources relevant to the old syllabus (for examination up to and including November 2026).
 
