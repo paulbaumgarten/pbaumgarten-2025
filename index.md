@@ -12,6 +12,8 @@ I am a Secondary Computer Science teacher, currently working at an international
 
 ### Published textbook for IB Diploma Computer Science
 
+<img style="float: right;" src="assets/dp-compsci-book.png">
+
 In collaboration with Carl Turland and Ioana Ganea, I have authored a book for the new IB Diploma Computer Science syllabus published by [Hachette Learning (formerly Hodder Education)](https://www.hachettelearning.com/computing-and-it/computer-science-for-the-ib-diploma). It is also available on [Amazon](https://www.amazon.com/Computer-Science-Diploma-Paul-Baumgarten/dp/1036009009).
 
 ### Code Hers HK
