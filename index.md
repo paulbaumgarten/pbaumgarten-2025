@@ -4,6 +4,8 @@ layout: home
 nav_order: 1
 ---
 
+# Welcome
+
 I am a Secondary Computer Science teacher, currently working at an international school in Hong Kong where I teach Computer Science through the IB Diploma, IGCSE and MYP. Previously I have also lived and worked in Lausanne Switzerland, and Perth Australia, which is where I was raised.
 
 ## Current projects
