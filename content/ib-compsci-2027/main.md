@@ -1,6 +1,6 @@
 ---
 title: IB Computer Science 2027
-layout: home
+layout: default
 nav_order: 3
 ---
 

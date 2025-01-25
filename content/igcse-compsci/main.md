@@ -1,5 +1,6 @@
 ---
-title: IGCSE Computer Science (CAIE)
+title: IGCSE Computer Science
+layout: default
 nav_order: 3
 ---
 
