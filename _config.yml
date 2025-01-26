@@ -12,9 +12,6 @@ aux_links:
 
 footer_content: "Copyright &copy; Paul Baumgarten."
 
-exclude:
-  - slides
-
 # Color scheme supports "light" (default) and "dark"
 # color_scheme: dark
 
