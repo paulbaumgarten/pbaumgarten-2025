@@ -1,3 +1,10 @@
+---
+title: Extended essay
+parent: IB Computer Science 2014
+layout: default
+nav_order: 3
+---
+
 # Extended essay
 
 A brief outline of what is involved to complete your IB Diploma Extended Essay in Computer Science.

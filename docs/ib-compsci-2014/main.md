@@ -74,11 +74,14 @@ Archive of resources relevant to the old syllabus (for examination up to and inc
 
 ## Case study
 
-* [Case study](case-study) (HL only)
+HL only
+
+* [Lessons overview](case-study.html) 
+* [M25 the perfect chatbot](m25-the-perfect-chatbot.pdf)
 
 ## Extended essay
 
-* [Extended essay](extended-essay.md) (optional)
+* [Extended essay](extended-essay.html) (optional)
 
 ## External examinations
 
