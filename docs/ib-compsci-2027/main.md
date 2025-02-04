@@ -18,11 +18,11 @@ Content will be start to be posted once the syllabus is officially released.
 
 ## Course overview
 
-* [Course brief](https://www.ibo.org/university-admission/latest-curriculum-updates/computer-science-updates/)
-* Course syllabus/guide
-* IB teacher support materials portal
-* [Computer Science for the IB Diploma](https://www.hachettelearning.com/computing-and-it/computer-science-for-the-ib-diploma) textbook by Baumgarten, Ganea, & Turland; published by Hachette Learning. ISBN 9781036009007.
-* Teaching schedule (1st draft)
+* [IBO Course brief](https://www.ibo.org/university-admission/latest-curriculum-updates/computer-science-updates/)
+* [IBO Course syllabus/guide for Computer Science (PDF)](ib-compsci-2025.pdf)
+* [IBO teacher support materials portal]([https://https://resources.ibo.org/dp/subject/Computer-science-2027/?)
+* [Summary of changes and FAQ about the new course](changes.html)
+* Textbook: [Computer Science for the IB Diploma](https://www.hachettelearning.com/computing-and-it/computer-science-for-the-ib-diploma) textbook by Baumgarten, Ganea, & Turland; published by Hachette Learning. ISBN 9781036009007.
 
 ## A1 Computer fundamentals
 
@@ -44,14 +44,14 @@ Content will be start to be posted once the syllabus is officially released.
 
 ## Internal assessment
 
-The Hachette textbook contains a 40 page guide to the Internal Assessment. For every criteria, it includes:
+The Hachette textbook contains a 40 page guide to the Internal Assessment. For each of the 5 criteria, it includes:
 
-* IB assessment criteria
+* The official IB assessment criteria text
 * Top tips and common mistakes
 * Exemplar samples (separate to the IB authored samples)
-* A checklist
+* Detailed checklist
 
-For those who found my guide to the IA for the previous syllabus useful, you will find the chapter in the Hachette textbook very helpful. 
+Those who found my guide to the IA for the previous syllabus useful, should find the chapter in the Hachette textbook very helpful for navigating the new IA. 
 
 ## External examinations
 
