@@ -147,9 +147,9 @@ Finally if you want to pay for online platforms there's sites such as
 
 |  | Content | SL | HL |
 | :---- | :---- | :---- | :---- |
-| Paper 1 | A1 Computer fundamentals A2 Networks A3 Databases A4 Machine Learning Case study (see separate heading) | 35% of grade 1:15 hours duration 50 marks total 38 marks A1/A2/A3/A4 12 marks Case study | 40% of grade 2 hours duration 80 marks total 56 marks A1/A2/A3/A4 24 marks Case study |
-| Paper 2 | B1 Computational thinking B2 Programming B3 Object oriented programming B4 Abstract data types There are two versions of paper 2—one for students who have studied Python, one for students who have studied Java. | 35% of grade 1:15 hours duration 50 marks total One of the questions will focus on algorithmic thinking without the need to interpret or write code.  | 40% of grade 2 hours duration 80 marks total Two questions from the SL paper will be repeated in the HL paper, including a question with a focus on algorithmic thinking without the need to interpret or write code. Additional questions will focus on HL-only topics. |
-| IA | See separate heading | 30% of grade 35 hours class time | 20% of grade 35 hours class time |
+| Paper 1 | A1 Computer fundamentals<br>A2 Networks<br>A3 Databases<br>A4 Machine Learning<br>Case study | 35% of grade<br> 1:15 hours duration<br>50 marks total<br>38 marks A1/A2/A3/A4<br>12 marks Case study | 40% of grade<br>2 hours duration<br>80 marks total<br>56 marks A1/A2/A3/A4<br>24 marks Case study |
+| Paper 2 | B1 Computational thinking<br>B2 Programming<br>B3 OOP<br>B4 ADT<br>There are two versions of paper 2, one for students who have studied Python, one for students who have studied Java. | 35% of grade<br>1:15 hours duration<br>50 marks total<br>One of the questions will focus on algorithmic thinking without the need to interpret or write code. | 40% of grade<br>2 hours duration<br>80 marks total<br>Two questions from the SL paper will be repeated in the HL paper, including a question with a focus on algorithmic thinking without the need to interpret or write code.<br>Additional questions will focus on HL-only topics. |
+| IA | Self selected programming project and documentation | 30% of grade<br>35 hours class time | 20% of grade<br>35 hours class time |
 
 # Case study
 
@@ -171,12 +171,12 @@ Yes. 2 challenge questions that are SL (also studied by HL) and an additional 2 
 
 | 2014 course | 2027 course | Word counts etc |
 | :---- | :---- | :---- |
-| Criteria A (client / rationale / success criteria) | Criteria A  (scenario / context / success criteria) | 300 words |
-| Criteria B (record of tasks) | Criteria B (planning) | 150 words plus planning diagrams |
-| Criteria B (design and testing) | Criteria C(system overview) | 150 words plus design diagrams |
-| Criteria C (Development) | Criteria D (Development) | 1000 words |
-| Criteria D (Video of Functionality) | Criteria D Development includes a video | 5 minute video |
-| Criteria E (Evaluation / recommendations) | Criteria E (Evaluation / recommendations) | 400 words |
+| Criteria A<br>(client / rationale / success criteria) | Criteria A<br>(scenario / context / success criteria) | 300 words |
+| Criteria B<br>(record of tasks) | Criteria B<br>(planning) | 150 words plus planning diagrams |
+| Criteria B<br>(design and testing) | Criteria C<br>(system overview) | 150 words plus design diagrams |
+| Criteria C<br>(Development) | Criteria D<br>(Development) | 1000 words |
+| Criteria D<br>(Video of Functionality) | Criteria D<br>(Development includes a video) | 5 minute video |
+| Criteria E<br>(Evaluation / recommendations) | Criteria E<br>(Evaluation / recommendations) | 400 words |
 
 Commentary:
 
@@ -216,21 +216,21 @@ Everyone will have their own preferences and styles when it comes to this. This 
 
 | Time period | Lesson focus |
 | :---- | :---- |
-| Late August September Early October | B2: Programming |
+| Late August<br>September<br>Early October | B2: Programming |
 | Mid term break |  |
-| November December | B1: Computational thinking B3: Object oriented programming |
+| November<br>December | B1: Computational thinking<br>B3: Object oriented programming |
 | Winter break |  |
-| January February March | B4: Abstract data types A3: Databases |
+| January<br>February<br>March | B4: Abstract data types<br>A3: Databases |
 | April break |  |
-| May June | Year 12 examinations Internal assessment lessons Submit Internal Assessment draft (Criteria A, B, C) |
-| Summer break | Submit Internal Assessment draft (Criteria D, E) |
-| Late August September Early October | A1: Computer fundamentals A4: Machine learning  |
+| May<br>June | Year 12 examinations<br>IA lessons<br>Submit IA draft<br>(Criteria A, B, C) |
+| Summer break | Submit IA draft<br>(Criteria D, E) |
+| Late August<br>September<br>Early October | A1: Computer fundamentals<br>A4: Machine learning  |
 | Mid term break |  |
-| November December | A4: Machine learning (continued) A2: Networks |
+| November<br>December | A4: Machine learning (continued)<br>A2: Networks |
 | Winter break |  |
-| January February March | Mock examinations Case study Submit Internal Assessment final Exam revision |
+| January<br>February<br>March | Mock examinations<br>Case study<br>Submit IA final<br>Exam revision |
 | April break |  |
-| May June | External examinations |
+| May<br>June | External examinations |
 
 Rationale:
 
