@@ -42,9 +42,9 @@ Content will be updated gradually as developed in preparation for teaching the n
 
 |  | Content | SL | HL |
 | :---- | :---- | :---- | :---- |
-| Paper 1 | A1 Computer fundamentals A2 Networks A3 Databases A4 Machine Learning Case study (see separate heading) | 35% of grade 1:15 hours duration 50 marks total 38 marks A1/A2/A3/A4 12 marks Case study | 40% of grade 2 hours duration 80 marks total 56 marks A1/A2/A3/A4 24 marks Case study |
-| Paper 2 | B1 Computational thinking B2 Programming B3 Object oriented programming B4 Abstract data types There are two versions of paper 2—one for students who have studied Python, one for students who have studied Java. | 35% of grade 1:15 hours duration 50 marks total One of the questions will focus on algorithmic thinking without the need to interpret or write code.  | 40% of grade 2 hours duration 80 marks total Two questions from the SL paper will be repeated in the HL paper, including a question with a focus on algorithmic thinking without the need to interpret or write code. Additional questions will focus on HL-only topics. |
-| IA | Self selected programming project and documentation | 30% of grade 35 hours class time | 20% of grade 35 hours class time |
+| Paper 1 | A1 Computer fundamentals<br>A2 Networks<br>A3 Databases<br>A4 Machine Learning<br>Case study | 35% of grade<br> 1:15 hours duration<br>50 marks total<br>38 marks A1/A2/A3/A4<br>12 marks Case study | 40% of grade<br>2 hours duration<br>80 marks total<br>56 marks A1/A2/A3/A4<br>24 marks Case study |
+| Paper 2 | B1 Computational thinking<br>B2 Programming<br>B3 OOP<br>B4 ADT<br>There are two versions of paper 2, one for students who have studied Python, one for students who have studied Java. | 35% of grade<br>1:15 hours duration<br>50 marks total<br>One of the questions will focus on algorithmic thinking without the need to interpret or write code. | 40% of grade<br>2 hours duration<br>80 marks total<br>Two questions from the SL paper will be repeated in the HL paper, including a question with a focus on algorithmic thinking without the need to interpret or write code.<br>Additional questions will focus on HL-only topics. |
+| IA | Self selected programming project and documentation | 30% of grade<br>35 hours class time | 20% of grade<br>35 hours class time |
 
 ## Extended essay
 
