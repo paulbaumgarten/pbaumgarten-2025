@@ -184,7 +184,7 @@ Commentary:
 
 * The overall size and scope of the IA is roughly comparable to the old course. I anticipate my students still requiring considerable "at home" hours to complete the IA.
 
-* New criteria D is focused on students discussing their techniques used, with a specific focus on algorithms, in the same way as the old criteria C. That part of the IA has not changed, although it could be said to be more explicit about the focus being on algorithms being the techniques it is concerned with. I expect there will continue to be debates in the online forums over how to interpret "techniques" in the new syllabus.
+* New criteria D is focused on students discussing their techniques used, with a specific focus on algorithms. While similar to the old criteria C, it is more explicit that the focus is algorithms which should help make the expectations clearer.  
 
 ## Choice of language for the IA?
 
@@ -202,7 +202,6 @@ To help teachers and students further with the IA, the Hodder book team have pre
 * Our own samples to supplement the IB samples. These have been collated from past student projects (or created bespoke for the book) and modified to suit the new criteria.  
 * A detailed checklist for each of the assessment criteria.
 
- 
 
 ## Why is the IA worth more to SL than HL?
 
