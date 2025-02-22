@@ -1,5 +1,5 @@
 ---
-title: A1 Computer fundamentals
+title: Syllabus content
 parent: IB Computer Science 2027
 layout: default
 nav_order: 3
