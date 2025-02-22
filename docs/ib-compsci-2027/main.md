@@ -12,7 +12,7 @@ has_toc: false
 For the new IB Diploma Computer Science syllabus to start teaching in August 2025, and for first examinations in May 2027.
 
 {: .important }
-Content will be start to be posted once the syllabus is officially released. 
+Content will be updated gradually as developed in preparation for teaching the new course in August.
 
 - TOC
 {:toc} 
