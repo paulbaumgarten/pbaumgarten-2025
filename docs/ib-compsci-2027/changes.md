@@ -159,7 +159,7 @@ Yes 15 hours for SL, 30 hours for HL.
 
 ## Same case study but different depth?
 
-Yes. 2 challenge questions for SL and 4 challenge questions for HL.
+Yes. 2 challenge questions that are SL (also studied by HL) and an additional 2 challenge questions specifically for HL.
 
 # Internal assessment
 

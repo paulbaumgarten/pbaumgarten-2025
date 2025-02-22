@@ -1,0 +1,130 @@
+A1 1: CPU components
+A1 2: Primary memory, secondary memory
+A1 3: Fetch/decode/execute
+A1 4: GPU (HL)
+A1 5: Pipelining (HL)
+A1 6: Compression
+A1 7: Cloud computing
+A1 8,9: Binary data
+A1 10,11,12,13: Logic gates, truth tables, logic diagrams
+A1 14,15,16: Operating systems
+A1 17,18: Control systems (HL)
+A1 19: Translation (HL)
+A1 20: Exam practice questions
+A1 21: Assessment
+
+A2 1: Network types
+A2 2: Network devices & transmission media
+A2 3: Topologies, models, segmentation
+A2 4: Protocols
+A2 5: TCP/IP model
+A2 6: Servers
+A2 7: Practical: Create a socket server
+A2 8: IP addressing
+A2 9: Packet switching & routing
+A2 10: Firewalls in detail
+A2 11,12: Vulnerabilities & countermeasures (HL)
+A2 13: Encryption & certificates
+A2 14: Practical: TBD
+A2 15: Exam style questions
+A2 16: Assessment
+
+A3 1: Database fundamentals
+A3 2: Schemas and data types
+A3 3: Entity relationship diagrams
+A3 4: Normalisation
+A3 5: Designing 3NF databases
+A3 6: Introducing SQL
+A3 7: SQL joins
+A3 8: SQL update & insert
+A3 9: SQL aggregate functions (HL)
+A3 10: Views (HL)
+A3 11: Transactions (HL)
+A3 12: Alternatives & warehouses (HL)
+A3 13: Data mining & distributed databases (HL)
+A3 13: Using SQL with Python (bonus)
+A3 14: Exam style questions
+A3 15: Assessment
+
+A4 1: Intro to ML
+A4 2: ML hardware
+A4 3: Pre-processing (HL)
+A4 4: Linear regression (HL)
+A4 5: Classification (HL)
+A4 6: Hyper parameters (HL)
+A4 7: Clustering (HL)
+A4 8: Association rule (HL)
+A4 9: Reinforcement learning (HL)
+A4 10: Genetic algorithms (HL)
+A4 11,12: Artificial neural networks (HL)
+A4 13: Convolutional neural networks (HL)
+A4 14,15: Ethics
+A4 16: Exam style questions
+A4 17: Assessment
+
+B1 1: Problem specification
+B1 2: Computational thinking concepts & application
+B1 3: Trace flowcharts
+B1 4: Review
+
+B2 1: Hello world
+B2 2: Numeric types & operations
+B2 3: String types & operations
+B2 4: Exception handling & debugging techniques
+B2 5,6: Static & dynamic structures; Arrays & lists
+B2 7: Stacks
+B2 8: Queues
+B2 9: Sequence & selection
+B2 10,11: Iteration
+B2 12: Functions & modularisation
+B2 13: Big O
+B2 14,15: Search algorithms
+B2 16,17: Sort algorithms
+B2 18,19,20: Recursion (HL)
+B2 21: File processing
+B2 22-27: Programming scenarios
+B2 28,29: Review
+B2 30: Assessment
+
+B3 1: Introducing OOP
+B3 2: Designing classes
+B3 3: Instantiating objects
+B3 4: Encapsulation
+B3 5: Statics & non-statics
+B3 6,7,8: Programming scenarios
+B3 9: Inheritance (HL)
+B3 10: Polymorphism (overriding) (HL)
+B3 11: Abstract classes (HL)
+B3 12: Composition & aggregation (HL)
+B3 13: Design patterns (HL)
+B3 14-17: Programming scenarios (HL)
+B3 18,19: Exam style questions
+B3 20: Assessment
+
+B4 1: Intro to ADT
+B4 2,3,4: Linked lists
+B4 5,6,7: Binary search trees
+B4 8,9,10: Sets
+B4 11,12,13: Hashmaps
+B4 14,15,16: Programming scenarios
+B4 17,18,19: Exam style questions
+B4 20: Assessment
+
+CS 1: Introduce the case study
+CS 2,3: Understand the text of the case study
+CS 4,5,6: Understand the technology in the case study
+CS 7,8: Consider the challenges of the case study
+CS 9,10: Review for exam questions
+CS 11,12,13: Practice exam questions
+CS 14,15: Consider the challenges of the case study (HL)
+CS 16,17: Review for exam questions (HL)
+CS 18,19,20: Practice exam questions (HL)
+
+IA 1: Introduction
+IA 2: Submit a proposal
+IA 3,4: Scenario, Context, Success criteria
+IA 5,6: Initial planning
+IA 7-13: System overview
+IA 14-30: Programming time
+IA 31,32,33: Development documentation & video
+IA 34,35: Evaluation
