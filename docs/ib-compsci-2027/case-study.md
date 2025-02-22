@@ -55,18 +55,18 @@ Unit and lesson overviews will be gradually published as developed.
 
 * Challenge 1
 
-## Lesson 9: Review for exam questions
+## Lesson 10: Review for exam questions
 
 * Challenge 2
 
-## Lesson 8: Practice exma questions
+## Lesson 11: Practice exam questions
 
-* Challenge 1
+* Challenge 3
 
-## Lesson 9: Practice exma questions
+## Lesson 12: Practice exam questions
 
-* Challenge 2
+* Challenge 4
 
-## Lesson 10: Practice exma questions
+## Lesson 13: Practice exam questions
 
 * Assorted
