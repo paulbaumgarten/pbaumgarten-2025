@@ -211,7 +211,7 @@ It was the same under the old course due. Since HL paper 1 and 2 are "larger" th
 
 ## How should I sequence my lesson topics?
 
-Everyone will have their own preferences and styles when it comes to this. This is my proposed timeline at the moment that I am leaning forward for my first cohort in the new syllabus. **I am not suggesting or recommending this timeline, simply offering it as \_a\_ timeline**. I'll outline some of the rationale after the chart:
+Everyone will have their own preferences and styles when it comes to this. This is my proposed timeline at the moment that I am leaning toward for my first cohort in the new syllabus. **I am not suggesting or recommending this timeline, simply offering it as \_a\_ timeline**. I'll outline some of the rationale after the chart:
 
 | Time period | Lesson focus |
 | :---- | :---- |
