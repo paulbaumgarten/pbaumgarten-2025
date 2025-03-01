@@ -8,9 +8,19 @@ nav_order: 1
 
 I am a Secondary Computer Science teacher, currently working at an international school in Hong Kong where I teach Computer Science through the IB Diploma, IGCSE and MYP. Previously I have also lived and worked in Lausanne Switzerland, and Perth Australia, which is where I was raised.
 
+## Why learn Computer Science?
+
+*Why learn Computer Science and programming?*
+
+Computer Science is everywhere! It is the field that is changing society like no other. From transportation to agriculture, medicine to business finance, from entertainment to government – Computer Science is rapidly changing our business and personal lives. It does not matter if you wish to pursue Computer Science for a career, or if you are just exploring it while in school, a solid background in the fundamentals of Computer Science will be valuable no matter your final profession. 
+
+Computer Science is more than programming, and programming is more than coding. In fact, "Coding is to programming what typing is to writing. If you learn to program by learning to code, you essentially only know how to type." - Dr Leslie Lamport (Turing Award winner and Computer Science luminary).
+
+Ultimately, Computer Science is about solving problems. It includes the study of algorithms and the structure of data to help model the problems we are working on. Programming languages are a tool used to help express our solution. While this guide is focused only on the latter, it is important to remember the bigger picture as you proceed. 
+
 ## Current projects
 
-### Published textbook for IB Diploma Computer Science
+### Published author for IB Diploma Computer Science
 
 <img style="float: right; width: 100px" src="assets/dp-compsci-book.png">
 
