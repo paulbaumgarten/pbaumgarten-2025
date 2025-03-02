@@ -108,3 +108,51 @@ f = { 'file': ("newname.pdf", data_string, "application/pdf", {"Expires": "0"} )
 r = requests.post("https://httpbin.org/post", files=f)
 ```
 
+## Using ntfy
+
+<img style="float: right; width: 200px" src="/assets/python/ntfy.jpg">
+
+[Ntfy.sh](https://ntfy.sh) is a cool service that allows you to quickly and easily send notifications to your phone from code. You can either use the service provided by [ntfy.sh](https://ntfy.sh), or self-host it if you have a server to install it on, obtain it from here [https://github.com/binwiederhier/ntfy](https://github.com/binwiederhier/ntfy).
+
+While you can sign up for a free service using the `ntfy.sh` server, the free service does limit you in that channels can not be made private. Anyone who knows your channel name can (a) subscribe to receive messages sent to that channel, and (b) send messages to that channel. Therefore it is recommended that (a) you don't use ntfy.sh for anything private, and (b) you host your own service if possible (it is fairly easy to set up).
+
+```py
+import requests, json
+
+CHANNEL = "my-channel"
+
+# Use a self-hosted ntfy server
+def test1():
+    response = requests.post("https://ntfy.yourdomain.com/"+CHANNEL, 
+        data="Test 😀".encode(encoding='utf-8'))
+    print(response)
+
+# Send header information with a clickable link
+def test2():
+    requests.post("https://ntfy.sh/"+CHANNEL,
+        data="Test link to my website",
+        headers={ "Click": "https://pbaumgarten.com/" })
+
+# Send header information with two action buttons
+def test3():
+    requests.post("https://ntfy.sh/",
+        data=json.dumps({
+            "topic": CHANNEL,
+            "message": "You left the house. Turn down the A/C?",
+            "actions": [
+                {
+                    "action": "view",
+                    "label": "Website",
+                    "url": "https://pbaumgarten.com/",
+                    "clear": True
+                },
+                {
+                    "action": "http",
+                    "label": "Other",
+                    "url": "https://pbaumgarten.com",
+                    "body": "{\"boo\": 65}"
+                }
+            ]
+        })
+    )
+```
