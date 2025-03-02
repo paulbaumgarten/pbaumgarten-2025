@@ -101,7 +101,7 @@ SELECT * FROM table;
 SELECT field, field, field FROM table;
 
 -- Get records that match where field is set to value.
-SELECT … FROM table WHERE field = value;
+SELECT * FROM table WHERE field = value;
 
 -- Get records sorted by field
 SELECT * FROM table WHERE field=value ORDER BY field2;
@@ -110,10 +110,10 @@ SELECT * FROM table WHERE field=value ORDER BY field2;
 SELECT * FROM table WHERE field=value ORDER BY field2 LIMIT 10;
 
 -- Get records that match where two fields have set values.
-SELECT … FROM table WHERE (field = value) AND (field = value);
+SELECT *…* FROM table WHERE (field = value) AND (field = value);
 
 -- Get records that match where two possible field/values exist.
-SELECT … FROM table WHERE (field = value) OR (field = value);
+SELECT * FROM table WHERE (field = value) OR (field = value);
 
 -- Get records from two tables
 SELECT * FROM (table1 LEFT JOIN table2 ON table1.f1=table2.f2) WHERE table1.f3=value;

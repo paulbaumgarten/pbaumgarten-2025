@@ -69,7 +69,7 @@ if response.status_code == 200:
         f.write(response.content)
     os.startfile("cat.png") # Open with default Windows application
     # subprocess.call(('open', filepath)) # Mac ... import subprocess
-``` 
+```
 
 ### Binary download – Larger files (over 1MB)
 
