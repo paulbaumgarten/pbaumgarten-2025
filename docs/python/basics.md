@@ -1,3 +1,9 @@
+---
+title: Basics
+parent: Python notes
+layout: default
+nav_order: 6
+---
 
 # Python getting started guide
 {: .no_toc }
