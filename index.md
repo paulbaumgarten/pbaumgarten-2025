@@ -32,7 +32,7 @@ The e-Inspection copy and pre-orders are now available.
 
 ### CodeHers HK
 
-<img style="float: right; width: 100px" src="assets/codehershk.png">
+<img style="float: right; width: 200px" src="assets/codehershk.png">
 Computer Science, as a subject and a profession, remains heavily male dominated. Code Hers is a collaboration of 11 International Schools within Hong Kong that aims to address this disparity by providing a safe, supporting and encouraging environment for girls to have a go. The ultimate aim is to normalise the presence of women in tech, making the need for such events obsolete. Until that day comes, however, events like Code Hers are critically important and serve an important role.
 
 The inaugural event in 2024 attracted over 300 girls in attendance, and we are hoping for 500 at our 2025 event on 15 March. 
