@@ -110,7 +110,7 @@ SELECT * FROM table WHERE field=value ORDER BY field2;
 SELECT * FROM table WHERE field=value ORDER BY field2 LIMIT 10;
 
 -- Get records that match where two fields have set values.
-SELECT *…* FROM table WHERE (field = value) AND (field = value);
+SELECT * FROM table WHERE (field = value) AND (field = value);
 
 -- Get records that match where two possible field/values exist.
 SELECT * FROM table WHERE (field = value) OR (field = value);
