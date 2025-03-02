@@ -106,6 +106,7 @@ Jinga2 is a templating language you can use to generate HTML documents from your
 An example of a Jinga2 HTML document, illustrating the most common constructs
 
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html>
     <body>
@@ -147,6 +148,7 @@ An example of a Jinga2 HTML document, illustrating the most common constructs
 
     </body>
 </html>
+{% endraw %}
 ```
 
 To render this from Flask
@@ -208,6 +210,7 @@ main.html
 templates/response.html
 
 ```html
+{% raw %}
 <!DOCTYPE html>
 <html>
     <head><title>Flask demo</title></head>
@@ -217,5 +220,6 @@ templates/response.html
         <a href="/">Return to main</a>        
     </body>
 </html>
+{% endraw %}
 ```
 
