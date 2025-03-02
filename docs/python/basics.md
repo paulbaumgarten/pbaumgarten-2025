@@ -488,7 +488,7 @@ print("These lines will execute regardless of the 'if' statement.")
 
 The structure of an "if" statement may be described as:
 
-```python
+```
 if (comparison_is_True):
     executeThisCode()
     executeThisCode()
@@ -521,8 +521,8 @@ elif a < b:
 else:
    print("a is higher than b")
 ```
- 
-Compound conditionals
+
+### Compound conditionals
 
 It is possible to make an "if" statement conditional on the result of more than one comparison. This is called a compound conditional. The two most common compound operations you will use are "and" and "or". You'll learn more about logic operators later but for now:
 * An "and" will be true if both comparisons are true.
