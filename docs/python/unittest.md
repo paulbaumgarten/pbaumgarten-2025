@@ -6,11 +6,6 @@ nav_order: 6
 ---
 
 # Unit tests
-{: .no_toc }
-
-- TOC
-{:toc} 
-
 
 Unit tests check if the different parts (units) of a larger program work correctly. It is like testing individual Lego pieces before building something with them.
 

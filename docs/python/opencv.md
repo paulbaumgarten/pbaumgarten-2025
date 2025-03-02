@@ -6,10 +6,6 @@ nav_order: 6
 ---
 
 # OpenCV (Compputer Vision)
-{: .no_toc }
-
-- TOC
-{:toc} 
 
 Install the opencv-contrib-python and numpy libraries:
 

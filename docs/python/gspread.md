@@ -7,10 +7,6 @@ nav_order: 6
 ---
 
 # Gspread (Google sheets)
-{: .no_toc }
-
-- TOC
-{:toc} 
 
 ### Install and setup Gspread
 

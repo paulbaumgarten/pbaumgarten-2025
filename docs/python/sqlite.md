@@ -6,10 +6,6 @@ nav_order: 6
 ---
 
 # SQLite database
-{: .no_toc }
-
-- TOC
-{:toc} 
 
 ```py
 import sqlite3

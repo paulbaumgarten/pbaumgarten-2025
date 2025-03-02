@@ -6,10 +6,6 @@ nav_order: 6
 ---
 
 # Matplotlib charts
-{: .no_toc }
-
-- TOC
-{:toc} 
 
 Matplotlib is a powerful graph and chart rendering library. Learn how to master it to make amazing illustrations of your data. Install the library matplotlib to proceed.
 
@@ -19,10 +15,10 @@ The following code all uses the import statement of:
 import matplotlib.pyplot as plt
 ```
 
-Histogram
+## Histogram
 
-![](/assets/python/image11.png)
- 
+<img style="width: 300px" src="/assets/python/image11.png">
+
 ```py
 data = [29,29,30,...] # Extract of data
 plt.rcParams["figure.figsize"] = (10,10)
@@ -35,9 +31,9 @@ plt.hist(data, range=(20,45), bins=26, color='blue')
 plt.show()
 ```
 
-Bar chart
+## Bar chart
  
-![](/assets/python/image12.png)
+<img style="width: 300px" src="/assets/python/image12.png">
  
 ```py
 names = ['Au','Chan','Koh','Lau','Ng','Wong']
@@ -48,9 +44,9 @@ plt.bar(names, scores, color=color_list)   # plt.barh() will give a horizontal c
 plt.show()
 ```
 
-Plot chart
+## Plot chart
 
-![](/assets/python/image13.png)
+<img style="width: 300px" src="/assets/python/image13.png">
  
 Incidentally, the following two charts are based on real data that illustrate how Computer Science still has a long way to go in order to reach equity and parity!
  
@@ -70,10 +66,9 @@ plt.legend()
 plt.show()
 ```
 
-Pie chart
+## Pie chart
 
-![](/assets/python/image14.png)
- 
+<img style="width: 300px" src="/assets/python/image14.png">
  
 ```py
 names = ["Girls","Boys"]
@@ -85,9 +80,9 @@ plt.legend()
 plt.show()
 ```
 
-Scatter diagram
+## Scatter diagram
 
-![](/assets/python/image15.png)
+<img style="width: 300px" src="/assets/python/image15.png">
  
 ```py
 # SCATTER DIAGRAM 
@@ -103,7 +98,7 @@ plt.colorbar()
 plt.show()
 ```
 
-![](/assets/python/image16.png)
+<img style="width: 300px" src="/assets/python/image16.png">
 
 ```py
 # SCATTER DIAGRAM
@@ -121,9 +116,9 @@ for i in range(len(labels)): # label each coordinate
 plt.show()
 ```
 
-Box and violin plots
+## Box and violin plots
 
-![](/assets/python/image17.png)
+<img style="width: 300px" src="/assets/python/image17.png">
 
 ```py                     
 # BOX PLOTS
@@ -138,7 +133,7 @@ plt.boxplot(data, showmeans=True)
 plt.show()
 ```
 
-![](/assets/python/image18.png)
+<img style="width: 300px" src="/assets/python/image18.png">
 
 ```py
 # VIOLIN PLOTS
@@ -154,11 +149,10 @@ plt.violinplot(data, showmeans=True)
 plt.show()
 ```
 
-Saving charts
+## Saving charts
 
 All the above examples use plt.show() to render the chart on screen. You can also have Python save the chart as an image using the plt.savefig() function as follows:
 
 ```py
 plt.savefig("file.png", format: "png")
 ```
-

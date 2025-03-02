@@ -6,10 +6,6 @@ nav_order: 6
 ---
 
 # Log files
-{: .no_toc }
-
-- TOC
-{:toc} 
 
 Instead of filling your code with print() function calls just for debugging purposes, it may be helpful to put program output into a text file you can read through later.
 

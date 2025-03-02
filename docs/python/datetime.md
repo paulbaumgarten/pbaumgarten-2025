@@ -6,10 +6,6 @@ nav_order: 6
 ---
 
 # Dates and times
-{: .no_toc }
-
-- TOC
-{:toc} 
 
 Use the `datetime` library to work with dates and times in Python. 
 

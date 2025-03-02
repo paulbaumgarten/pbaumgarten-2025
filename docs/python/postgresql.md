@@ -6,12 +6,8 @@ nav_order: 6
 ---
 
 # Postgresql database
-{: .no_toc }
 
-- TOC
-{:toc} 
-
-Installation
+## Installation
 
 ```
 pip install psycopg2-binary
@@ -24,7 +20,7 @@ import psycopg2
 import psycopg2.extras
 ```
 
-Database connection string
+## Database connection string
 
 The format of a _postgressql_ database connection string is as follows. You will need this string to be able to connect. Typically it is loaded from a secure file, or pulled in from the external environment. For security reasons, it should never be hard-coded into your Python files, except possibly when you are in the early stages of development using test values that will change later.
 
@@ -42,7 +38,7 @@ connection_string = os.getenv("DATABASE_URL")
 connection_string = os.env["DATABASE_URL"]
 ```
 
-### Writing to a database
+## Writing to a database
 
 ```py
 import psycopg2
@@ -68,7 +64,7 @@ with conn.cursor() as cur:
 conn.close()
 ```
 
-### Reading from a database
+## Reading from a database
 
 ```py
 import psycopg2

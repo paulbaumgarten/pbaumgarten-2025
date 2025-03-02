@@ -14,9 +14,6 @@ For the new IB Diploma Computer Science syllabus to start teaching in August 202
 {: .important }
 Content will be updated gradually as developed in preparation for teaching the new course in August.
 
-- TOC
-{:toc} 
-
 ## Course overview
 
 * [IBO Course brief](https://www.ibo.org/university-admission/latest-curriculum-updates/computer-science-updates/)

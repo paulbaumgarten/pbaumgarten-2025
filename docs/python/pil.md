@@ -6,10 +6,6 @@ nav_order: 6
 ---
 
 # Python Imaging Library (PIL)
-{: .no_toc }
-
-- TOC
-{:toc} 
 
 The Python Imaging library will allow you to load and manipulate JPG, PNG and other common image formats. (note: Also compare to OpenCV). Install the "Pillow" library.
 

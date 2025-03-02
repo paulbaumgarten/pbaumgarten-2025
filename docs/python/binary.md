@@ -6,10 +6,6 @@ nav_order: 6
 ---
 
 # Binary operatiomns
-{: .no_toc }
-
-- TOC
-{:toc} 
 
 This assumes you understand binary and other number systems and the operations involved.
 

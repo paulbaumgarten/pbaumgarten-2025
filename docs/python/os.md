@@ -6,10 +6,6 @@ nav_order: 6
 ---
 
 # Operating system utilities
-{: .no_toc }
-
-- TOC
-{:toc} 
 
 There are a range of powerful functions Python provides for working with the operating system and file/folder system of your computer.
 

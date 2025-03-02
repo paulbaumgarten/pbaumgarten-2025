@@ -6,10 +6,6 @@ nav_order: 6
 ---
 
 # Flask web server
-{: .no_toc }
-
-- TOC
-{:toc} 
 
 Install the Flask library to host web-based projects run by Python.
 

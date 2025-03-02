@@ -11,7 +11,11 @@ nav_order: 6
 - TOC
 {:toc} 
 
+## Installation
+
 Install and import the `pygame-ce` library to be able to create rich 2D games such as platformers.
+
+## Basic structure
 
 Basic structure of a Pygame revolves around a main game loop. An example follows
 
@@ -57,7 +61,7 @@ This will create a simple program that will move the bulleye to whatever locatio
 
 ![](/assets/python/image19.png)
  
-### Detecting key presses
+## Detecting key presses
 
 Get a Python list of all keys being pressed.
 
@@ -100,7 +104,7 @@ K_a         # Letter 'a'
 K_1         # Number '1'
 ```
 
-### Detecting mouse action
+## Detecting mouse action
 
 ```py
 for event in pygame.event.get():
@@ -114,7 +118,7 @@ for event in pygame.event.get():
       print("released at ",x,y)
 ```
  
-### Music and sound effects
+## Music and sound effects
 
 To play background music. Use an MP3 file. Do not place this in the game loop!
 
@@ -135,7 +139,7 @@ Then within the game loop, use this to initiate the sound effect when you want i
 hurt_sound.play()
 ```
 
-### Images
+## Images
 
 Assign a variable the content of an image file. Use PNG if you require transparency, otherwise JPG is ok. Do this before the game loop.
 
@@ -179,7 +183,7 @@ resized_image = pygame.transform.scale(original_image, (200, 100))
 rotated_image = pygame.transform.rotate(original_image, 90) 
 ```
 
-### Text
+## Text
 
 Create a variable for the font and size you wish to display. Do not put in your game loop.
 
@@ -194,7 +198,7 @@ label = arial_24.render("Hello Python!", 1, white)  # Create an image containing
 window.blit(label, (300, 50))                       # Blit the image to screen
 ```
 
-### Drawing shapes
+## Drawing shapes
 
 ```py
 # parameters: window, color, (from-coordinates), (to-coordinates), thickness
@@ -213,7 +217,7 @@ pygame.draw.ellipse(window, pink, (220, 100, 80, 40), 10)
 pygame.draw.polygon(window, red, ((20,20), (52,60), (172,60), (200,20)), 5)
 ```
  
-### Detecting collisions
+## Detecting collisions
 
 Pygame uses rectangles to detect collisions by looking for any overlap between the rectangles.
 
@@ -260,7 +264,7 @@ if player_rect.colliderect(enemy_rect):
    print("ouch!")
 ```
 
-### Sample Snake game
+## Sample Snake game
 
 ```py
 import pygame, sys, random

@@ -13,7 +13,7 @@ nav_order: 6
 
 The requests library provides a convenient means to interact with websites, such as to download or upload files. Install the `requests` library and import it for all these recipes.
 
-### Text file download - Load into string
+## Text file download - Load into string
 
 ```py
 import requests
@@ -23,7 +23,7 @@ if response.status_code == 200:
     print(response.text)
 ```
 
-### Text file download - Save to file
+## Text file download - Save to file
 
 ```py
 import requests
@@ -34,7 +34,7 @@ if response.status_code == 200:
         f.write(response.text)
 ```
 
-### JSON download
+## JSON download
 
 ```py
 import requests
@@ -57,7 +57,7 @@ if response.status_code == 200: # 200 = Normal/OK
     print("Wind:",wind)
 ```
 
-### Binary download – Small files (less than 1MB)
+## Binary download – Small files (less than 1MB)
 
 ```py
 import requests, os
@@ -71,7 +71,7 @@ if response.status_code == 200:
     # subprocess.call(('open', filepath)) # Mac ... import subprocess
 ```
 
-### Binary download – Larger files (over 1MB)
+## Binary download – Larger files (over 1MB)
 
 ```py
 import requests, os
@@ -86,7 +86,7 @@ if response.status_code == 200:
     os.startfile("galaxy_tree.jpg") # Windows
 ```
 
-### Upload a file
+## Upload a file
 
 ```py
 # Simple file upload
