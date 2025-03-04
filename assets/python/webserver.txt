@@ -1,0 +1,92 @@
+import network
+import usocket as socket
+import urequests
+import machine
+import time
+
+# Connect to WiFi
+def connect_to_wifi(SSID, PASSWORD):
+    led = machine.Pin("LED", machine.Pin.OUT)
+    wlan = network.WLAN(network.STA_IF)
+    wlan.active(True)
+    led.on()
+    if not wlan.isconnected():
+        print('connecting to network...')
+        wlan.connect(SSID, PASSWORD)
+        while not wlan.isconnected():
+            print('Waiting for Wi-Fi connection...')
+            led.off()
+            time.sleep(0.4)
+            led.on()
+            time.sleep(0.4)
+    print('network config:', wlan.ifconfig())
+    led.on()
+    return wlan.ifconfig()[0]
+
+# Send HTTP POST request
+def send_post_request(ip):
+    url = 'http://example.com/post'
+    headers = {'Content-Type': 'application/json'}
+    data = {'url': f'http://{ip}'}
+    response = urequests.post(url, json=data, headers=headers)
+    print(response.text)
+    response.close()
+
+# Parse POST data
+def parse_post_data(body):
+    params = {}
+    for param in body.split('&'):
+        key, value = param.split('=')
+        params[key] = value
+    return params
+
+def start_server(ip, port, html_file, callback_handler):
+    # Read HTML file
+    def display_webpage(html_file, status=False):
+        with open(html_file, 'r') as file:
+            return file.read()
+    
+    # Set up socket and start listening
+    addr = socket.getaddrinfo(ip, port)[0][-1]
+    s = socket.socket()
+    s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+    s.bind(addr)
+    s.listen()
+    print('Listening on', addr)
+    # Initialize variables
+    state = "OFF"
+    # Main loop to listen for connections
+    while True:
+        try:
+            conn, addr = s.accept()
+            print('Got a connection from', addr)
+            # Receive and parse the request
+            request = conn.recv(1024)
+            request = str(request)
+            # print('Request content = %s' % request)
+            try:
+                request = request.split()[1]
+                print('Request:', request)
+            except IndexError:
+                pass
+            # Process the request and update variables
+            if request[0] == "/":
+                request = request[1:]
+            if request.find("?") > 0:
+                request = request[ 0 : request.find("?")-1 ]
+            if request == "quit":
+                break
+            # Execute the callback function
+            callback_handler(request)
+            # Generate HTML response
+            response = display_webpage(html_file, state)  
+            # Send the HTTP response and close the connection
+            conn.send('HTTP/1.0 200 OK\r\nContent-type: text/html\r\n\r\n')
+            conn.send(response)
+            conn.close()
+        except OSError as e:
+            conn.close()
+            print('Connection closed')
+    print("Exiting webserver")
+
+
