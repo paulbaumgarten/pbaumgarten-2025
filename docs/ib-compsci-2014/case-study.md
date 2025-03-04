@@ -34,6 +34,10 @@ For each of the challenges faced:
 * Research and identify real world examples of this challenge being relevant.
 * Produce a document summary of the real life examples and record the citations.
 
+Suggested resources:
+
+* [arXiv](https://arxiv.org/)
+
 ## Stage 6 - Brainstorm exam questions (question 1,2,3)
 
 * Qu 1, 2 - Definition, outline, describe
