@@ -62,7 +62,7 @@ This is obviously imprecise as it over simplifies things, but may be a helpful s
   [https://www.ibo.org/university-admission/latest-curriculum-updates/computer-science-updates/](https://www.ibo.org/university-admission/latest-curriculum-updates/computer-science-updates/)
 
 * This is the poster I have created for use in my school, feel free to adapt:  
-  [https://pbaumgarten.com/assets/ib-course-overview-poster-2025.pdf](https://pbaumgarten.com/assets/ib-course-overview-poster-2025.pdf)
+  [ib-compsci-poster.pdf](/assets/ib-compsci-poster-2025.pdf)
 
 # Programming languages: Pseudocode, Java, Python
 

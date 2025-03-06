@@ -22,7 +22,7 @@ Ultimately, Computer Science is about solving problems. It includes the study of
 
 ### Published author for IB Diploma Computer Science
 
-<img style="float: right; width: 100px" src="assets/dp-compsci-book.png">
+<img style="float: right; width: 100px" src="assets/ib-compsci-book.png">
 In collaboration with Carl Turland and Ioana Ganea, I have authored a book for the new IB Diploma Computer Science syllabus. Published by Hachette Learning (formerly Hodder Education).
 
 The e-Inspection copy and pre-orders are now available.

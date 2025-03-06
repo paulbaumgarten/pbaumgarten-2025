@@ -16,11 +16,11 @@ Content will be updated gradually as developed in preparation for teaching the n
 
 ## Course overview
 
-* [IBO Course brief](https://www.ibo.org/university-admission/latest-curriculum-updates/computer-science-updates/)
-* [IBO Course syllabus/guide for Computer Science (PDF)](/assets/ib-compsci-2025.pdf)
-* [Course content overview (poster)](https://pbaumgarten.com/assets/ib-course-overview-poster-2025.pdf)
+* [Course syllabus](/assets/ib-compsci-guide-en-2025.pdf) by the IBO
+* [Course overview](/assets/ib-compsci-poster-2025.pdf) poster
 * [Changes and FAQ about the new course](changes.html)
-* [Computer Science for the IB Diploma](https://www.hachettelearning.com/computing-and-it/computer-science-for-the-ib-diploma) textbook by Baumgarten, Ganea, & Turland; published by Hachette Learning. ISBN 9781036009007.
+* [Teaching schedule](/assets/lesson-mapping-2025-2027-DRAFT.pdf) this is **very very very draft**!
+* "Computer Science for the IB Diploma" by Baumgarten, Ganea, & Turland; published by Hachette Learning. ISBN 9781036009007<br/>[Hachette listing](https://www.hachettelearning.com/computing-and-it/computer-science-for-the-ib-diploma) // [Amazon listing](https://www.amazon.com/Computer-Science-Diploma-Paul-Baumgarten/dp/1036009009/)
 
 ## Units of learning
 
