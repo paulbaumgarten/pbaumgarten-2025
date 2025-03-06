@@ -12,6 +12,24 @@ Various tutorials and programming exercises for those students who would like a 
 - TOC
 {:toc} 
 
+## CS Circles
+
+By the University of Waterloo
+
+Teaches the basics of Python programming in a semi-interactive fashion. It contains a series of instructions, mixed with exercises that you can use to test your progress. The exercises and writing are aimed at people who have no prior experience programming.
+
+* Python: [https://cscircles.cemc.uwaterloo.ca/](https://cscircles.cemc.uwaterloo.ca/)
+
+When you create an account, go to your [profile](https://cscircles.cemc.uwaterloo.ca/wp-admin/profile.php) page and add `pbaumgarten` as your guru. This will allow me to see your progress through the exercises.
+
+## Python from Scratch
+
+By the University of Waterloo
+
+Python from scratch is a gentle introduction to programming, designed with the beginner in mind. No previous background is assumed. Each programming concept is first taught without reference to a specific programming language. Hands-on practice using the programming language of Python helps to reinforce the concepts.
+
+* Python [https://open.cs.uwaterloo.ca/python-from-scratch/](https://open.cs.uwaterloo.ca/python-from-scratch/)
+
 ## Snakify
 
 Learn Python 3 and web design with 200+ exercises
