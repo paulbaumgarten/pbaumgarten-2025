@@ -49,3 +49,46 @@ desktop = os.path.expanduser("~/Desktop")
 # (will not recursively give contents of subfolders)
 files = os.listdir( "/folder/name" )
 ```
+
+While technically not the OS library, these are _os related tasks_ that I commonly need reminders on, so thought they would be useful to include here...
+
+## Get my IP address
+
+```python
+import socket
+s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+s.connect(("8.8.8.8", 80)) # Connect somewhere, anywhere
+ip_address = s.getsockname()[0] # Obtain the IP address used for the connection
+```
+
+## Get my computer name
+
+```python
+import socket
+name = socket.gethostname()
+```
+
+## Get an environment variable
+
+Get an environment variable and generate exception if it does not exist
+
+```python
+import os
+var = os.environ['PATH']
+```
+
+Get an environment variable and return None if it does not exist
+
+```python
+import os
+var = os.getenv('PATH')
+```
+
+Get an environment variable and return the provided default if it does not exist
+
+```python
+import os
+var = os.getenv('PATH', 'default')
+```
+
+
