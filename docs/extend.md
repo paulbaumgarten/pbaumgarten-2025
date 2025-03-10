@@ -4,7 +4,7 @@ layout: default
 nav_order: 7
 ---
 
-# Competitions and other extension opportunities
+# Extension opportunities
 {: .no_toc }
 
 - TOC
@@ -118,7 +118,7 @@ The NASA international SpaceApps challenge is an annual 48 hours hackathon organ
 
 ## City University of Hong Kong
 
-The Summer Research Internship provides opportunities for secondary school students to undertake engineering-related research attachments for approximately one month at CityU during the summer 2024. Students will be actively engaged in CityU laboratories under the supervision of CityU PhD students and a faculty member as an advisor. 
+The Summer Research Internship provides opportunities for secondary school students to undertake engineering-related research attachments for approximately one month at CityU during the summer. Students will be actively engaged in CityU laboratories under the supervision of CityU PhD students and a faculty member as an advisor. 
 
 Key info:
 
