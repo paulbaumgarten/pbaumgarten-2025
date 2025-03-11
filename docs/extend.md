@@ -1,5 +1,5 @@
 ---
-title: Competitions
+title: Extension opportunities
 layout: default
 nav_order: 7
 ---
@@ -10,9 +10,17 @@ nav_order: 7
 - TOC
 {:toc} 
 
-# Competitions
+## Programming extension roadmap
 
-## Hong Kong Olympiad in Informatics
+The extension roadmap assumes you are already confident in the core skills of IGCSE programming.
+
+As you work through these extension tasks please regularly save your progress into the github repo.  This will help me monitor your progress - check for your understanding, see if you are getting stuck, and monitor pacing (when do I have to add additional items to this doc). 
+
+* [Programming extension roadmap](/extend-programming.html)
+
+## Competitions
+
+### Hong Kong Olympiad in Informatics
 
 Started in 1997, Hong Kong Olympiad in Informatics (HKOI) is a prestigious annual programming competition for secondary school students, focusing on algorithmic problem-solving and programming skills, and serving as the preliminary selection contest for the International Olympiad in Informatics (IOI) Hong Kong team.
 
@@ -20,7 +28,7 @@ Website: [https://hkoi.org/en/hkoi/](https://hkoi.org/en/hkoi/)
 
 * STC team selection starts in September. Make sure you have registered your interest with me early as we typically have more students wanting to participate than places available (in which case we run a an internal shortlisting test).
 
-## Hong Kong Girls' Olympiad in Infomatics
+### Hong Kong Girls' Olympiad in Infomatics
 
 Hong Kong Girls' Olympiad in Informatics (HKGOI) is an annual programming competition specifically designed for female secondary school students, promoting their participation and excellence in computer science, and serving as the preliminary selection contest for the European Girls' Olympiad in Informatics (EGOI) Hong Kong team.
 
@@ -28,13 +36,13 @@ Website: [https://hkoi.org/en/hkgoi/](https://hkoi.org/en/hkgoi/)
 
 * STC team selection starts in September. Make sure you have registered your interest with me early as we typically have more students wanting to participate than places available (in which case we run a an internal shortlisting test).
 
-## Hong Kong Secondary Schools Coding Challenge
+### Hong Kong Secondary Schools Coding Challenge
 
 Held in July each year, the HKSSCC is an individual competition in a similar form to the international olympiad informatics (IOI) contest. Cash prizes available.
 
 * Website: [https://www.cs.cityu.edu.hk/~hksc/](https://www.cs.cityu.edu.hk/~hksc/)
 
-## Imperial Hackathon
+### Imperial Hackathon
 
 Imperial College London, in collaboration with HK Science Park, are running a Hackathon in HK for Secondary students.
 
@@ -61,14 +69,14 @@ Key info:
 * Final Pitch & Grand Finale: October 13, 2024 at Hong Kong Science Park
 * Website: [https://www.imperialhackathonhk.com/](https://www.imperialhackathonhk.com/)
 
-## MIT EWB (Engineering without borders) Science & Engineering competition
+### MIT EWB (Engineering without borders) Science & Engineering competition
 
 * For Middle and High School Students
 * Regular Registration Deadline: 25 January, 2025
 * Competition website: [https://algoed.co/mit-ewb](https://algoed.co/mit-ewb)
 * MIT EWB Website: [http://ewb.mit.edu/](http://ewb.mit.edu/)
 
-## Perse Coding Team Challenge
+### Perse Coding Team Challenge
 
 Round 1: Monday 27 January – Friday 7 February 2025 (for pairs (or solo, if necessary) sharing one computer)
 Round 2: Monday 10 March – Friday 21 March 2025 (three students to participate together, maximum of two Years 10-11 students allowed per team)
@@ -76,7 +84,7 @@ Round 2: Monday 10 March – Friday 21 March 2025 (three students to participate
 * Website: [https://pctc.perse.co.uk/](https://pctc.perse.co.uk/)
 * Practice past challenges: [https://pctc.perse.co.uk/practice/](https://pctc.perse.co.uk/practice/)
 
-## Canadian Computing Competition
+### Canadian Computing Competition
 
 Canada's version of the HKOI.
 
@@ -86,7 +94,7 @@ The Canadian Computing Competition (CCC) is a fun challenge for participants wit
 
 * [Past contests](https://cemc.uwaterloo.ca/resources/past-contests?grade=20&academic_year=All&contest_category=29)
 
-## Coding Quest
+### Coding Quest
 
 Monday 3 March to Friday 14 March, 2025 
 
@@ -94,7 +102,7 @@ Monday 3 March to Friday 14 March, 2025
 
 Coding Quest is an annual competition specifically for secondary students to showcase their knowledge and understanding of algorithm design, data structures and computational thinking. There are no prizes, just bragging rights. Coding Quest exists mostly for students to compete against themselves. Last year there were 760 students from 97 schools who participated. Previous problems remain open on the website to try.
 
-## Advent of code
+### Advent of code
 
 For those who are a little nerdy and enjoy pushing your limits with programming, it is a lot of fun - a highlight of the calendar I look forward to every year.
 
@@ -106,17 +114,17 @@ Join the internal STC competition leaderboard with this code on the website: 121
 
 * Website: [https://adventofcode.com/](https://adventofcode.com/)
 
-## ESF Co Co
+### ESF Co Co
 
 Organized by current ESF students to encourage and influence student interest in computer science from a young age. Renowned Industry leaders and institutes host interactive workshops and deliver informative talks to invoke your interest and passion for technology and computing. Additionally, a large-scale Hackathon will challenge your creativity and innovation.
 
-## NASA Space Apps Challenge
+### NASA Space Apps Challenge
 
 The NASA international SpaceApps challenge is an annual 48 hours hackathon organized by NASA and local hosts around the globe. The challenge addresses the great challenges we are facing on Earth and in space by connecting NASA's data with coders, makers, designers and dreamers around the world. Occurs over 2 days, October 1 & 2, 2022. Registrations in July.
 
-# Research opportunities
+## Research opportunities
 
-## City University of Hong Kong
+### City University of Hong Kong
 
 The Summer Research Internship provides opportunities for secondary school students to undertake engineering-related research attachments for approximately one month at CityU during the summer. Students will be actively engaged in CityU laboratories under the supervision of CityU PhD students and a faculty member as an advisor. 
 
@@ -126,7 +134,7 @@ Key info:
 * For year 11 students and up
 * Website: [https://www.cityu.edu.hk/ceng/bright-future-engineering-talent-hub/hubs-activities/summer-research-internship](https://www.cityu.edu.hk/ceng/bright-future-engineering-talent-hub/hubs-activities/summer-research-internship)
 
-## The Hong Kong Polytechnic University
+### The Hong Kong Polytechnic University
 
 The Junior Researcher Mentoring Programme aims to:
 
