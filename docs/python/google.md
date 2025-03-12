@@ -1,12 +1,56 @@
 
 ---
-title: Gspread (Google sheets)
+title: Google APIs
 parent: Python notes
 layout: default
 nav_order: 6
 ---
 
-# Gspread (Google sheets)
+## PyDrive2 (Google Drive)
+
+### Authentication with service account
+
+Install pydrive2 via pip.
+
+```
+pip install pydrive2
+```
+
+You will need to register with Google Cloud to create a service account. This is like an additional Google Account but instead of being linked to a person, it is for use by programs and applications.
+
+* Visit [https://console.cloud.google.com/](https://console.cloud.google.com/)
+* Open the `APIs & Services` window
+* Enable `Google Drive API`
+* Open the `Credentials` window
+* Download the service account key file to a secure location. This file is the equivilant to the password of the account. Whoever or whatever program that has access to it, can operate the service account.
+
+```python
+# Sourced from https://github.com/iterative/PyDrive2/issues/21#issuecomment-929186260
+from pydrive2.auth import GoogleAuth
+from pydrive2.drive import GoogleDrive
+from oauth2client.service_account import ServiceAccountCredentials
+
+scope = ["https://www.googleapis.com/auth/drive"]
+gauth = GoogleAuth()
+gauth.auth_method = 'service'
+gauth.credentials = ServiceAccountCredentials.from_json_keyfile_name('service_account.json', scope)
+drive = GoogleDrive(gauth)
+
+about = drive.GetAbout()
+
+print('Current user name:{}'.format(about['name']))
+print('Root folder ID:{}'.format(about['rootFolderId']))
+print('Total quota (bytes):{}'.format(about['quotaBytesTotal']))
+print('Used quota (bytes):{}'.format(about['quotaBytesUsed']))
+
+file_list = drive.ListFile().GetList()
+for file1 in file_list:
+  print('title: %s, id: %s' % (file1['title'], file1['id']))
+```
+
+Rate limits apply. Per 60 seconds per user: 12,000 queries.
+
+## Gspread (Google Sheets)
 
 ### Install and setup Gspread
 
