@@ -1,4 +1,3 @@
-
 ---
 title: Google APIs
 parent: Python notes
