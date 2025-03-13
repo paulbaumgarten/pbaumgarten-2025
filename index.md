@@ -35,13 +35,15 @@ The e-Inspection copy and pre-orders are now available.
 <img style="float: right; width: 200px" src="assets/codehershk.png">
 Computer Science, as a subject and a profession, remains heavily male dominated. Code Hers is a collaboration of 11 International Schools within Hong Kong that aims to address this disparity by providing a safe, supporting and encouraging environment for girls to have a go. The ultimate aim is to normalise the presence of women in tech, making the need for such events obsolete. Until that day comes, however, events like Code Hers are critically important and serve an important role.
 
-The inaugural event in 2024 attracted over 300 girls in attendance, and we are hoping for 500 at our 2025 event on 15 March. 
+The inaugural event in 2024 attracted over 300 girls in attendance, and we are looking at bigger and better at our 2025 event on 15 March. 
 
 * ⁠Website - [codehershk.org](https://codehershk.org/)
 * Instagram - [@codehershk](https://instagram.com/codehershk) 
 * ⁠Information letter for schools - [codehershk.org/marketing/2025intro-letter.pdf](https://codehershk.org/marketing/2025intro-letter.pdf)
 * ⁠Promotional posters - [codehershk.org/marketing/2025poster.pdf](https://codehershk.org/marketing/2025poster.pdf)
 * ⁠Promotional video - [youtube.com/watch?v=4yTva9Ncbrs](https://www.youtube.com/watch?v=4yTva9Ncbrs)
+
+I made an [infographic](/assets/gender-equality-in-cs-why.png) that outlines the case for girls-only events in Computer Science.
 
 ### Coding Quest
 
