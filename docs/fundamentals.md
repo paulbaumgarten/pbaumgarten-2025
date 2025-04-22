@@ -63,3 +63,10 @@ Exercism’s Java Track for access to 148 exercises grouped into 25 Java Concept
 Time2code has been specifically written for the IGCSE course and is used by 100s of schools. Each lesson has written material, video demonstrations, example code to replicate, and exercises. Put aside a couple of hours a week to work through the online course and share your results with me.
 
 * Python: [https://time2code.today/python-course](https://time2code.today/python-course)
+
+## Carnegie Mellon University: Computer Science Academy
+
+CMU CS Academy is an online, graphics-based computer science curriculum taught in Python provided by Carnegie Mellon University. We create novel, world-class Computer Science education for your classroom —and it’s entirely free.
+
+* Python: [https://academy.cs.cmu.edu/](https://academy.cs.cmu.edu/)
+
