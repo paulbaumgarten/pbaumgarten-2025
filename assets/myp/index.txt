@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pico W Control Panel</title>
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    .button {
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .circle {
+        width: 30vh; /* Responsive based on viewport height */
+        height: 30vh; /* Responsive based on viewport height */
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 5vh; /* Larger font size for better readability */
+        color: white;
+        cursor: pointer;
+    }
+    .green {
+        background-color: #4CAF50;
+    }
+    .red {
+        background-color: #f44336;
+    }
+    .form {
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    input[type="text"], input[type="time"], input[type="submit"] {
+        width: 80%;
+        padding: 15px;
+        margin: 10px;
+        font-size: 4vh; /* Responsive font size */
+    }
+</style>
+</head>
+<body>
+    <div class="button">
+        <div class="circle green" onclick="sendCommand('/on')">ON</div>
+        <div class="circle red" onclick="sendCommand('/off')">OFF</div>
+    </div>
+    <div class="form">
+        <input type="time" id="time" placeholder="HH:MM">
+        <input type="submit" value="SET" onclick="setAlarm()">
+    </div>
+    <script>
+        function sendCommand(url) {
+            fetch(url, { method: 'GET' }).then(response => {
+                console.log('Request successful', response);
+            }).catch(error => {
+                console.error('Request failed', error);
+            });
+        }
+
+        function setAlarm() {
+            var timeInput = document.getElementById('time').value;
+            var timeParts = timeInput.split(':');
+            var now = new Date();
+            var alarmDate = new Date(now.getFullYear(), now.getMonth(), now.getDate(),
+                                    parseInt(timeParts[0]), parseInt(timeParts[1]), 0);
+            
+            // Check if the set time has already passed for today
+            if (alarmDate.getTime() < now.getTime()) {
+                // If the alarm time has passed, set it for the next day
+                alarmDate.setDate(alarmDate.getDate() + 1);
+            }
+
+            var timestamp = Math.floor(alarmDate.getTime() / 1000);
+            fetch('/setalarm', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: 'time=' + timestamp
+            }).then(response => {
+                console.log('Alarm set', response);
+            }).catch(error => {
+                console.error('Failed to set alarm', error);
+            });
+        }
+    </script>
+</body>
+</html>

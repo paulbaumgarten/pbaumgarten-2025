@@ -1,0 +1,35 @@
+import time
+import json
+import machine
+import ntptime
+import urequests
+
+# NTP Time Fetching Function
+def set_correct_time():
+    while True:
+        try:
+            ntptime.settime()
+            break
+        except:
+            print("Waiting to set time...")
+            time.sleep(5)
+    # Update for timezone
+    rtc = machine.RTC()
+    (year, month, day, weekday, hours, minutes, seconds, subseconds) = rtc.datetime()
+    # Calculate local time UTC+8
+    hours += 8
+    if hours >= 24:
+        hours -= 24 # doesn't change the day
+    # Set the RTC to the local time
+    rtc.datetime((year, month, day, weekday, hours, minutes, seconds, subseconds))
+
+def send_nfty_message(channel, message, link=None, server="https://ntfy.sh/"):
+    print(f"[sending ntfy message] {server+channel} '{message}'")
+    if link:
+        response = urequests.post(url=server+channel, data=message, headers=[{"action":"view", "label":"Open", "url": link}])
+    else:
+        response = urequests.post(url=server+channel, data=message)        
+    res = response.text
+    print(f"[ntfy reply]",response.status_code,res)
+    response.close()    
+    return res
