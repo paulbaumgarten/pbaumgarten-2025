@@ -1,5 +1,6 @@
 ---
 title: 08 Internet of things
+parent: MYP Digital Design
 layout: default
 nav_order: 5
 ---
