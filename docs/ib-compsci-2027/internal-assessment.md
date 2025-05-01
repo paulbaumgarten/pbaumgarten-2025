@@ -43,8 +43,7 @@ The following are the offical sample IA's published by the IBO for the new cours
 * Example 7: Trip organizer (22/30)
 * Example 8: Flappy bird (13/30)
 
-* My students can access them directly via [Google Drive](https://drive.google.com/drive/folders/1CxyTGB0coSBCPK8BhCRc1tw03KPekqhD?usp=sharing) (STC accounts only). 
-* As these materials are IBO copyrighted, I can not share with non-STC teachers and students, so please don't request drive access. IB CompSci teachers can download these for their own classes from the [IBO resource center](https://resources.ibo.org/dp/subject/Computer-science-2027/works/dp_11162-433685?lang=en&root=1.6.2.2.7)
+My students can access them directly via [Google Drive](https://drive.google.com/drive/folders/1CxyTGB0coSBCPK8BhCRc1tw03KPekqhD?usp=sharing) (STC accounts only). As these materials are IBO copyrighted, I can not share with non-STC teachers and students, so please don't request drive access. IB CompSci teachers can download these for their own classes from the [IBO resource center](https://resources.ibo.org/dp/subject/Computer-science-2027/works/dp_11162-433685?lang=en&root=1.6.2.2.7)
 
 ## Suggested timeline for the IA
 
