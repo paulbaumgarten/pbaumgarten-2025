@@ -11,26 +11,40 @@ nav_order: 3
 {: .highlight }
 For the new IB Diploma Computer Science syllabus to start teaching in August 2025, and for first examinations in May 2027.
 
-{: .important }
-Unit and lesson overviews will be gradually published as developed. 
-
 - TOC
 {:toc} 
 
 ## Guide to the IA
 
-I had a Guide to the IA for the previous syllabus that was a very popular download. I want to thank all the teachers and students who sent me messages over the years for the encouragement. It's clear that there was a need for such a thorough guide and many people found it very helpful.
+The guide to the IA that I wrote for the previous syllabus was a very popular download. I want to thank all the teachers and students who sent me messages over the years for the encouragement. It's clear that there was a need for such a thorough guide and many people found it very helpful.
 
-For the new course, my co-authors and I have developed a similar guide in the Hachette book, ["Computer Science for the IB Diploma"](https://www.hachettelearning.com/computing-and-it/computer-science-for-the-ib-diploma) which contains a 40 page chapter for the Internal Assessment. 
+With the support of my co-authors, I have developed a new, updated guide for the new Internal Assessment, which has been added as a chapter to the Hachette book, ["Computer Science for the IB Diploma"](https://www.hachettelearning.com/computing-and-it/computer-science-for-the-ib-diploma).
 
-For each of the 5 criteria, it includes:
+The new IA guide contains a 40 page chapter for the Internal Assessment. For each of the 5 criteria, it includes:
 
 * The official IB assessment criteria text
-* Top tips and common mistakes
-* Exemplar samples based on real student IA's (and separate to the IB authored samples)
+* Top tips
+* Common mistakes
+* Exemplar samples based on real student IA's (separate to the IB authored samples)
 * Detailed checklists
 
 Those who found my guide to the IA for the previous syllabus useful, should find the chapter in the Hachette textbook very helpful for navigating the new IA. 
+
+## Sample IAs
+
+The following are the offical sample IA's published by the IBO for the new course. They have been marked by IB moderators with comments provided.
+
+* Example 1: Birthday card generator (24/30)
+* Example 2: Quiz game (17/30)
+* Example 3: Chat room (18/30)
+* Example 4: Car management system (23/30)
+* Example 5: Currency converter (16/30)
+* Example 6: IB timetable (26/30)
+* Example 7: Trip organizer (22/30)
+* Example 8: Flappy bird (13/30)
+
+* My students can access them directly via [Google Drive](https://drive.google.com/drive/folders/1CxyTGB0coSBCPK8BhCRc1tw03KPekqhD?usp=sharing) (STC accounts only). 
+* As these materials are IBO copyrighted, I can not share with non-STC teachers and students, so please don't request drive access. IB CompSci teachers can download these for their own classes from the [IBO resource center](https://resources.ibo.org/dp/subject/Computer-science-2027/works/dp_11162-433685?lang=en&root=1.6.2.2.7)
 
 ## Suggested timeline for the IA
 
