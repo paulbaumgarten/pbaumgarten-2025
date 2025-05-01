@@ -23,12 +23,15 @@ Ultimately, Computer Science is about solving problems. It includes the study of
 ### Published author for IB Diploma Computer Science
 
 <img style="float: right; width: 100px" src="assets/ib-compsci-book.png">
-In collaboration with Carl Turland and Ioana Ganea, I have authored a book for the new IB Diploma Computer Science syllabus. Published by Hachette Learning (formerly Hodder Education).
+Endorsed and approved by the International Baccalaureate for the new Computer Science syllabus, and authored by Paul Baumgarten, Ioana Ganea, and Carl Turland. The **Computer Science for the IB Diploma** textbook fully addresses both SL and HL content, caters to either Python or Java as the language of instruction, and includes a thorough 40 page guide to the IA filled with exemplar work from former students, top tips, common mistakes, and checklists.
 
-The e-Inspection copy and pre-orders are now available.
+The authors delivered a webinar to launch the new book and outline key features, which is available here: [https://www.youtube.com/watch?v=tN0SKH9EMXM](https://www.youtube.com/watch?v=tN0SKH9EMXM)
 
-* [Hachette Learning book link](https://www.hachettelearning.com/computing-and-it/computer-science-for-the-ib-diploma). 
-* [Amazon book link](https://www.amazon.com/Computer-Science-Diploma-Paul-Baumgarten/dp/1036009009)
+Order from: [Hachette / Hodder publishing](https://www.hachettelearning.com/computing-and-it/computer-science-for-the-ib-diploma), [Amazon](https://www.amazon.com/Computer-Science-Diploma-Paul-Baumgarten/dp/1036009009), [Waterstones](https://www.waterstones.com/book/computer-science-for-the-ib-diploma/carl-turland/ioana-ganea/9781036009007), [Foyles](https://www.foyles.co.uk/book/computer-science-for-the-ib-diploma/carl-turland/9781036009007), [The IB Bookshop](https://www.ibbookshop.co.uk/product/computer-science-for-the-ib-diploma/), and other major bookstores that cater to international schools.
+
+The book was published on 24th April 2025 and is now available.
+
+ISBN: 9781036009007
 
 ### CodeHers HK
 
