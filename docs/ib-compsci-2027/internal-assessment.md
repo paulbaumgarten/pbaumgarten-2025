@@ -22,17 +22,19 @@ With the support of my co-authors, I have developed a new, updated guide for the
 
 The new IA guide contains a 40 page chapter for the Internal Assessment. For each of the 5 criteria, it includes:
 
-* The official IB assessment criteria text
+* IB assessment criteria statements
 * Top tips
 * Common mistakes
-* Exemplar samples based on real student IA's (separate to the IB authored samples)
+* Exemplar samples from real student IA's, re-worked for the new syllabus (separate to the IB authored samples)
 * Detailed checklists
 
 Those who found my guide to the IA for the previous syllabus useful, should find the chapter in the Hachette textbook very helpful for navigating the new IA. 
 
 ## Sample IAs
 
-The following are the offical sample IA's published by the IBO for the new course. They have been marked by IB moderators with comments provided.
+The following are the offical sample IA's published by the IBO for the new course. They have been marked by IB moderators with comments provided but are subject to the following fine-print from the IB:
+
+_Although the examples have been standardized by experienced Diploma Programme (DP) computer science teachers, these example computational solutions, their marks and examiner comments are for guidance only. They are not definitive and have not been generated through the International Baccalaureate's (IB) process of standardization. These examples will be replaced with authentic examination examples following first assessment in 2027._
 
 * Example 1: Birthday card generator (24/30)
 * Example 2: Quiz game (17/30)
@@ -43,7 +45,7 @@ The following are the offical sample IA's published by the IBO for the new cours
 * Example 7: Trip organizer (22/30)
 * Example 8: Flappy bird (13/30)
 
-My students can access them directly via [Google Drive](https://drive.google.com/drive/folders/1CxyTGB0coSBCPK8BhCRc1tw03KPekqhD?usp=sharing) (STC accounts only). As these materials are IBO copyrighted, I can not share with non-STC teachers and students, so please don't request drive access. IB CompSci teachers can download these for their own classes from the [IBO resource center](https://resources.ibo.org/dp/subject/Computer-science-2027/works/dp_11162-433685?lang=en&root=1.6.2.2.7)
+My students can access them directly via [Google Drive](https://drive.google.com/drive/folders/1CxyTGB0coSBCPK8BhCRc1tw03KPekqhD?usp=sharing) (STC accounts only). As these materials are IBO copyrighted, I can not share with other teachers and students, so please don't request drive access. IB CompSci teachers can download these for their own classes from the [IBO resource center](https://resources.ibo.org/dp/subject/Computer-science-2027/works/dp_11162-433685?lang=en&root=1.6.2.2.7)
 
 ## Suggested timeline for the IA
 
@@ -76,7 +78,4 @@ That's the same as asking: _Can you use code sourced from Google, Stackoverflow,
 
 Externally sourced code, properly cited and in moderation, is perfectly fine and expected. That said, the vast majority of the programming code should be your own independently produced work. The IA is an opportunity for you to showcase your personal programming expertise, not your ability to copy-and-paste someone elses code.
 
-**TL;DR...**
-
-AI tools can be used and are treated the same as any other resource that students may use: They should be fully and properly cited and referenced at all times, failure to do so risks breaching the Academic Integrity Policy.
-
+**TL;DR...**: AI tools can be used and are treated the same as any other resource that students may use. They should be fully and properly cited and referenced at all times, failure to do so risks breaching the Academic Integrity Policy.

@@ -20,33 +20,32 @@ Ultimately, Computer Science is about solving problems. It includes the study of
 
 ## Current projects
 
-### Published author for IB Diploma Computer Science
+### Computer Science for the IB Diploma by Paul Baumgarten, Ioana Ganea, and Carl Turland
 
 <img style="float: right; width: 100px" src="assets/ib-compsci-book.png">
-Endorsed and approved by the International Baccalaureate for the new Computer Science syllabus, and authored by Paul Baumgarten, Ioana Ganea, and Carl Turland. The **Computer Science for the IB Diploma** textbook fully addresses both SL and HL content, caters to either Python or Java as the language of instruction, and includes a thorough 40 page guide to the IA filled with exemplar work from former students, top tips, common mistakes, and checklists.
+**Computer Science for the IB Diploma** published by Hachette and approved by the IB. The textbook fully addresses both SL and HL content, caters to either Python or Java as the language of instruction, and includes a thorough 40 page guide to the IA filled with exemplar work from former students, top tips, common mistakes, and checklists.
 
 The authors delivered a webinar to launch the new book and outline key features, which is available here: [https://www.youtube.com/watch?v=tN0SKH9EMXM](https://www.youtube.com/watch?v=tN0SKH9EMXM)
 
-Order from: [Hachette / Hodder publishing](https://www.hachettelearning.com/computing-and-it/computer-science-for-the-ib-diploma), [Amazon](https://www.amazon.com/Computer-Science-Diploma-Paul-Baumgarten/dp/1036009009), [Waterstones](https://www.waterstones.com/book/computer-science-for-the-ib-diploma/carl-turland/ioana-ganea/9781036009007), [Foyles](https://www.foyles.co.uk/book/computer-science-for-the-ib-diploma/carl-turland/9781036009007), [The IB Bookshop](https://www.ibbookshop.co.uk/product/computer-science-for-the-ib-diploma/), and other major bookstores that cater to international schools.
+Order from: [Hachette](https://www.hachettelearning.com/computing-and-it/computer-science-for-the-ib-diploma) / [Amazon](https://www.amazon.com/Computer-Science-Diploma-Paul-Baumgarten/dp/1036009009) / [Waterstones](https://www.waterstones.com/book/computer-science-for-the-ib-diploma/carl-turland/ioana-ganea/9781036009007) / [Foyles](https://www.foyles.co.uk/book/computer-science-for-the-ib-diploma/carl-turland/9781036009007) / [The IB Bookshop](https://www.ibbookshop.co.uk/product/computer-science-for-the-ib-diploma/), and other major bookstores that cater to international schools.
 
-The book was published on 24th April 2025 and is now available.
-
-ISBN: 9781036009007
+The book was published on 24th April 2025 and is now available with ISBN: 9781036009007. A big thank you to my co-authors Ioana Ganea and Carl Turland - it was a lot of fun doing this project together.
 
 ### CodeHers HK
 
 <img style="float: right; width: 200px" src="assets/codehershk.png">
 Computer Science, as a subject and a profession, remains heavily male dominated. Code Hers is a collaboration of 11 International Schools within Hong Kong that aims to address this disparity by providing a safe, supporting and encouraging environment for girls to have a go. The ultimate aim is to normalise the presence of women in tech, making the need for such events obsolete. Until that day comes, however, events like Code Hers are critically important and serve an important role.
 
-The inaugural event in 2024 attracted over 300 girls in attendance, and we are looking at bigger and better at our 2025 event on 15 March. 
+The inaugural event in 2024 attracted over 300 girls in attendance. Our 2025 event also saw over 300 girls in attendance, coming from 42 schools across all of Hong Kong. 
 
 * ⁠Website - [codehershk.org](https://codehershk.org/)
 * Instagram - [@codehershk](https://instagram.com/codehershk) 
 * ⁠Information letter for schools - [codehershk.org/marketing/2025intro-letter.pdf](https://codehershk.org/marketing/2025intro-letter.pdf)
 * ⁠Promotional posters - [codehershk.org/marketing/2025poster.pdf](https://codehershk.org/marketing/2025poster.pdf)
 * ⁠Promotional video - [youtube.com/watch?v=4yTva9Ncbrs](https://www.youtube.com/watch?v=4yTva9Ncbrs)
+* [SCMP Young Post article](https://www.scmp.com/yp/discover/lifestyle/features/article/3303202/student-led-conference-empowers-hong-kong-and-macau-girls-break-code-stem) about the 2025 event
 
-I made an [infographic](/assets/gender-equality-in-cs-why.png) that outlines the case for girls-only events in Computer Science.
+Here is an [infographic](/assets/gender-equality-in-cs-why.png) that outlines the case for girls-only events in Computer Science.
 
 ### Coding Quest
 
