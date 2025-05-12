@@ -108,6 +108,8 @@ class TestAdderFunction(unittest.TestCase):
     def test_adder(self):
         result = adder(2, 3)  # Call the imported function
         self.assertEqual(result, 5)
+        result = adder(1, -1)  # Call the imported function
+        self.assertEqual(result, 0)
 
 if __name__ == '__main__':
     unittest.main()
@@ -119,11 +121,14 @@ Given a Python file called `my_project.py`:
 
 ```python
 class Adder:
-    def __init__(self, initialise):
+    def __init__(self, initialise=0):
         self.__total = initialise
     
     def add(self, value):
-        self.__total = self.__total + value
+        self.__total += value
+    
+    def increment(self):
+        self.__total += 1
     
     def get_total(self):
         return self.__total
@@ -133,12 +138,16 @@ Construct this test file:
 
 ```python
 import unittest
-from my_project import adder  # Import the adder function from your project
+from my_project import adder  # Import the Adder class from your project
 
 class TestAdderFunction(unittest.TestCase):
     def test_adder(self):
-        result = adder(2, 3)  # Call the imported function
-        self.assertEqual(result, 5)
+        obj = Adder()  # Create an object
+        self.assertEqual(obj.get_total(), 0)
+        obj.increment()
+        self.assertEqual(obj.get_total(), 1)
+        obj.add(5)
+        self.assertEqual(obj.get_total(), 6)
 
 if __name__ == '__main__':
     unittest.main()
