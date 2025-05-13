@@ -145,25 +145,29 @@ import network
 import machine
 import time
 
-def connect_to_wifi(SSID, PASSWORD):
-    led = machine.Pin("LED", machine.Pin.OUT)
+def connect_to_wifi(networks):
     wlan = network.WLAN(network.STA_IF)
     wlan.active(True)
-    led.on()
-    if not wlan.isconnected():
-        print('connecting to network...')
-        wlan.connect(SSID, PASSWORD)
-        while not wlan.isconnected():
-            print('Waiting for Wi-Fi connection...')
-            led.off()
-            time.sleep(0.4)
-            led.on()
-            time.sleep(0.4)
-    print('network config:', wlan.ifconfig())
-    led.on()
-    return wlan.ifconfig()[0]
+    print(networks)
+    for ssid, password in networks:
+        print(f"Trying to connect to: {ssid}")
+        wlan.connect(ssid, password)
+        # Wait for connection or timeout
+        for i in range(10):
+            if wlan.isconnected():
+                print(f"✅ Connected to {ssid}")
+                print(f"IP address: {wlan.ifconfig()[0]}")
+                return wlan.ifconfig()[0]
+            time.sleep(0.5)
+        print(f"❌ Failed to connect to {ssid}\n")
+        # Disconnect before trying the next one
+        wlan.disconnect()
+        time.sleep(1)
+    print("🚫 Could not connect to any known Wi-Fi networks.")
+    return None
 
-ip = connect_to_wifi("SSID", "PASSWORD")
+NETWORKS = [("SSID", "PASSWORD")]
+ip = connect_to_wifi(NETWORKS)
 ```
 
 ## Obtain the current time
@@ -175,23 +179,24 @@ import ntptime
 
 # NTP Time Fetching Function
 # Assumes WiFi connected device
-def set_correct_time():
+def set_correct_time(timezone_offset_hours=8):
     while True:
         try:
-            # Will set to UTC time
             ntptime.settime()
             break
         except:
-            print("Waiting to set time...")
+            print("Fetching the current time/date...")
             time.sleep(5)
-    # Update for timezone, Hong Kong local time being UTC+8
+    # Update for timezone
+    local_time = time.localtime(time.time() + timezone_offset_hours*(60*60))
+    # Extract local time from the tuple provided by time.localtime()
+    year, month, mday, hour, minute, second, weekday, yearday = local_time
+    rtc_weekday = (weekday + 1) % 7  # RTC uses Sunday as 0
+    # Update the real time clock to local time
     rtc = machine.RTC()
-    (year, month, day, weekday, hours, minutes, seconds, subseconds) = rtc.datetime()
-    hours += 8
-    if hours >= 24:
-        hours -= 24 # Note: This doesn't change the day!
-    # Set the RTC to the local time
-    rtc.datetime((year, month, day, weekday, hours, minutes, seconds, subseconds))
+    rtc.datetime((year, month, mday, rtc_weekday, hour, minute, second, 0))
+    print(f"Current time/date: {hour:02}:{minute:02}:{second:02} {year:04}-{month:02}-{mday:02}")
+
 
 set_correct_time()
 ```
@@ -237,8 +242,7 @@ import webserver # webserver.py
 import stc # stc.py
 
 # Constants
-SSID = "SSID"  # Adjust as required
-PASSWORD = "PASSWORD"  # Adjust as required
+NETWORKS = [("SSID","PASSWORD")] # Adjust as required
 LED_PIN = 0  # Adjust as required
 
 # Instantiate the LED pin
@@ -254,7 +258,7 @@ def callback(request):
 
 # Main function
 def main():
-    ip = webserver.connect_to_wifi(SSID, PASSWORD)
+    ip = webserver.connect_to_wifi(NETWORKS)
     stc.set_correct_time()
     stc.send_nfty_message("your-ntfy-channel", "My IoT lamp @ http://"+ip)
     webserver.start_server("0.0.0.0", 80, "index.html", callback)
@@ -262,6 +266,65 @@ def main():
 # Run the program
 if __name__ == '__main__':
     main()
+```
+
+## CYD Demo code
+
+For the CYD (Cheap Yellow Device)
+
+```python
+import machine
+#from machine import Pin, SPI, ADC, idle, RTC
+import os
+import time
+import stc
+import random
+from ili9341 import Display, color565
+from xpt2046 import Touch
+from xglcd_font import XglcdFont
+
+WIFI = [("SCWiFi", "wifi1234")]
+X,Y = 0,0 # Globals to contain coordinates of last touch
+
+def touchscreen_press(x, y):
+    global X,Y
+    print(f"Touch at x={x}, y={y}")
+    X,Y = x,y
+
+### SETUP HARDWARE
+spi_1 = machine.SPI(1, baudrate=10000000, sck=machine.Pin(14), mosi=machine.Pin(13), miso=machine.Pin(12))
+display = Display(spi_1, dc=machine.Pin(2), cs=machine.Pin(15), rst=machine.Pin(15), width=320, height=240, rotation=0)
+touchscreen = Touch(spi_1, cs=machine.Pin(33), int_pin=machine.Pin(36), int_handler=touchscreen_press, width=320, height=240)
+backlight = machine.Pin(27, machine.Pin.OUT)
+backlight.on()
+unispace_font = XglcdFont('fonts/Unispace12x24.c', 12, 24)
+
+# Color codes are BGR
+white_color = color565(255, 255, 255)
+black_color = color565(0, 0, 0)
+red_color = color565(0, 0, 255)
+yellow_color = color565(0, 255, 255)
+green_color = color565(0, 255, 0)
+
+# Main
+if __name__=="__main__":
+    display.clear(black_color)
+    display.draw_text(0, 0, 'Connecting to wifi...', unispace_font, white_color, black_color)
+    stc.connect_to_wifi(WIFI)
+    display.clear(black_color)
+    display.draw_text(0, 0, 'Fetching time...', unispace_font, white_color, black_color)
+    stc.set_correct_time()
+    (year, month, mday, hour, minute, second, weekday, yearday) = time.localtime()
+    display.draw_text(0, 0, f'{mday:02}/{month:02}/{year:02}, {hour:02}:{minute:02}:{second:02}', unispace_font, white_color, black_color)
+    display.draw_text(0, 25, f'Use touchscreen...', unispace_font, white_color, black_color)
+    while True: # Play forever
+        x,y=X,Y
+        (year, month, mday, hour, minute, second, weekday, yearday) = time.localtime()
+        display.draw_text(0, 0, f'{mday:02}/{month:02}/{year:02}, {hour:02}:{minute:02}:{second:02}  ', unispace_font, white_color, black_color)
+        display.draw_text(0, 25, f'x={x},y={y}                 ', unispace_font, white_color, black_color)
+        display.fill_circle(x, y, 10, white_color)
+        time.sleep(0.1)
+        display.fill_circle(x, y, 10, black_color)
 ```
 
 ## Other resources
