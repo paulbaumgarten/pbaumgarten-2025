@@ -35,14 +35,70 @@ Your final product will:
 
 You will **evaluate** your design based on how well it meets your design goals. You will not be able to use it with a live plant yet, so your evaluation will focus on the **design and print quality**, and what you observed during testing.
 
-### 🔍 Task-Specific Rubric
+## 📊 Criterion D: Evaluate – Task-Specific Rubric
 
-| Level | What you need to do |
-|-------|----------------------|
-| **1–2** | Describe how you tested your planter (e.g., water test). Say if it worked. |
-| **3–4** | Describe the test and what it showed. Say how well it met your goals. Suggest one improvement. Say who it could help. |
-| **5–6** | Describe useful tests. Explain how well it met each goal. Suggest improvements. Describe how it helps the user. |
-| **7–8** | Describe detailed tests and results. Explain how it met your success criteria. Suggest specific improvements. Describe the real impact on the user or community. |
+Use this rubric to guide your final evaluation of your 3D-printed planter.  
+Focus on how well it meets your design goals and what you learned during testing and printing.
+
+---
+
+### ✅ Level 1–2 (Limited)
+
+**You:**
+
+- Briefly describe your testing (e.g., “I checked if water stayed in”).
+- State if the planter worked or not, with little detail.
+- Do not include much evidence or explanation.
+
+💡 **Example:**  
+> “I tested the planter by putting water in it. It printed okay.”
+
+---
+
+### ✅ Level 3–4 (Adequate)
+
+**You:**
+
+- Describe a basic test (e.g., water test, size fit, stability on surface).
+- Outline how well the printed planter met some of your design goals.
+- List at least one way your design could be improved.
+- Briefly explain how your planter could be useful to someone.
+
+💡 **Example:**  
+> “I poured 100ml of water into the planter. It held the water, but some leaked.  
+> I think I should make the walls thicker. It could help people grow herbs.”
+
+---
+
+### ✅ Level 5–6 (Substantial)
+
+**You:**
+
+- Describe at least one relevant test (e.g., volume capacity, balance, water retention) and share your results.
+- Describe the success of your design based on testing and your original success criteria.
+- Suggest specific improvements, based on what you observed during testing or printing.
+- Describe how your planter design could help people, based on its features and purpose.
+
+💡 **Example:**  
+> “I tested the weight and balance. The planter tipped over when filled.  
+> It meets the size goal but not stability. I would improve the base width.  
+> This planter could help window gardeners grow lettuce with little space.”
+
+---
+
+### ✅ Level 7–8 (Excellent)
+
+**You:**
+
+- Describe detailed and relevant testing methods (e.g., volume tests, stability checks, material strength, peer review) that give accurate data or observations.
+- Explain clearly how your planter met or didn’t meet each success criterion.
+- Describe specific, thoughtful improvements, based on your testing, printing process, or peer feedback.
+- Explain in detail how your design could impact the user or community, based on its features and design purpose (even if not yet used with a plant).
+
+💡 **Example:**  
+> “I tested water capacity (held 220ml, goal was 250ml), and checked that it fits a 6cm plant pot.  
+> The print was successful but the walls were too thin. I would increase wall thickness and add a water-fill indicator.  
+> The planter is designed to help students grow herbs in dorm rooms with limited time and space.”
 
 ---
 
@@ -220,11 +276,21 @@ You will **evaluate** your design based on how well it meets your design goals. 
 ## 📘 Digital Design Journal Requirements
 
 You must complete a journal entry **at the end of every lesson**. Include:
+
 - Photos or screenshots of your work
 - Reflections using the prompts
 - Sketches, models, and feedback
 
+📋 Student Self-Checklist for Final Evaluation:
+
+* I described how I tested my printed planter (e.g., measurements, water test, sturdiness).
+* I explained how my planter met or didn’t meet my design goals.
+* I included results or observations (e.g., numbers, photos, peer feedback).
+* I suggested at least one improvement and explained why.
+* I described how my planter could help someone or a group in the community.
+
 Your journal will be used as **evidence for assessment**.
+
 
 ---
 
