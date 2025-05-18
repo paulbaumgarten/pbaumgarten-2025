@@ -1,19 +1,23 @@
 
-### Problem Set 1: Input/Print  
+
+# Problem Set 1: Input/Print  
 
 Focus: Basic I/O, string literals.  
 
-1. Greeting Bot  
-   - *Scenario*: Ask the user for their name and print a greeting.  
-   - *Example 1*:  
-     Input: `Alice`  
-     Output: `Hello, Alice!`  
-   - *Example 2*:  
-     Input: `Bob`  
-     Output: `Hello, Bob!`  
-   - Save as: `exercise-1-1.py`
+## Problem 1-1: Greeting Bot  
 
-2. Age Echo  
+Ask the user for their name and print a greeting.  
+
+Examples
+
+| Input | Output |
+| -------- | --------------- |
+| `Alice`    | `Hello, Alice!` |
+| `Bob` | `Hello, Bob!` |
+
+Save as: `exercise-1-1.py`
+
+1. Age Echo  
    - *Scenario*: Prompt the user for name and their age and repeat it back.  
    - *Example 1*:  
      Input: `Alice`  
@@ -25,7 +29,7 @@ Focus: Basic I/O, string literals.
      Output: `Hello, Bob! You are 17 years old.`  
    - Save as: `exercise-1-2.py`
 
-3. Favorite Color  
+2. Favorite Color  
    - *Scenario*: Prompt the user for their name and their favorite color.  
    - *Example 1*:  
      Input: `Alice`  
