@@ -35,9 +35,8 @@ Your final product will:
 
 You will **evaluate** your design based on how well it meets your design goals. You will not be able to use it with a live plant yet, so your evaluation will focus on the **design and print quality**, and what you observed during testing.
 
-## 📊 Criterion D: Evaluate – Task-Specific Rubric
-
 Use this rubric to guide your final evaluation of your 3D-printed planter.  
+
 Focus on how well it meets your design goals and what you learned during testing and printing.
 
 ---
