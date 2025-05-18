@@ -70,13 +70,13 @@ B1 4: Review
 B2 1: Hello world
 B2 2: Numeric types & operations
 B2 3: String types & operations
-B2 4: Exception handling & debugging techniques
-B2 5,6: Static & dynamic structures; Arrays & lists
-B2 7: Stacks
-B2 8: Queues
-B2 9: Sequence & selection
-B2 10,11: Iteration
-B2 12: Functions & modularisation
+B2 4,5: Arrays & lists
+B2 6: Sequence & selection
+B2 7,8: Iteration
+B2 9: Functions & modularisation
+B2 10: Exception handling & debugging techniques
+B2 11: Static & dynamic structures; Stacks
+B2 12: Queues
 B2 13: Big O
 B2 14,15: Search algorithms
 B2 16,17: Sort algorithms

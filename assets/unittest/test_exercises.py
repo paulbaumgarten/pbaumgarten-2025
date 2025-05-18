@@ -7,6 +7,15 @@ from unittest.mock import patch
 from io import StringIO
 import importlib.util
 
+"""
+Naming conventions for the tests to be automatically discovered and executed:
+* The name of this file must start `test_` (or be manually specified with the --pattern option).
+* Classes containing the tests must inherit from `unittest.TestCase`.
+* By convention Class names should also start with `Test`.
+* Methods within the classes containing tests must start with `test`. Only methods prefixed with test are recognized and executed as tests.
+* Run `python -m unittest` to automatically discover all test files in the current directory and subdirectories, executing all tests found
+"""
+
 # Define the list of expected exercise files with different test types
 TESTS = {
     "exercise_01_hello.py": {
