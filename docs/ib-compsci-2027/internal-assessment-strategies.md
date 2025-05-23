@@ -14,10 +14,6 @@ For the new IB Diploma Computer Science syllabus to start teaching in August 202
 - TOC
 {:toc} 
 
-# Internal assessment:  Programming strategically
-
-## Some thoughts on how best to approach the programming for your IA.
-
 Context:  
 *For many of you, this is your first substantial programming project that will take  more than an hour or two to complete. The idea may be daunting \- where to start?\! The aim of this guide is to help offer some strategies.*
 
