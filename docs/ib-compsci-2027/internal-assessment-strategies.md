@@ -1,5 +1,5 @@
 ---
-title: Algorithms to consider
+title: Being organised
 parent: Internal assessment
 layout: default
 nav_order: 3
