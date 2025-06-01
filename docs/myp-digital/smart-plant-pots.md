@@ -1,11 +1,11 @@
 ---
-title: Planters for Social Enterprise
+title: Smart plant pots
 parent: MYP Digital Design
 layout: default
 nav_order: 5
 ---
 
-# 🌱 Planters for Social Enterprise
+# 🌱 Smart plant pots
 
 ## 🧭 Unit Overview
 
