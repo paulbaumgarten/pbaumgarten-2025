@@ -78,6 +78,7 @@ HL only
 
 * [Lessons overview](case-study.html) 
 * [M25 the perfect chatbot](m25-the-perfect-chatbot.pdf)
+* [M26 ethical hacking](m26-ethical-hacking.pdf)
 
 ## Extended essay
 
