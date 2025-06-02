@@ -6,14 +6,27 @@ nav_order: 6
 ---
 
 # MicroPython
+{: .no_toc }
 
 A collection of sample code extracts for commonly used tasks within MicroPython when used on a microprocessor such as the RP2040 (Raspberry Pi Pico), ESP32, or Microbit.
 
+My current recommended IDE for MicroPython is Thonny. It has excellent hardware support for the commonly used devices. 
+
+- TOC
+{:toc} 
+
 ## Raspberry Pi Pico pinout diagram
 
-My current recommended IDE for MicroPython is Thonny. It has excellent hardware support for the commonly used devices. Check this [connection guide for the Raspberry Pi Pico](/assets/python/thonny-pico-connection-guide.pdf).
+* [Connection guide for the Raspberry Pi Pico](/assets/python/thonny-pico-connection-guide.pdf).
 
 ![](https://www.raspberrypi.com/documentation/microcontrollers/images/pico-2-r4-pinout.svg)
+
+## ESP32-S3-wroom pinout diagram
+
+Note: The ESP32's we have at STC have their onboard Neopixel at GP48.
+
+![](esp32-s3-pinout.jpg)
+
 
 ## Operate an LED or simple device
 
@@ -96,7 +109,7 @@ while True:
 
 * You will need to experiment with the values supplied to `.move()` as it varies from device to device.
 
-## Neopixels
+## Neopixels (Pico W)
 
 Download the [Neopixel library file](/assets/python/neopixel.txt) and save it to your board as `neopixel.py`.
 
@@ -136,6 +149,36 @@ while True:
         pixels.show()
         time.sleep(0.2)
     time.sleep(1)
+```
+
+## Neopixels (ESP-32)
+
+Using the onboard Neopixel library
+
+```python
+from machine import Pin, ADC, PWM
+import neopixel
+import time
+
+# Neopixel (Status LED)
+pixel = neopixel.NeoPixel(Pin(48), 1)  # GPIO48
+
+colors = [
+    (255, 0, 0),    # Red
+    (255, 127, 0),  # Orange
+    (255, 255, 0),  # Yellow
+    (0, 255, 0),    # Green
+    (0, 0, 255),    # Blue
+    (127, 0, 255),  # Violet
+    (255, 0, 127),  # Pink
+    (255, 255, 255) # White
+]
+
+while True:
+    for i in range(len(colors)):
+        pixel[0] = colors[i]
+        pixel.write()
+        time.sleep(0.3)
 ```
 
 ## Connect to WiFi
@@ -196,7 +239,6 @@ def set_correct_time(timezone_offset_hours=8):
     rtc = machine.RTC()
     rtc.datetime((year, month, mday, rtc_weekday, hour, minute, second, 0))
     print(f"Current time/date: {hour:02}:{minute:02}:{second:02} {year:04}-{month:02}-{mday:02}")
-
 
 set_correct_time()
 ```
