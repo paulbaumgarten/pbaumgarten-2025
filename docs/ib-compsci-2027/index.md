@@ -17,7 +17,8 @@ Content will be updated gradually as developed in preparation for teaching the n
 ## Course overview
 <img style="float: right; width: 100px" src="/assets/ib-compsci-book.png">
 
-* [Course syllabus](/assets/ib-compsci-guide-en-2025.pdf) by the IBO
+* [Course syllabus PDF](/assets/ib-compsci-guide-en-2025.pdf) by the IBO
+* [Course syllabus text](syllabus-content.html)
 * [Course overview](/assets/ib-compsci-poster-2025.pdf) poster
 * [FAQ about the new course](changes.html)
 * [Teaching schedule](/assets/ib-compsci-lesson-mapping-DRAFT.pdf) this is **very very very draft**!
@@ -43,7 +44,3 @@ Content will be updated gradually as developed in preparation for teaching the n
 | Paper 1 | A1 Computer fundamentals<br>A2 Networks<br>A3 Databases<br>A4 Machine Learning<br>Case study | 35% of grade<br> 1:15 hours duration<br>50 marks total<br>38 marks A1/A2/A3/A4<br>12 marks Case study | 40% of grade<br>2 hours duration<br>80 marks total<br>56 marks A1/A2/A3/A4<br>24 marks Case study |
 | Paper 2 | B1 Computational thinking<br>B2 Programming<br>B3 OOP<br>B4 ADT<br>There are two versions of paper 2, one for students who have studied Python, one for students who have studied Java. | 35% of grade<br>1:15 hours duration<br>50 marks total<br>One of the questions will focus on algorithmic thinking without the need to interpret or write code. | 40% of grade<br>2 hours duration<br>80 marks total<br>Two questions from the SL paper will be repeated in the HL paper, including a question with a focus on algorithmic thinking without the need to interpret or write code.<br>Additional questions will focus on HL-only topics. |
 | IA | Self selected programming project and documentation | 30% of grade<br>35 hours class time | 20% of grade<br>35 hours class time |
-
-## Extended essay
-
-The extended essay for 2025+ is also being updated with a new syllabus. More information in due course.
