@@ -42,7 +42,7 @@ def set_correct_time(timezone_offset_hours=8):
     # Update the real time clock to local time
     rtc = machine.RTC()
     rtc.datetime((year, month, mday, rtc_weekday, hour, minute, second, 0))
-    print(f"Current time/date: {hour:02}:{minute:02}:{second:02} {year:04}-{month:02}-{day:02}")
+    print(f"Current time/date: {hour:02}:{minute:02}:{second:02} {year:04}-{month:02}-{mday:02}")
 
 def send_nfty_message(channel, message, link=None, server="https://ntfy.sh/"):
     print(f"[sending ntfy message] {server+channel} '{message}'")
