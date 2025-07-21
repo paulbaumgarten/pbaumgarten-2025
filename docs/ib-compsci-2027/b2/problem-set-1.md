@@ -3,6 +3,7 @@ title: B2 problems set 1
 parent: IB Computer Science 2027
 layout: default
 nav_order: 3
+nav_exclude: true
 ---
 
 # B2 problems set 1
@@ -16,6 +17,9 @@ These problems are designed as recap exercises for those who have previously, su
 * B2.3.2 Construct programs utilizing appropriate selection structures.
 * B2.3.3 Construct programs that utilize looping structures to perform repeated actions.
 * B2.3.4 Construct functions and modularization.
+
+- TOC
+{:toc} 
 
 ---
 
