@@ -5,7 +5,7 @@ layout: default
 nav_order: 3
 ---
 
-# Internal assessment
+# Guide to the new IA
 {: .no_toc }
 
 {: .highlight }
@@ -13,8 +13,6 @@ For the new IB Diploma Computer Science syllabus to start teaching in August 202
 
 - TOC
 {:toc} 
-
-## Guide to the new IA
 
 The guide to the IA that I wrote for the previous syllabus was a very popular download. I want to thank all the teachers and students who sent me messages over the years for the encouragement. It's clear that there was a need for such a thorough guide and many people found it very helpful.
 

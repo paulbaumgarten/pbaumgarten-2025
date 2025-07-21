@@ -15,6 +15,9 @@ For the new IB Diploma Computer Science syllabus to start teaching in August 202
 {: .important }
 Content will be updated gradually as developed in preparation for teaching the new course in August.
 
+- TOC
+{:toc} 
+
 ## Samples by IBO
 
 The following are the offical sample IA's published by the IBO for the new course. They have been marked by IB moderators with comments provided but are subject to the following fine-print from the IB:

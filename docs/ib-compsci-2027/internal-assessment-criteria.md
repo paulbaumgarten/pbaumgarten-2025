@@ -5,7 +5,7 @@ layout: default
 nav_order: 3
 ---
 
-# Internal assessment criteria
+# Assessment criteria for the IA
 {: .no_toc }
 
 {: .highlight }
@@ -14,9 +14,7 @@ For the new IB Diploma Computer Science syllabus to start teaching in August 202
 - TOC
 {:toc} 
 
-## Assessment criteria
-
-### Criterion A: Problem specification (4 marks)
+## Criterion A: Problem specification (4 marks)
 
 The problem specification is the starting point of the solution and must be used as a basis for the development of the product.
 
@@ -38,7 +36,7 @@ Clarifications
 successful development of the product.
 * The **computation context** is the specific area of computing that is selected to be used in the solution. 
 
-### Criterion B: Planning (4 marks)
+## Criterion B: Planning (4 marks)
 
 The planning of the product must be consistent with the problem specification in criterion A. 
 
@@ -60,7 +58,7 @@ Clarifications
 * **Decomposition** is the breaking down of the problem scenario identified in criterion A into smaller, more manageable sub-problems or components The decomposition can be effectively constructed using diagrams. 
 * A **reasonable decomposition** breaks the problem down into essential components that support the construction of a plan.
 
-### Criterion C: System overview (6 marks)
+## Criterion C: System overview (6 marks)
 
 The system overview of the product must be consistent with the problem specification in criterion A, and the planning in criterion B.
 
@@ -83,7 +81,7 @@ Clarifications
 * **Algorithms** can be presented in different forms including natural language, flow charts or pseudocode, and should address the individual components of the system model.
 * The **testing strategy** refers to a systematic approach for evaluating whether the computational solution works as intended. The testing strategy should ensure that code functions correctly and handles unexpected or incorrect inputs. This can be represented effectively in a table with proposed test data and expected outcomes.
 
-### Criterion D: Development (12 marks)
+## Criterion D: Development (12 marks)
 
 The development of the product must be consistent with the problem specification in criterion A, the planning in criterion B and the system overview developed in criterion C.
 
@@ -106,7 +104,7 @@ Clarifications
 * **Implementation and coding of the algorithms**: Techniques in the criteria refer to the process of programming algorithms using code. The documentation must highlight key elements of code that are important for the efficient functioning of the algorithms. Any code presented in the solution must include relevant comments, be consistent and be readable. Code excerpts included in the documentation must be referenced to the full source code submitted as an appendix.
 * The video must demonstrate the **functionality** of the product. The deployment of the **testing** strategy and its effectiveness must be described in the documentation with examples of the testing seen in the video.
 
-### Criterion E: Evaluation (4 marks)
+## Criterion E: Evaluation (4 marks)
 
 The evaluation of the product must be consistent with the problem specification and success criteria in criterion A. 
 

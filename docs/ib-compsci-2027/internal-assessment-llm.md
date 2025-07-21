@@ -5,7 +5,7 @@ layout: default
 nav_order: 3
 ---
 
-# using LLMs in the CS IA
+# Using LLMs in the CS IA
 {: .no_toc }
 
 {: .highlight }

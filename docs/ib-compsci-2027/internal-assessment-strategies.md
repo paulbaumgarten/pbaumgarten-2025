@@ -5,7 +5,7 @@ layout: default
 nav_order: 3
 ---
 
-# Internal assessment: Organisational strategies
+# Organisational strategies for the IA
 {: .no_toc }
 
 {: .highlight }
