@@ -32,7 +32,7 @@ I will be teaching a topic based scope and sequence at Sha Tin College.
 
 * [Scope and sequence - Overview](sequence-overview.html)
 * [Scope and sequence - Calendar](calendar-2025-2027.pdf) for the STC class of 2027
-* [Scope and sequence - Detailed](sequence.html) - Teaching schedule for STC class of 2027.
+* [Scope and sequence - Detailed]([sequence.html](https://docs.google.com/document/d/1MNst1Cdf2V6nCwC61gSUE6G9zhHyAM0oIbup-7-2evM/edit?usp=sharing)) - Teaching schedule for STC class of 2027.
 
 ## Units of learning
 
