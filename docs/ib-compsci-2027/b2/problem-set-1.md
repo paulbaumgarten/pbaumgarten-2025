@@ -115,8 +115,6 @@ Return value:
 
 ## Additional challenges
 
-For those who finish early...
-
 Leetcoode problems
 
 * [Two Sum](https://leetcode.com/problems/two-sum/description/) (Nested loops, lists)
