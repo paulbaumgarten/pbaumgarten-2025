@@ -7,6 +7,7 @@ nav_exclude: true
 ---
 
 # Abstract data types problem set
+{: .no_toc }
 
 - TOC
 {:toc} 
@@ -61,7 +62,7 @@ Using a basic binary tree node class as your starting point (such as the one abo
 
 ---
 
-## Swts
+## Sets
 
 1. Hackerrank [Set .add()](https://www.hackerrank.com/challenges/py-set-add/problem)
 2. Hackerrank [Mean calculation of unique terms](https://www.hackerrank.com/challenges/py-introduction-to-sets/problem)
