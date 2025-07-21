@@ -1,5 +1,5 @@
 ---
-title: LLMs in the IA?
+title: IA and use of AI
 parent: IB Computer Science 2027
 layout: default
 nav_order: 3

@@ -1,5 +1,6 @@
 ---
 title: IA exemplars
+parent: IB Computer Science 2027
 layout: default
 nav_order: 3
 has_toc: false
