@@ -1,11 +1,11 @@
 ---
-title: Algorithms to consider
+title: IA ideas
 parent: Internal assessment
 layout: default
 nav_order: 3
 ---
 
-# Internal assessment: Algorithms to consider
+# Algorithms and ideas for the IA
 {: .no_toc }
 
 {: .highlight }
@@ -14,7 +14,9 @@ For the new IB Diploma Computer Science syllabus to start teaching in August 202
 - TOC
 {:toc} 
 
-The Internal Assessment prioritises the design, construction and use of algorithms. Sometimes it can be difficult for students to even know what existing algorithms are available that might be useful for their project. The following is a list of algorithms and their possible uses to help start the ideation process. (I acknowledge the use of LLM to help brainstorm this list)
+The Internal Assessment prioritises the design, construction and use of algorithms. 
+
+Some students struggle to even know what algorithms exist that might be useful for a project. To that end, the following is a list of algorithms commonly learnt at undergraduate level, and their possible uses. I will add to this list over time.
 
 1. Multidimensional Arrays
    * Minesweeper Game (Storing board state, revealing adjacent cells)
@@ -52,7 +54,7 @@ The Internal Assessment prioritises the design, construction and use of algorith
    * E-commerce Product Catalog (Products, Categories, Reviews)
    * Game Character System (Inheritance for different enemy types)
 
-7. Dijkstra / A*
+7. Dijkstra / A star (shortest path finding)
    * Pathfinding Visualizer (Interactive grid with obstacles)
    * Public Transport Route Planner (Finding shortest routes)
    * RPG Game Enemy AI (Smart movement around obstacles)
@@ -137,3 +139,4 @@ The Internal Assessment prioritises the design, construction and use of algorith
     * Fibonacci Heap Priority Queue (Advanced data structure)
 
 
+(I acknowledge the use of LLM to help brainstorm parts of this list)

@@ -17,12 +17,36 @@ Content will be updated gradually as developed in preparation for teaching the n
 ## Course overview
 <img style="float: right; width: 100px" src="/assets/ib-compsci-book.png">
 
-* [Course syllabus PDF](/assets/ib-compsci-guide-en-2025.pdf) by the IBO
+* [Course syllabus official PDF](/assets/ib-compsci-guide-en-2025.pdf) by the IBO
 * [Course syllabus text](syllabus-content.html)
-* [Course overview](/assets/ib-compsci-poster-2025.pdf) poster
+* [Course poster](/assets/ib-compsci-poster-2025.pdf) poster
 * [FAQ about the new course](changes.html)
-* [Teaching schedule](/assets/ib-compsci-lesson-mapping-DRAFT.pdf) this is **very very very draft**!
-* **Computer Science for the IB Diploma** textbook<br/>By Baumgarten, Ganea, & Turland<br/>Published by Hachette Learning ISBN 9781036009007<br/>Order from [Hachette](https://www.hachettelearning.com/computing-and-it/computer-science-for-the-ib-diploma) or [Amazon](https://www.amazon.com/Computer-Science-Diploma-Paul-Baumgarten/dp/1036009009/)
+* **Computer Science for the IB Diploma** textbook<br/>By Baumgarten, Ganea, & Turland<br/>Published by Hachette Learning ISBN 9781036009007 and authorised by the IBO.<br/>Order from [Hachette](https://www.hachettelearning.com/computing-and-it/computer-science-for-the-ib-diploma) or [Amazon](https://www.amazon.com/Computer-Science-Diploma-Paul-Baumgarten/dp/1036009009/)
+
+## Scope and sequence schedule
+
+I will be teaching a topic based scope and sequence at Sha Tin College.
+
+| Time period | Lesson focus |
+| :---- | :---- |
+| Late August<br>September<br>Early October | B2: Programming |
+| Mid term break |  |
+| November<br>December | B1: Computational thinking<br>B3: Object oriented programming |
+| Winter break |  |
+| January<br>February<br>March | B4: Abstract data types<br>A3: Databases |
+| April break |  |
+| May<br>June | Year 12 examinations<br>IA lessons<br>Submit IA draft<br>(Criteria A, B, C) |
+| Summer break | Submit IA draft<br>(Criteria D, E) |
+| Late August<br>September<br>Early October | A1: Computer fundamentals<br>A4: Machine learning  |
+| Mid term break |  |
+| November<br>December | A4: Machine learning (continued)<br>A2: Networks |
+| Winter break |  |
+| January<br>February<br>March | Mock examinations<br>Case study<br>Submit IA final<br>Exam revision |
+| April break |  |
+| May<br>June | External examinations |
+
+* [Scope and sequence - 1 page overview](schedule-1-page.pdf)
+* [Scope and sequence - Detailed](schedule.html) - Teaching schedule for STC class of 2027.
 
 ## Units of learning
 
@@ -35,9 +59,37 @@ Content will be updated gradually as developed in preparation for teaching the n
 * [B3: Object oriented programming](b3.html)
 * [B4: Abstract data types](b4.html)
 * [Case study](case-study.html)
-* [Internal assessment](internal-assessment.html)
 
-## Assessment structure
+## Internal assessment
+
+The new Internal Assessment criteria are as follows:
+
+| Criterion | Deliverables | Word count |
+| :---- | :---- | :---- |
+| Criteria A | Scenario / context / success criteria | 300 words |
+| Criteria B | Planning overview (eg: GANTT) | 150 words plus diagrams |
+| Criteria C | System overview (design diagrams as relevant, such as UML, flowcharts, network diagrams, system design diagrams, UX navigation charts, etc) | 150 words plus diagrams |
+| Criteria D | Development document discussing algorithms used | 1000 words |
+| Criteria D | Demonstration video | 5 minute video |
+| Criteria E | Evaluation and recommendations | 400 words |
+
+For those familar with the Internal Assessment of the old syllabus, the following are some noteworthy changes:
+
+* Students no longer require a client; They are producing the IA for themselves now.  This is a positive move as there was always a tension between client needs and what the student needed from a project for their assessment. Now, students can select a project that both (a) interests them and (b) allows them to best showcase their algorithmic talnet.
+
+* The overall size and scope of the IA is roughly comparable to the old course. I anticipate my students still requiring considerable "at home" hours to complete the IA.
+
+* New criteria D is focused on students discussing their techniques used, with a specific focus on algorithms. While similar to the old criteria C, it is more explicit that the focus is algorithms which should help make the expectations clearer.  
+
+* [Assessment criteria rubrics](internal-assessment-crteria.html) - how will you be assessed?
+* [Strategies to manage the IA](internal-assessment-strategies.html) - tips for staying organised and managing your first real _large programming project_.
+* [Ideas and algorithms to consider](internal-assessment-ideas.html) - if you are lost for ideas
+* [Guide to the IA](internal-assessment-guide.html) - tips, common mistakes, checklists and more
+* [Official samples and past student exemplars](internal-assessment-exemplars.html) - learn from those who have gone before you
+* [Using AI / LLMs in the IA](internal-assessment-llm.html) - can you use code generated by chatgpt?
+* [Tips for teachers]([internal-assessment-teaching-tips.html](https://docs.google.com/document/d/1e0hAIsGFJOCO6sFrl-bq4bJWCOZ51W3ey7dppZUwvlE/edit?tab=t.0)) (based on the old IA - will be updated in due course for the new IA)
+
+## Course assessment structure
 
 |  | Content | SL | HL |
 | :---- | :---- | :---- | :---- |

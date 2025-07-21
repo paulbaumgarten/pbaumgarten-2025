@@ -1,5 +1,5 @@
 ---
-title: Being organised
+title: IA getting organised
 parent: Internal assessment
 layout: default
 nav_order: 3
