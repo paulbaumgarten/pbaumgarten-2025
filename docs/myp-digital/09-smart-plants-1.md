@@ -18,6 +18,37 @@ Help promote the sustainability of increased greenery at home or in our classroo
 
 ---
 
+## Schedule
+
+### Lesson 1 - Introduction to unit
+
+### Lesson 2 - Research & product analysis
+
+### Lesson 3 - Success criteria + begin sketching
+
+### Lesson 4 - Finalise sketches & justify decision
+
+### Lesson 5 - Develop final plan (drawing or CAD)
+
+### Lesson 6 - Submit design journal (A & B)
+
+### Lesson 7 & 8 - Shapr3D introductory tutorials and exercises
+
+### Lesson 9 & 10 - Design the basic pot
+
+including overall shape, water tank and how the various components will fit together
+
+### Lesson 11 & 12 - Design the electronics bay
+
+including supports to fit, mount and support each of the required components
+
+### Lesson 13 & 14 - Finalise your designs and prepare to 3d print
+
+Finalise ARR
+
+
+---
+
 ## Rubrics
 
 **Criterion A: Inquiring and Analysing**
@@ -94,35 +125,3 @@ Help promote the sustainability of increased greenery at home or in our classroo
 * B.iv Created a detailed and accurate diagram (hand-drawn or Shapr3d)
 * B.iv Labeled all key features (e.g. reservoir, electronics space, dimensions)
 * B.iv My drawing/diagram could be used to actually build the planter
-
----
-
-## Schedule
-
-### Lesson 1 - Introduction to unit
-
-### Lesson 2 - Research & product analysis
-
-### Lesson 3 - Success criteria + begin sketching
-
-### Lesson 4 - Finalise sketches & justify decision
-
-### Lesson 5 - Develop final plan (drawing or CAD)
-
-### Lesson 6 - Submit design journal (A & B)
-
-### Lesson 7 & 8 - Shapr3D introductory tutorials and exercises
-
-### Lesson 9 & 10 - Design the basic pot
-
-including overall shape, water tank and how the various components will fit together
-
-### Lesson 11 & 12 - Design the electronics bay
-
-including supports to fit, mount and support each of the required components
-
-### Lesson 13 & 14 - Finalise your designs and prepare to 3d print
-
-Finalise ARR
-
-

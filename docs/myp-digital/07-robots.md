@@ -11,6 +11,7 @@ nav_order: 5
 * Key concept: Communities
 * Related concept: Function
 * Context: Identities and relationships (Social development, health, wellbeing and lifestyle choices)
+* Assessed criteria: C
 * Technologies: Qtruck, Microbit, Makecode.
 
 How can functional robots contribute to the community? Solve the challenges involved with programming functional robots to perform useful tasks. Culminate in conquering the robotic obstacle course.

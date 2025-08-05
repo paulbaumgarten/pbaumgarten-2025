@@ -11,9 +11,46 @@ nav_order: 5
 * Key concept: Communities
 * Related concept: Innovation
 * Context: Fairness and development (social entrepreneurs)
+* Assessed criteria: C, D
 * Technology: ESP32, MicroPython, Pump, Moisture sensor, Temperature sensor, Wifi, IoT
 
 Use your social entrepreneurial skills to construct an innovative, smart pot planter to nurture your plants.
+
+---
+
+## Schedule
+
+## Lesson 1 - Unit Launch + Big Ideas
+
+## Lesson 2 - Intro to ESP32 + IDE setup
+
+## Lesson 3 - Python Basics 1
+
+## Lesson 4 - Python Basics 2
+
+## Lesson 5 - Python Basics 3
+
+## Lesson 6 - Python Basics 4
+
+## Lesson 7 - Components Overview
+
+## Lesson 8 - Wiring & Testing
+
+## Lesson 9 & 10 - Mounting in Pot
+
+## Lesson 11 & 12 - Full System Code
+
+## Lesson 13 - Adding IoT
+
+## Lesson 14 - Testing & Debugging
+
+## Lesson 15 - Peer Testing Day
+
+## Lesson 16 & 17 - Dragon's den pitch
+
+## Lesson 18 - Reflection
+
+## Lesson 19 - Finalise all ARR
 
 ---
 
@@ -89,40 +126,3 @@ Use your social entrepreneurial skills to construct an innovative, smart pot pla
 * I explained how my smart plant pot helps the user (e.g. saves time, makes plant care easier).
 * I explained how my system supports sustainability (e.g. saves water, promotes greenery at home or school).
 * I thought about how this type of system could help other people or the environment in the real world
-
-
----
-
-## Schedule
-
-## Lesson 1 - Unit Launch + Big Ideas
-
-## Lesson 2 - Intro to ESP32 + IDE setup
-
-## Lesson 3 - Python Basics 1
-
-## Lesson 4 - Python Basics 2
-
-## Lesson 5 - Python Basics 3
-
-## Lesson 6 - Python Basics 4
-
-## Lesson 7 - Components Overview
-
-## Lesson 8 - Wiring & Testing
-
-## Lesson 9 & 10 - Mounting in Pot
-
-## Lesson 11 & 12 - Full System Code
-
-## Lesson 13 - Adding IoT
-
-## Lesson 14 - Testing & Debugging
-
-## Lesson 15 - Peer Testing Day
-
-## Lesson 16 & 17 - Dragon's den pitch
-
-## Lesson 18 - Reflection
-
-## Lesson 19 - Finalise all ARR
