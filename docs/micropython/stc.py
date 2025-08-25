@@ -1,0 +1,62 @@
+import time
+import json
+import machine
+import ntptime
+import urequests
+import network
+
+def connect_to_wifi(networks):
+    wlan = network.WLAN(network.STA_IF)
+    wlan.active(True)
+    for ssid, password in networks:
+        print(f"Trying to connect to: {ssid}")
+        wlan.connect(ssid, password)
+        # Make 10 attempts before trying the next network in the list
+        for i in range(10):
+            if wlan.isconnected():
+                print(f"✅ Connected to {ssid}")
+                print(f"IP address: {wlan.ifconfig()[0]}")
+                return wlan.ifconfig()[0]
+            time.sleep(0.5)
+        print(f"❌ Failed to connect to {ssid}\n")
+        # Disconnect before trying the next one
+        wlan.disconnect()
+        time.sleep(1)
+    print("🚫 Could not connect to any known Wi-Fi networks.")
+    return None
+
+# NTP Time Fetching Function
+def set_correct_time(timezone_offset_hours=8, attempts=5):
+    attempt = 0
+    while True:
+        try:
+            ntptime.settime()
+            break
+        except:
+            print("Fetching the current time/date...")
+            attempt += 1
+            time.sleep(2)
+            if attempt == attempts:
+                return False
+    # Update for timezone
+    local_time = time.localtime(time.time() + timezone_offset_hours*(60*60))
+    # Extract local time from the tuple provided by time.localtime()
+    year, month, mday, hour, minute, second, weekday, yearday = local_time
+    rtc_weekday = (weekday + 1) % 7  # RTC uses Sunday as 0
+    # Update the real time clock to local time
+    rtc = machine.RTC()
+    rtc.datetime((year, month, mday, rtc_weekday, hour, minute, second, 0))
+    print(f"Current time/date: {hour:02}:{minute:02}:{second:02} {year:04}-{month:02}-{mday:02}")
+    return True
+
+def send_nfty_message(channel, message, link=None, server="https://ntfy.sh/"):
+    print(f"[sending ntfy message] {server+channel} '{message}'")
+    if link:
+        response = urequests.post(url=server+channel, data=message, headers=[{"action":"view", "label":"Open", "url": link}])
+    else:
+        response = urequests.post(url=server+channel, data=message)        
+    res = response.text
+    print(f"[ntfy reply]",response.status_code,res)
+    response.close()    
+    return res
+
