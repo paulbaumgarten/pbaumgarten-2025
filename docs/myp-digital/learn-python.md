@@ -14,7 +14,12 @@ nav_order: 7
 Exercises
 
 * Can you make a zig-zag line?
+* Can you make an XYZ?
 * Can you make a tic-tac-toe board?
+* Can you make a star?
+
+![](turtle/xyz.png)
+![](turtle/star.png)
 
 ## Lesson 2 - Loops
 
@@ -34,12 +39,28 @@ Exercises
 
 * Draw a house in a landscape scene, with a door, window, clouds and a sun.
 
-## Lesson 4 - User input
+![](turtle/house1.png)
+![](turtle/house2.png)
+![](turtle/flowers.png)
+![](turtle/mountains.png)
+![](turtle/boat.png)
+![](turtle/puppy.png)
 
-## Lesson 5 - Make decisions
+## Lesson 4 - Functions
 
-## Lesson 6 - Lists
+<iframe width="480" height="320" src="https://www.youtube.com/embed/aCukKT8xrgY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+## Lesson 5 - On click
+
+<iframe width="480" height="320" src="https://www.youtube.com/embed/U7mckoHUU30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Lesson 6 - If statements
+
+<iframe width="480" height="320" src="https://www.youtube.com/embed/3HxO-8r7LEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Lesson 7 - Lists
+
+Coming soon
 
 -----
 
@@ -104,3 +125,17 @@ You can use these commands to fill in a shape with a color.
     if my_color == "red":
         t.color("red")
     ```
+
+### Screen functions
+
+`onclick()` will execute a function, providing the (x,y) coordinates of the mouse click.
+
+Example:
+
+```python
+def handle_screen_click(x,y):
+   print("You clicked at ",x,y)
+
+screen = turtle.Screen()
+screen.onclick(handle_screen_click)
+```
