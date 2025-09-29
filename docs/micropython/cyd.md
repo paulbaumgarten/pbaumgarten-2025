@@ -42,7 +42,149 @@ The CYD-clone we are using at STC is as follows:
 
 ![](/docs/micropython/cyd-interfaces.png)
 
-## MicroPython driver libraries
+## Reference
+
+### Display - Basic control
+
+* `display.clear(color_code)`  
+  * **Description:** Fills the entire screen with the specified color. Defaults to black if no color is provided.  
+  * **Example:** `display.clear(color['black'])`
+* `display.width` / `display.height`  
+  * **Description:** Returns the display dimensions (e.g., 320 and 240).  
+  * **Example:** `print(display.height)`
+* `display.cleanup()`  
+  * **Description:** Safely shuts down the display.  
+  * **Example:** `display.cleanup()`
+
+### Display - Draw text
+
+* `display.draw_text(x, y, text, font, fg_color, bg_color)`  
+  * **Description:** Draws text using the configured font (unispace_font) at position (x,y).  
+  * **Example:** `display.draw_text(0, 0, 'Hi', unispace_font, color['white'], color['black'])`
+
+### Display - Draw shapes
+
+`display.draw_pixel(x, y, color_code)`  
+  * **Description:** Draws a single pixel at coordinates (x,y).  
+  * **Example:** `display.draw_pixel(50, 50, color['white'])`
+
+`display.draw_line(x1, y1, x2, y2, color_code)`
+  * **Description:** Draws a line between points (x1,y1) and (x2,y2).  
+  * **Example:** `display.draw_line(50, 0, 64, 40, color['yellow'])`
+
+`display.draw_hline(x, y, w, color_code)`
+  * **Description:** Draws a horizontal line starting at (x,y) with width w.  
+  * **Example:** `display.draw_hline(10, 40, 70, color['magenta'])`
+
+`display.draw_vline(x, y, h, color_code)`
+  * **Description:** Draws a vertical line starting at (x,y) with height h.  
+  * **Example:** `display.draw_vline(10, 0, 40, color['cyan'])`
+
+`display.draw_lines(coords, color_code)`
+  * **Description:** Draws a continuous line segment through a list of points (e.g., [[x1, y1], [x2, y2], ...]).  
+  * **Example:** `display.draw_lines([[0, 63], [78, 80]], color['cyan'])`
+
+`display.draw_rectangle(x, y, w, h, color)`
+  * Draw a rectangle
+  * Example: `display.draw_rectangle(0, 0, 15, 227, color['red'])`
+  * There is also a fill_rectangle() version, eg: `display.fill_rectangle(0, 0, 15, 227, color['red'])`
+
+`display.draw_circle(x, y, r, color)`
+  * Draw a circle
+  * Example: `display.draw_circle(132, 132, 70, color['green'])`
+  * There is also a fill_circle() version, eg: `display.fill_circle(132, 132, 70, color['green'])`
+
+`display.draw_ellipse(x, y, rx, ry, color)`
+  * Draw an ellipse
+  * Example: `display.draw_ellipse(x, y, rx, ry, color)`
+  * There is also a fill_ellipse() version, eg: `display.fill_ellipse(96, 96, 30, 16, color['red'])`
+
+### Display - Draw images
+
+`display.draw_image(filename, x, y, w, h)`
+
+Draws a raw image file (.raw) from the filesystem at position (x, y) with dimensions w (width) and h (height).
+
+Example: `display.draw_image('welcome.raw', 140, 0, 180, 240)` |
+
+To convert a **png** or **jpeg** file to a **raw** file, use the function below.
+
+```python
+# Utility to convert images to raw RGB565 format.
+
+from PIL import Image       # pip install Pillow
+from struct import pack
+from os import path
+import os
+import sys
+
+def convert_file(in_file, out_file):
+    img = Image.open(in_file).convert('RGB')
+    pixels = list(img.getdata())
+    with open(out_file, 'wb') as f:
+        for pix in pixels:
+            r = (pix[0] >> 3) & 0x1F # 5 bits for red
+            g = (pix[1] >> 2) & 0x3F # 6 bits for green
+            b = (pix[2] >> 3) & 0x1F # 5 bits for blue
+            f.write(pack('>H', (r << 11) + (g << 5) + b))
+    print('Saved: ' + out_file)
+
+PNG_FILE = "your photo.png"
+RAW_FILE = "your photo.raw"
+convert_file(PNG_FILE, RAW_FILE)
+```
+
+### Touch screen
+
+In the setup hardware section of your code, find this line...
+
+```python
+touchscreen = Touch(spi_1, cs=machine.Pin(33), int_pin=machine.Pin(36), width=320, height=240)
+```
+
+Change it to this...
+
+```python
+touchscreen = Touch(spi_1, cs=machine.Pin(33), int_pin=machine.Pin(36), width=320, height=240, int_handler=touchscreen_press)
+```
+
+Above it, paste this code:
+
+```python
+touch_x = 0
+touch_y = 0
+touch_detected = False
+
+def touchscreen_press(x, y):
+    global touch_x, touch_y, touch_detected
+    touch_x = x
+    touch_y = y
+    touch_detected = True
+```
+
+Then in your `main` the following will work...
+
+```python
+    while True:
+        green_led.on()
+        sleep(0.5)
+        green_led.off()
+        sleep(0.5)
+        # New touch detection code....
+        if touch_detected:
+            print(f"Touch detected at ({touch_x},{touch_y})")
+            touch_detected = False # Reset the touch detection
+```
+
+### Hardware control
+
+| Object | Description | Example |
+| :---- | :---- | :---- |
+| `backlight` | Control the screen backlight. | `backlight.on()` or `backlight.off()` |
+| `red_led`, `green_led`, `blue_led` | Control the onboard LEDs. Note (for complex reasons not going into here) these commands are reversed so `on()` will turn it OFF and `off()` will turn it ON. | `red_led.on()` (turn it off) or `red_led.off()` (turn it on) |
+
+
+## Driver libraries
 
 * [ili9341.py](/docs/micropython/ili9341.py) for the display
 * [xpt2046.py](/docs/micropython/xpt2046.py) for the touchscreen
@@ -132,6 +274,4 @@ if __name__=="__main__":
         green_led.off()
         sleep(0.5)
 ```
-
-## Reference
 
