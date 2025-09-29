@@ -1,13 +1,7 @@
 ---
-title: Other resources
+title: Reading
 layout: default
-nav_order: 20
 ---
-
-# Other resources
-{: .no_toc }
-
-A list of other valuable resources I have come across over time.
 
 # Academic papers
 

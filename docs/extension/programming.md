@@ -1,10 +1,9 @@
 ---
-title:  Programming extension
+title: Programming
 layout: default
-nav_order: 20
 ---
 
-# Programming extension roadmap
+# An extension roadmap for your programming
 {: .no_toc }
 
 - TOC

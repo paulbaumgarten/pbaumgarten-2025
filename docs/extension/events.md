@@ -1,7 +1,6 @@
 ---
 title: Competitions & events
 layout: default
-nav_order: 7
 ---
 
 # Competitions & events
