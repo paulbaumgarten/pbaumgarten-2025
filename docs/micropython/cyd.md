@@ -1,13 +1,19 @@
 ---
-title: Cheap Yellow Display
+title: ESP32 CYD
 parent: MicroPython notes
 layout: default
-nav_exclude: true
+nav_order: 10
 ---
 
-# Cheap Yellow Display
+# ESP32 Cheap Yellow Display
+{: .no_toc }
+
+- TOC
+{:toc} 
 
 ![](/docs/micropython/cyd.png)
+
+## Specifications
 
 The CYD-clone we are using at STC is as follows:
 
@@ -31,6 +37,8 @@ The CYD-clone we are using at STC is as follows:
 * Power: 5V at 115mA
 * GPIOs available: GPIO 35, GPIO 22, GPIO 21, and GPIO 27
 * Vendor: [TZT store](https://www.tztstore.com/goods/show-7983.html), [Aliexpress](https://www.aliexpress.com/item/1005008176009397.html)
+
+## Pin out
 
 ![](/docs/micropython/cyd-interfaces.png)
 
@@ -124,4 +132,6 @@ if __name__=="__main__":
         green_led.off()
         sleep(0.5)
 ```
+
+## Reference
 
