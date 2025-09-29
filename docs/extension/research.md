@@ -1,5 +1,6 @@
 ---
 title: Research
+parent: Extend yourself
 layout: default
 ---
 

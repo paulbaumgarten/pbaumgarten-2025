@@ -1,5 +1,6 @@
 ---
 title: Competitions & events
+parent: Extend yourself
 layout: default
 ---
 

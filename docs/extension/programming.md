@@ -1,5 +1,6 @@
 ---
 title: Programming
+parent: Extend yourself
 layout: default
 ---
 

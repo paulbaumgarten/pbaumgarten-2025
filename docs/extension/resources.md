@@ -1,5 +1,6 @@
 ---
 title: Reading
+parent: Extend yourself
 layout: default
 ---
 
