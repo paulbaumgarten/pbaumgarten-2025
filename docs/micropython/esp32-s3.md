@@ -7,7 +7,7 @@ nav_order: 10
 
 # ESP32-S3
 
-![](/docs/micropython/esp32-s3-image.jpg)
+![](/docs/micropython/esp32-s3-image.png)
 
 ## Specifications
 
