@@ -4,15 +4,15 @@ parent: Extend yourself
 layout: default
 ---
 
-# An extension roadmap for your programming
+# Programming roadmap
 {: .no_toc }
-
-- TOC
-{:toc} 
 
 The extension roadmap assumes you are already confident in the core skills of IGCSE programming.
 
 As you work through these extension tasks please regularly save your progress into the github repo.  This will help me monitor your progress - check for your understanding, see if you are getting stuck, and monitor pacing (when do I have to add additional items to this doc). 
+
+- TOC
+{:toc} 
 
 ## Getting started
 

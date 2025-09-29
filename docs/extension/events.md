@@ -5,6 +5,10 @@ layout: default
 ---
 
 # Competitions & events
+{: .no_toc }
+
+- TOC
+{:toc} 
 
 ## Imperial Hackathon - October
 
