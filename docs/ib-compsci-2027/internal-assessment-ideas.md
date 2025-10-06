@@ -130,6 +130,12 @@ Some students struggle to even know what algorithms exist that might be useful f
 * **Tesseract OCR Engine** (Optical Character Recognition)
     * *Receipt Scanner:* Extracting totals and dates from images of receipts.
     * *Business Card Reader:* Parsing contact information from a photograph of a card.
+* **Max-Margin Object Detector (MMOD) CNN**, *Detection for varying head poses*.
+    This deep learning approach uses a Convolutional Neural Network (CNN) to achieve high accuracy and robustness, especially for faces at odd angles, under occlusion, or in low-light conditions.
+* **Histogram of Oriented Gradients (HOG) + Linear SVM**, *Fast frontal face detection*.
+    This classic method uses Histogram of Oriented Gradients (HOG) as a feature descriptor, which is then fed into a Linear Support Vector Machine (SVM) to classify and locate frontal or near-frontal faces. It is computationally efficient and fast on a CPU.
+* **Ensemble of Regression Trees (Shape Predictor)**, *Facial landmark location and face alignment*.
+    This algorithm is used to locate precise facial landmarks (like the corners of the eyes and nose) on a detected face. The coordinates of these landmarks are then used to geometrically transform and align the face to a standard orientation and size, which is critical for recognition accuracy.
 
 ### Networking
 
@@ -232,4 +238,5 @@ Some students struggle to even know what algorithms exist that might be useful f
 ---
 
 (I acknowledge the use of various LLMs to help curate parts of this list)
+
 
