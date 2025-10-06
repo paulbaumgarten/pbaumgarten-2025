@@ -1,5 +1,5 @@
 ---
-title: IA ideas
+title: IA algorithms
 parent: IB Computer Science 2027
 layout: default
 nav_order: 3
@@ -18,125 +18,218 @@ The Internal Assessment prioritises the design, construction and use of algorith
 
 Some students struggle to even know what algorithms exist that might be useful for a project. To that end, the following is a list of algorithms commonly learnt at undergraduate level, and their possible uses. I will add to this list over time.
 
-1. Multidimensional Arrays
-   * Minesweeper Game (Storing board state, revealing adjacent cells)
-   * Chess/Checkers Board (Tracking piece positions, legal moves)
-   * Pixel Art Editor (Storing RGB values in a 2D grid)
-   * Matrix Operations Calculator (Addition, multiplication, determinant)
+### Fundamental Data Structures and Searching
 
-2. Depth First Search (DFS)
-   * Maze Solver (Finding a path from start to end)
-   * File System Traversal (Simulating directory structure search)
-   * Sudoku Solver (Backtracking to fill valid numbers)
-   * Dependency Resolver (Topological sorting for task scheduling)
+* **Multidimensional Arrays**
+    * *Minesweeper Game:* Storing board state and revealing adjacent cells.
+    * *Chess/Checkers Board:* Tracking piece positions and legal moves.
+    * *Pixel Art Editor:* Storing RGB values in a 2D grid.
+    * *Matrix Operations Calculator:* Handling addition, multiplication, and determinant calculations.
+* **Depth First Search (DFS)**
+    * *Maze Solver:* Finding a path from start to end by exploring as deeply as possible.
+    * *File System Traversal:* Simulating directory structure search.
+    * *Sudoku Solver:* Using backtracking to fill valid numbers.
+    * *Dependency Resolver:* Using topological sorting for task scheduling (e.g., build systems).
+* **Breadth First Search (BFS)**
+    * *Shortest Path in a Grid:* Finding the shortest path in a maze with unweighted edges.
+    * *Social Network Friend Finder:* Finding degrees of separation (e.g., 6 degrees of separation).
+    * *Web Crawler Simulation:* Visiting links level by level.
+    * *Puzzle Solver (e.g., 8-Puzzle):* Finding optimal moves by exploring all neighbors uniformly.
+* **Stacks or Queues**
+    * *Undo/Redo Feature in a Text Editor:* Using a stack-based command history.
+    * *Print Job Scheduler:* Using a queue for managing print requests.
+    * *Balanced Parentheses Checker:* Using a stack for syntax validation.
+    * *BFS/DFS Implementation:* Using a queue/stack explicitly for traversal.
+* **Binary Search Trees (BSTs)**
+    * *Dictionary/Spell Checker:* Enabling fast word lookup and insertion.
+    * *Student Grade Tracker:* Managing insert, search, and delete records efficiently.
+    * *Auto-complete System:* Facilitating prefix-based searches (though Tries are also common).
+    * *Leaderboard System:* Allowing efficient ranking updates and retrieval.
+* **Sets**
+    * *Spell Checker:* Quickly checking if a word exists in a dictionary (membership testing).
+    * *Social Media "Mutual Friends" Finder:* Using set intersection to find common connections.
+    * *Duplicate File Detector:* Comparing file hashes to detect identical files.
 
-3. Breadth First Search (BFS)
-   * Shortest Path in a Grid (Maze with unweighted edges)
-   * Social Network Friend Finder (Finding degrees of separation)
-   * Web Crawler Simulation (Visiting links level by level)
-   * Puzzle Solver (e.g., 8-Puzzle) (Finding optimal moves)
+### Hashing and Cryptography
 
-4. Stacks or Queues
-   * Undo/Redo Feature in a Text Editor (Stack-based command history)
-   * Print Job Scheduler (Queue for managing print requests)
-   * Balanced Parentheses Checker (Stack for syntax validation)
-   * BFS/DFS Implementation (Using a queue/stack explicitly)
+* **Hash Tables**
+    * *Password Manager:* Storing and retrieving credentials using keys for fast access.
+    * *Spam Filter:* Counting word frequencies for classification.
+    * *Cache Simulation:* Implementing an LRU (Least Recently Used) cache.
+* **Hashing Algorithms**
+    * *Password Storage System:* Using SHA-256 (with salting) to securely store credentials.
+    * *File Integrity Checker:* Generating MD5/SHA checksums to verify file contents haven't changed.
+    * *Plagiarism Detector:* Comparing document hashes to find similarities.
+* **Cryptographic Algorithms**
+    * *Caesar/Vigenère Cipher Tool:* Demonstrating basic encryption and decryption principles.
+    * *RSA Key Generator:* Showing the creation of a simple public/private key pair.
+    * *Secure Chat App:* Simulating end-to-end encryption.
 
-5. Binary Search Trees (BSTs)
-   * Dictionary/Spell Checker (Fast word lookup)
-   * Student Grade Tracker (Insert, search, delete records)
-   * Auto-complete System (Prefix-based searches)
-   * Leaderboard System (Efficient ranking updates)
+### Pathfinding and Optimization
 
-6. Object-Oriented Programming (OOP)
-   * Library Management System (Books, Users, Loans as objects)
-   * Bank Account Simulator (Accounts, Transactions, Customers)
-   * E-commerce Product Catalog (Products, Categories, Reviews)
-   * Game Character System (Inheritance for different enemy types)
+* **Dijkstra / A star** (Shortest Path Finding)
+    * *Pathfinding Visualizer:* Creating an interactive grid with obstacles.
+    * *Public Transport Route Planner:* Finding shortest routes considering travel time and transfers.
+    * *RPG Game Enemy AI:* Allowing smart movement around obstacles in a game world.
+    * *Drone Delivery Simulator:* Optimizing delivery paths for maximum efficiency.
+* **Huffman Encoding**
+    * *Text File Compressor:* Demonstrating lossless data compression.
+    * *Image Compression (Simplified):* Encoding pixel data based on frequency.
+    * *Encrypted Messaging App:* Combining data compression with cryptography.
 
-7. Dijkstra / A star (shortest path finding)
-   * Pathfinding Visualizer (Interactive grid with obstacles)
-   * Public Transport Route Planner (Finding shortest routes)
-   * RPG Game Enemy AI (Smart movement around obstacles)
-   * Drone Delivery Simulator (Optimizing delivery paths)
+### Object-Oriented and General Techniques
 
-8. Huffman Encoding
-   * Text File Compressor (Lossless compression demo)
-   * Image Compression (Simplified) (Encoding pixel data)
-   * Encrypted Messaging App (Combining with cryptography)
+* **Object-Oriented Programming (OOP)**
+    * *Library Management System:* Modeling Books, Users, and Loans as interconnected objects.
+    * *Bank Account Simulator:* Representing Accounts, Transactions, and Customers with classes and methods.
+    * *E-commerce Product Catalog:* Organizing Products, Categories, and Reviews using inheritance and composition.
+    * *Game Character System:* Using inheritance for different enemy types with shared and unique behaviors.
+* **Other Common Algorithms**
+    * *Merge/Quick Sort Visualizer:* Comparing the time complexity and efficiency of these two popular sorting algorithms.
+    * *N-Queens Problem Solver:* Using backtracking to place N chess queens on an $N \times N$ board without attacking each other.
+    * *Fibonacci Heap Priority Queue:* Exploring an advanced data structure used in efficient graph algorithms.
 
-9. Q-Learning (Reinforcement Learning)
-   * Tic-Tac-Toe AI (Learning optimal moves)
-   * Maze Navigator Bot (Training to find the exit)
-   * Simple Stock Trading Bot (Reward-based decision making)
+### Machine Learning and Data Science
 
-10. Hash Tables
-    * Password Manager (Storing & retrieving credentials)
-    * Spam Filter (Counting word frequencies)
-    * Cache Simulation (LRU cache implementation)
+* **Q-Learning** (Reinforcement Learning)
+    * *Tic-Tac-Toe AI:* Training an agent to learn optimal moves through trial and error.
+    * *Maze Navigator Bot:* Training a bot to find the exit of a maze based on rewards.
+    * *Simple Stock Trading Bot:* Making reward-based decisions on buying or selling assets.
+* **Linear Regression**
+    * *House Price Predictor:* Estimating house prices based on features like size and location.
+    * *Exam Score Estimator:* Modeling the relationship between hours studied and exam grades.
+    * *Sports Performance Analyzer:* Analyzing training metrics versus results.
+* **Classification Algorithms**
+    * *Spam Email Classifier (Naive Bayes):* Identifying emails as spam or not spam.
+    * *Iris Flower Species Predictor (k-NN):* Classifying objects based on feature similarity to neighbors.
+    * *Sentiment Analysis Tool:* Determining if reviews are positive, negative, or neutral.
+* **Clustering Algorithms**
+    * *Customer Segmentation:* Grouping customers by purchase behavior for targeted marketing.
+    * *Image Color Quantization:* Reducing the number of colors in an image while minimizing visual loss.
+    * *Anomaly Detection in Data:* Identifying outliers in a dataset (e.g., fraudulent transactions).
+* **Association Rule (Apriori)**
+    * *Market Basket Analysis:* Finding items frequently purchased together (e.g., "People who buy bread also buy butter").
+    * *Movie Recommendation System:* Suggesting movies based on item sets (what other users watched).
+* **Genetic Algorithms**
+    * *Traveling Salesman Solver:* Optimizing routes by simulating natural selection.
+    * *Timetable Generator:* Scheduling classes or meetings to avoid conflicts and optimize resources.
+    * *Game AI Evolution:* Optimizing game strategies over generations.
+* **ANNs / CNNs** (Artificial/Convolutional Neural Networks)
+    * *Handwritten Digit Recognizer (MNIST dataset):* A classic introduction to image classification.
+    * *Emotion Detection from Text:* Building a simple Natural Language Processing (NLP) model.
+    * *Basic Image Classifier (Cats vs. Dogs):* Distinguishing between simple image categories.
 
-11. Sets
-    * Spell Checker (Finding misspelled words)
-    * Social Media "Mutual Friends" Finder (Set intersection)
-    * Duplicate File Detector (Comparing file hashes)
+### Computer Vision
 
-12. Hashing Algorithms
-    * Password Storage System (SHA-256 + salting)
-    * File Integrity Checker (MD5/SHA checksums)
-    * Plagiarism Detector (Comparing document hashes)
+* **YOLO (You Only Look Once)** (Object Detection)
+    * *Real-Time Tracking:* A fast, single-pass system for simultaneously detecting and classifying multiple objects (like reading license plates in a video stream).
+* **Viola-Jones Algorithm** (Face Detection)
+    * *Face Detection App (Haar cascades):* Identifying the presence and location of human faces using a fast cascade of simple features.
+* **AR Marker Detector** (e.g., **ArUco Markers**)
+    * *Marker Recognition:* Recognizing unique square fiducial markers (like specialized QR codes) for augmented reality applications and camera pose estimation.
+* **Tesseract OCR Engine** (Optical Character Recognition)
+    * *Receipt Scanner:* Extracting totals and dates from images of receipts.
+    * *Business Card Reader:* Parsing contact information from a photograph of a card.
 
-13. Cryptographic Algorithms
-    * Caesar/Vigenère Cipher Tool (Encrypt/decrypt messages)
-    * RSA Key Generator (Simple public/private key demo)
-    * Secure Chat App (End-to-end encryption simulation)
+### Networking
 
-14. Linear Regression
-    * House Price Predictor (Based on size, location)
-    * Exam Score Estimator (Hours studied vs. grades)
-    * Sports Performance Analyzer (Training vs. results)
+* **TCP Handshake / Sliding Window Protocol**
+    * *Chat Application (TCP sockets):* Demonstrating the reliable, connection-oriented communication process, including connection setup and flow control.
+* **Distributed Hash Table (DHT)** (e.g., **Kademlia**)
+    * *P2P File Sharing Simulator:* Modeling distributed hash tables for decentralized file lookup and routing in peer-to-peer systems.
+* **Bilateral Filter**
+    * *Image Denoising:* Applying a non-linear filter to images to reduce noise while preserving edges (a common preprocessing step in vision pipelines).
+* **Packet Sniffer** (e.g., **ARP Protocol / Wireshark Techniques**)
+    * *Network Traffic Analysis:* Analyzing network traffic and protocols, which involves understanding protocols like ARP for mapping IP to MAC addresses.
+* **Checksum Algorithm (e.g., Internet Checksum)**
+    * *IP and UDP Header Validation:* A simple, fast checksum algorithm used by protocols like IP and UDP to verify the integrity of the header of every packet transmitted across the internet.
+* **Diffie-Hellman Key Exchange**
+    * *Secure Communication Setup:* A fundamental protocol allowing two parties to establish a shared, secret cryptographic key over an unsecured public channel, which is the basis for many secure communication systems (SSL/TLS).
+* **Digital Signature Algorithm (DSA) / RSA Signatures**
+    * *Software/Document Verification:* Algorithms that allow a party to mathematically "sign" a digital document (like a software executable or a certificate) to prove its authenticity and ensure it hasn't been tampered with since being signed.
 
-15. Classification Algorithms
-    * Spam Email Classifier (Naive Bayes)
-    * Iris Flower Species Predictor (k-NN)
-    * Sentiment Analysis Tool (Positive/Negative reviews)
+### Graph and Tree Algorithms
 
-16. Clustering Algorithms
-    * Customer Segmentation (Grouping by purchase behavior)
-    * Image Color Quantization (Reducing color palette)
-    * Anomaly Detection in Data (Identifying outliers)
+* **Prim's or Kruskal's Algorithm** (Minimum Spanning Tree)
+    * *Utility Network Design:* Finding the cheapest way to lay fiber optic cable or water pipes to connect a set of cities or houses.
+* **Floyd-Warshall Algorithm** (All-Pairs Shortest Path)
+    * *Mapping Services:* Calculating the shortest distance between *every* pair of nodes/locations in a small transport network.
+* **Topological Sort** (Kahn's or DFS-based)
+    * *Course Pre-requisites:* Ordering university courses so a student takes required pre-requisites before advanced courses.
+* **Trie (Prefix Tree)**
+    * *Phonebook Search:* Storing and quickly searching contacts/words based on their prefix (used in older T9 phone input).
+* **Max Flow / Min Cut** (e.g., Edmonds-Karp)
+    * *Logistics/Resource Allocation:* Maximizing the flow of resources (e.g., oil, internet traffic) through a network with limited capacities.
 
-17. Association Rule (Apriori)
-    * Market Basket Analysis (Recommending products)
-    * Movie Recommendation System (Frequent item sets)
+### Optimization and Dynamic Programming
 
-18. Genetic Algorithms
-    * Traveling Salesman Solver (Optimizing routes)
-    * Timetable Generator (Scheduling classes/meetings)
-    * Game AI Evolution (Optimizing strategies over generations)
+* **The Knapsack Problem** (Dynamic Programming)
+    * *Cargo Loading Optimization:* A spacecraft or delivery truck deciding which items to take to maximize value without exceeding a weight limit.
+* **Bellman-Ford Algorithm** (Shortest Path with Negative Weights)
+    * *Financial Arbitrage:* Finding a sequence of currency trades (the "path") that results in a profit, which is only possible with a negative cycle.
+* **Traveling Salesperson Problem (TSP) Approximation Heuristics** (e.g., Nearest Neighbor)
+    * *Drilling Paths:* Optimizing the path a drill head takes to bore a set of holes on a circuit board to minimize time.
+* **Edit Distance / Levenshtein Distance** (Dynamic Programming)
+    * *DNA Sequence Alignment:* Measuring the similarity between two strands of DNA by counting the minimum number of insertions, deletions, or substitutions required to change one into the other.
 
-19. ANNs / CNNs
-    * Handwritten Digit Recognizer (MNIST dataset)
-    * Emotion Detection from Text (Simple NLP model)
-    * Basic Image Classifier (Cats vs. Dogs)
+### String and Text Processing
 
-20. Image Object Detection/Recognition
-    * License Plate Reader (OpenCV + Tesseract)
-    * Face Detection App (Haar cascades)
-    * AR Marker Detector (QR code recognition)
+* **KMP (Knuth-Morris-Pratt)** (String Searching)
+    * *Malware Detection:* Efficiently searching through a large file or memory for a specific, known byte pattern (the "signature").
+* **Rabin-Karp Algorithm** (String Searching/Hashing)
+    * *Plagiarism Detection (Alternative to simple hashing):* Used for comparing substrings efficiently, often in systems that require rolling hashes.
+* **Regular Expressions (Regex) Engines** (State Machines)
+    * *Input Validation:* Ensuring a user-entered email address or phone number matches a specific, required format.
 
-21. Image-to-Text (OCR)
-    * Receipt Scanner (Extracting totals, dates)
-    * Business Card Reader (Parsing contact info)
+### Numerical and Scientific Computing
 
-22. Networking Algorithms
-    * Chat Application (TCP sockets)
-    * P2P File Sharing Simulator (Distributed hash tables)
-    * Packet Sniffer (Analyzing network traffic)
+* **Euclidean Algorithm** (Greatest Common Divisor)
+    * *Cryptography (RSA):* A fundamental step in finding the modular inverse when generating the private key for the RSA algorithm.
+* **Fast Fourier Transform (FFT)**
+    * *Audio Equalization/Filtering:* Decomposing an audio signal (or any wave) into its component frequencies, allowing for selective boosting or removal of bass, treble, etc.
+* **Monte Carlo Methods** (Simulation)
+    * *Risk Assessment:* Estimating the probability of success for a project (e.g., building a bridge) by running thousands of random simulations.
 
-23. Other Common Algorithms
-    * Merge/Quick Sort Visualizer (Comparing efficiencies)
-    * N-Queens Problem Solver (Backtracking)
-    * Fibonacci Heap Priority Queue (Advanced data structure)
+### Data Structures and Memory Management
+
+* **Bloom Filter**
+    * *Database Query Optimization:* Quickly checking if a username or element *might* be in a large database *before* doing an expensive disk lookup (allows false positives, but no false negatives).
+* **Timsort** (Hybrid Sorting Algorithm)
+    * *Standard Library Sorting:* Used in Python and Java's default sort functions; it's a stable, highly-optimized blend of Merge Sort and Insertion Sort.
+* **Garbage Collection** (e.g., Mark-and-Sweep)
+    * *Memory Management:* Automatically reclaiming memory used by objects that are no longer being referenced in a programming language like Java or Python.
+
+### Advanced Sampling and Data Processing
+
+* **Reservoir Sampling**
+    * *Big Data Stream Analysis:* Selecting a uniform random sample of size $k$ from a large data stream of unknown length $n$ (where $n$ is too big to fit in memory), commonly used for sampling social media feeds or search queries.
+* **Counting Sort / Radix Sort** (Non-Comparison Sorting)
+    * *High-Speed Data Processing:* Sorting large lists of integers or strings where the values are restricted to a small range, achieving $O(n+k)$ complexity, far faster than $O(n \log n)$ comparison sorts in specific cases.
+* **Linear Congruential Generator (LCG)**
+    * *Simple Random Number Generation:* A simple and fast algorithm for generating sequences of pseudorandom numbers, often used in older simulations or basic programming exercises.
+* **Fisher-Yates (Knuth) Shuffle**
+    * *Randomization in Games/Tests:* Generating a perfectly uniform random permutation of a finite set (e.g., shuffling a deck of cards or randomizing test questions).
+* **Reed-Solomon Error Correction**
+    * *QR Code Generation/Reading:* The core mathematical algorithm used to encode redundancy into QR codes (and CDs, DVDs) so that they can be correctly read even if a large portion is damaged, dirty, or obscured.
+
+### Scientific Computing and Graphics
+
+* **Bresenham's Line Algorithm**
+    * *Computer Graphics Rendering:* Drawing a straight line segment on a discrete pixel grid using only integer arithmetic (no floating-point operations), which was crucial for early and fast graphics hardware.
+* **Perlin Noise**
+    * *Procedural Content Generation:* Creating realistic, natural-looking textures, terrains, and fire/smoke effects in video games and visual effects by generating coherent, gradient-based random values.
+* **Ray Tracing (The Basic Algorithm)**
+    * *Realistic Rendering:* Simulating realistic lighting and reflections by tracing the path of light rays backward from the viewer's eye through a pixel and into the 3D scene.
+
+### Distributed Systems and Concurrency
+
+* **Two-Phase Commit (2PC)**
+    * *Distributed Database Transactions:* A crucial protocol ensuring that a transaction across multiple separate databases either succeeds completely on all servers or fails completely on all of them ("all or nothing").
+* **Paxos / Raft** (Consensus Algorithms)
+    * *Fault-Tolerant Distributed Storage:* Algorithms used to achieve agreement (consensus) among a group of servers, even if some servers fail, forming the backbone of highly-available systems like Google File System or etcd.
 
 
-(I acknowledge the use of LLM to help brainstorm parts of this list)
+---
+
+(I acknowledge the use of various LLMs to help curate parts of this list)
+
