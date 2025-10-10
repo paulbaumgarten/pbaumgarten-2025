@@ -46,7 +46,7 @@ Or download them individually:
 
 ## Video 2: Text, colours, coordinates
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/oMKQW4AB3no?si=deShqstL9ruBFbnt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-Y1FVR4Tu6U?si=d0mfqx2JLawu2lt4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ![](/docs/micropython/cyd/color_reference.png)
 
