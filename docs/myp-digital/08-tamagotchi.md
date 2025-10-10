@@ -194,34 +194,40 @@ response if too soon = {
 ## Video 14: Say hello to other pets
 
 ```
-POST https://api.pbaumgarten.com/pets/hello
+POST https://api.pbaumgarten.com/pets/prs
 
 headers = {
     "X-API-KEY": "PROVIDED BY YOUR TEACHER"
 }
 
 response if successful = {
-    "status": "success",
-    "responder": "their pet name",
+    "status": "match",
+    "result": "win", "tie", or "lose"
+    "your_choice": "rock", "paper" or "scissors",
+    "their_choice": "rock", "paper" or "scissors",
+    "opponent": "their pet name"
 }
 
 response if waiting for someone else = {
-    "status": "acknowledged"
+    "status": "waiting for opponent"
 }
 
-POST https://api.pbaumgarten.com/pets/hello-check
+POST https://api.pbaumgarten.com/pets/prs-check
 
 headers = {
     "X-API-KEY": "PROVIDED BY YOUR TEACHER"
 }
 
 response if successful = {
-    "status": "success",
-    "responder": "their pet name",
+    "status": "match",
+    "result": "win", "tie", or "lose"
+    "your_choice": "rock", "paper" or "scissors",
+    "their_choice": "rock", "paper" or "scissors",
+    "opponent": "their pet name"
 }
 
 response no response = {
-    "status": "no responses"
+    "status": "no opponent found""
 }
 ```
 
@@ -239,7 +245,7 @@ response if successful = {
     "responder": "their pet name",
 }
 
-response if waiting for someone else = {
+response if waiting for another player = {
     "status": "acknowledged"
 }
 
@@ -254,7 +260,7 @@ response if successful = {
     "responder": "their pet name",
 }
 
-response no response = {
+response no other player = {
     "status": "no responses"
 }
 ```
