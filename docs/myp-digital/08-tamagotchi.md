@@ -62,7 +62,7 @@ Or download them individually:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wOOJNYaEu2Q?si=v3SZzuP_rFK__lOS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Video 6: Creating functions to organise yuor code
+## Video 6: Creating functions to organise your code
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uhB7EYO8faA?si=YtW8d4lMPFg_dAMX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
