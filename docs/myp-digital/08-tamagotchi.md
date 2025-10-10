@@ -189,12 +189,78 @@ response if too soon = {
 }
 ```
 
-## Video 13: Say hello to other pets
+## Video 13: Navigation menu
 
-## Video 14: Paper rock scissors
+## Video 14: Say hello to other pets
 
-## Video 15: Screensaver mode (inactivity timer)
+```
+POST https://api.pbaumgarten.com/pets/hello
 
-## Video 16: Error handling (wifi issues etc)
+headers = {
+    "X-API-KEY": "PROVIDED BY YOUR TEACHER"
+}
+
+response if successful = {
+    "status": "success",
+    "responder": "their pet name",
+}
+
+response if waiting for someone else = {
+    "status": "acknowledged"
+}
+
+POST https://api.pbaumgarten.com/pets/hello-check
+
+headers = {
+    "X-API-KEY": "PROVIDED BY YOUR TEACHER"
+}
+
+response if successful = {
+    "status": "success",
+    "responder": "their pet name",
+}
+
+response no response = {
+    "status": "no responses"
+}
+```
+
+## Video 15: Paper rock scissors
+
+```
+POST https://api.pbaumgarten.com/pets/hello
+
+headers = {
+    "X-API-KEY": "PROVIDED BY YOUR TEACHER"
+}
+
+response if successful = {
+    "status": "success",
+    "responder": "their pet name",
+}
+
+response if waiting for someone else = {
+    "status": "acknowledged"
+}
+
+POST https://api.pbaumgarten.com/pets/hello-check
+
+headers = {
+    "X-API-KEY": "PROVIDED BY YOUR TEACHER"
+}
+
+response if successful = {
+    "status": "success",
+    "responder": "their pet name",
+}
+
+response no response = {
+    "status": "no responses"
+}
+```
+
+## Video 16: Screensaver mode (inactivity timer)
+
+## Video 17: Error handling (wifi issues etc)
 
 
