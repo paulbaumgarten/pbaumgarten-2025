@@ -1,7 +1,11 @@
 
 
 0. Trailer video
+https://youtu.be/5Dts5XKDRl
+
 1. Connect the device, upload correct files, hello world.
+https://youtu.be/xpW7Zvl4ahw
+
 2. Printing text in different locations, colours, orientations
 https://youtu.be/-Y1FVR4Tu6U
 
