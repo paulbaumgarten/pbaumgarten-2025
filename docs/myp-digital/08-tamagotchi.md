@@ -60,15 +60,134 @@ Or download them individually:
 
 ## Video 7: Converting and displaying images
 
+Code to convert PNG/JPG images to RAW
+
+```python
+# Utility to convert images to raw RGB565 format.
+from PIL import Image
+from struct import pack
+from os import path
+import os
+import sys
+
+def convert_file(in_file, out_file):
+    # Sha Tin's CYD devices require BGR format RAW files
+    print('Converting: ' + in_file)
+    img = Image.open(in_file).convert('RGB')
+    pixels = list(img.getdata())
+    with open(out_file, 'wb') as f:
+        for pix in pixels:
+            r = (pix[2] >> 3) & 0b00011111 # 5 bits
+            g = (pix[1] >> 2) & 0b00111111 # 6 bits
+            b = (pix[0] >> 3) & 0b00011111 # 5 bits
+            f.write(pack('>H', (r << 11) + (g << 5) + b))
+    print('Saved: ' + out_file)
+
+def convert_all_images_in_folder(folder=None):
+    if not folder:
+        folder = os.getcwd()
+    files = os.listdir()
+    for ssource_file in files:
+        if ssource_file.lower().endswith(".png") or ssource_file.lower().endswith(".jpeg") or ssource_file.lower().endswith(".jpg"):
+            target_file = ssource_file.split(".")[0]+".raw"
+            convert_file(ssource_file, target_file)
+
+convert_all_images_in_folder()
+```
+
 ## Video 8: Connect to wifi, download and display data
+
+* [Dad joke website](https://icanhazdadjoke.com/api)
 
 ## Video 9: Start your project, connect to Virtual Pet API
 
+```
+POST https://api.pbaumgarten.com/pets/register
+
+headers = {
+    "X-API-KEY": "PROVIDED BY YOUR TEACHER",
+    "Content-Type": "application/json"
+}
+
+data = {
+    "pet_name": "NAME FOR THE SYSTEM TO REMEMBER FOR YOUR PET"
+}
+
+response = {
+    "pet_name": "YOUR PET NAME",
+    "owner_name: "YOUR NAME",
+    "pet_id": "YOUR PET ID NUMBER",
+    "points_balance": 0 // balance of points earnt so far
+}
+```
+
 ## Video 10: Show the weather
+
+```
+GET https://api.pbaumgarten.com/pets/weather
+
+headers = {
+    "X-API-KEY": "PROVIDED BY YOUR TEACHER"
+}
+
+response = [
+    {
+        "Day": "Name of today",
+        "Info": "Weather description",
+        "Max": "Maximum temperature",
+        "Rain": "Likelihood of significant rain":
+    },{
+        "Day": "Name of tomorrow",
+        "Info": "Weather description",
+        "Max": "Maximum temperature",
+        "Rain": "Likelihood of significant rain":
+    }
+]
+```
 
 ## Video 11: Show your timetable
 
+```
+    start_dates = {
+        (2025,  8, 11): 0,
+        (2025, 10, 13): 0,
+        (2025, 11, 17): 0,
+        (2026,  1,  5): 0,
+        (2026,  2, 23): 0,
+        (2026,  4, 13): 5
+    }
+    timetable = [
+        ["12 CS",    "10 CS",    "11 CS",    "13 CS",  "9 DD 7"],
+        ["13 CS HL", "13 CS HL", "7 DD 3",   "",       "9 DD 1"],
+        ["",         "9 DD 3",   "12 CS",    "9X2 WB", ""],
+        ["11 CS",    "",         "10 CS",    "",       "12 CS"],
+        ["12 CS",    "10 CS",    "13 CS",    "",       "8 DD 2"],
+        ["11 CS",    "",         "13 CS HL", "9 DD 3", ""],
+        ["12 CS",    "12 CS",    "",         "10 CS",  "11 CS"],
+        ["",         "7 DD 3",   "",         "9X2 WB", ""],
+        ["13 CS",    "9 DD 1",   "",         "11 CS",  "10 CS"],
+        ["12 CS",    "9 DD 7",   "8 DD 2",   "",       "13 CS"]
+    ]
+```
+
 ## Video 12: Feed your pet a virtual meal
+
+```
+POST https://api.pbaumgarten.com/pets/meal
+
+headers = {
+    "X-API-KEY": "PROVIDED BY YOUR TEACHER"
+}
+
+response if successful = {
+    "status": "success",
+    "points_balance": 999,
+}
+
+response if too soon = {
+    "status": "too soon"
+}
+```
 
 ## Video 13: Say hello to other pets
 
