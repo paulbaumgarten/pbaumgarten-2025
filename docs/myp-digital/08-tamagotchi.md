@@ -194,6 +194,40 @@ response if too soon = {
 ## Video 14: Say hello to other pets
 
 ```
+POST https://api.pbaumgarten.com/pets/hello
+
+headers = {
+    "X-API-KEY": "PROVIDED BY YOUR TEACHER"
+}
+
+response if successful = {
+    "status": "success",
+    "responder": "their pet name",
+}
+
+response if waiting for another player = {
+    "status": "acknowledged"
+}
+
+POST https://api.pbaumgarten.com/pets/hello-check
+
+headers = {
+    "X-API-KEY": "PROVIDED BY YOUR TEACHER"
+}
+
+response if successful = {
+    "status": "success",
+    "responder": "their pet name",
+}
+
+response no other player = {
+    "status": "no responses"
+}
+```
+
+## Video 15: Paper rock scissors
+
+```
 POST https://api.pbaumgarten.com/pets/prs
 
 headers = {
@@ -228,40 +262,6 @@ response if successful = {
 
 response no response = {
     "status": "no opponent found""
-}
-```
-
-## Video 15: Paper rock scissors
-
-```
-POST https://api.pbaumgarten.com/pets/hello
-
-headers = {
-    "X-API-KEY": "PROVIDED BY YOUR TEACHER"
-}
-
-response if successful = {
-    "status": "success",
-    "responder": "their pet name",
-}
-
-response if waiting for another player = {
-    "status": "acknowledged"
-}
-
-POST https://api.pbaumgarten.com/pets/hello-check
-
-headers = {
-    "X-API-KEY": "PROVIDED BY YOUR TEACHER"
-}
-
-response if successful = {
-    "status": "success",
-    "responder": "their pet name",
-}
-
-response no other player = {
-    "status": "no responses"
 }
 ```
 
