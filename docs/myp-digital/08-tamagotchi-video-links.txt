@@ -1,0 +1,53 @@
+
+
+0. Trailer video
+1. Connect the device, upload correct files, hello world.
+2. Printing text in different locations, colours, orientations
+https://youtu.be/-Y1FVR4Tu6U
+
+3. Variables, counters, for loops, using a timer
+https://youtu.be/CX551LbtYUU
+
+4. While loops, detect touch, increase a counter
+https://youtu.be/LNCNZ5vPGjM
+
+5. If statements, touch coordinates, two counters: left side, right side
+https://youtu.be/wOOJNYaEu2Q
+
+6. Creating functions to simplify structure
+https://youtu.be/uhB7EYO8faA
+
+7. Displaying images
+https://youtu.be/1_xqVlGk9og
+
+8. Fetching data from an API, display it on screen (use a joke API)
+https://youtu.be/ldS4WNeg_jM
+
+9.  Starting your project, connecting to the virtualpet API
+https://youtu.be/yp5C1CuTvRI
+
+10. Weather
+https://youtu.be/_n1C7yxj-xg
+
+11. Timetable
+https://youtu.be/eyg94WUPZXw
+
+12. Meal time
+https://youtu.be/0OEfm22sTxk
+
+13. Menu system
+https://youtu.be/p8aHxCLPd6k
+
+14. Saying hello
+https://youtu.be/0L1zMfG-f5c
+
+15. Playing Paper, rock, scissors
+https://youtu.be/VKHFcTRa6B0
+
+16. Screensaver mode (inactivity timer)
+https://youtu.be/boLpGRd4Eps
+
+17. Error handling (wifi issues etc)
+https://youtu.be/4SlD_HSgwCA
+
+Files and other resources required for these lessons available at https://pbaumgarten.com/docs/myp-digital/08-tamagotchi.html
