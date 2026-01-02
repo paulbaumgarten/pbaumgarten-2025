@@ -1,11 +1,11 @@
 ---
-title: IA Algorithms and ideas
-parent: IB Computer Science 2027
+title: Project ideas
+parent: Internal assessment
 layout: default
 nav_order: 3
 ---
 
-# Algorithms and ideas for the IA
+# Project ideas and algorithms for the IA
 {: .no_toc }
 
 {: .highlight }

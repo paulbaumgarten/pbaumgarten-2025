@@ -1,6 +1,6 @@
 ---
-title: IA exemplars
-parent: IB Computer Science 2027
+title: Exemplars
+parent: Internal assessment
 layout: default
 nav_order: 3
 has_toc: false

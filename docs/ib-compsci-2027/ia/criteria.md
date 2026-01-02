@@ -1,6 +1,6 @@
 ---
-title: IA criteria
-parent: IB Computer Science 2027
+title: Assessment criteria
+parent: Internal assessment
 layout: default
 nav_order: 3
 ---
