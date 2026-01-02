@@ -243,7 +243,7 @@ Techniques for Color channel separation, filtering (blurring, sharpening), geome
 * **Garbage Collection** (e.g., Mark-and-Sweep)
     * *Memory Management:* Automatically reclaiming memory used by objects that are no longer being referenced in a programming language like Java or Python.
 
-### Advanced Sampling and Data Processing
+## Advanced Sampling and Data Processing
 
 * **Reservoir Sampling**
     * *Big Data Stream Analysis:* Selecting a uniform random sample of size $k$ from a large data stream of unknown length $n$ (where $n$ is too big to fit in memory), commonly used for sampling social media feeds or search queries.
@@ -254,7 +254,7 @@ Techniques for Color channel separation, filtering (blurring, sharpening), geome
 * **Reed-Solomon Error Correction**
     * *QR Code Generation/Reading:* The core mathematical algorithm used to encode redundancy into QR codes (and CDs, DVDs) so that they can be correctly read even if a large portion is damaged, dirty, or obscured.
 
-### Scientific Computing and Graphics
+## Scientific Computing and Graphics
 
 * **Bresenham's Line Algorithm**
     * *Computer Graphics Rendering:* Drawing a straight line segment on a discrete pixel grid using only integer arithmetic (no floating-point operations), which was crucial for early and fast graphics hardware.
@@ -265,7 +265,7 @@ Techniques for Color channel separation, filtering (blurring, sharpening), geome
 * **Graham Scan Convex Hull Algorithm**
     * Given a set of points in a 2D plane, compute the convex hull: the smallest convex polygon that contains all points.
 
-### Distributed Systems and Concurrency
+## Distributed Systems and Concurrency
 
 * **Two-Phase Commit (2PC)**
     * *Distributed Database Transactions:* A crucial protocol ensuring that a transaction across multiple separate databases either succeeds completely on all servers or fails completely on all of them ("all or nothing").
@@ -275,6 +275,5 @@ Techniques for Color channel separation, filtering (blurring, sharpening), geome
 
 ---
 
-(I acknowledge the use of various LLMs to help curate parts of this list)
-
+(LLMs were used to help brainstorm some parts of this page's content)
 
