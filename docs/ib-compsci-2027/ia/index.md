@@ -45,9 +45,6 @@ For my studdents, we shall dedicate a couple of lessons to this exercise. You wi
 * What problems does the algorithm solve?
 * Why the algorithm appeals to you.
 
-A list of some algorithms to help get you started (there are plenty of others): 
-https://pbaumgarten.com/docs/ib-compsci-2027/internal-assessment-ideas.html 
-
 **Step 2: What is a project that will allow you to showcase and demonstrate your understanding of that algorithm?**
 
 Come up with a project that answers that question, and you are on your way to a great IA.
@@ -85,7 +82,7 @@ The Internal Assessment criteria are as follows:
 | Criteria D | Demonstration video (functionality, algorithms demonstrated, testing highlights) | 5 minute video |
 | Criteria E | Evaluation and recommendations | 400 words |
 
-Be sure to study the detailed [Assessment criteria rubrics](internal-assessment-criteria.html) to understand how you will be assessed.
+Be sure to study the detailed [Assessment criteria rubrics](criteria.html) to understand how you will be assessed.
 
 For detailed **checklists, tips, common mistakes** and so forth, along with exemplar work from previous students, please consider purchasing the Hachette book, ["Computer Science for the IB Diploma"](https://www.hachettelearning.com/computing-and-it/computer-science-for-the-ib-diploma).
 
