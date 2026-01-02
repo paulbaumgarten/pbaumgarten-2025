@@ -1,5 +1,5 @@
 ---
-title: Sequence overview
+title: Timeline
 parent: IB Computer Science 2027
 layout: default
 nav_order: 3
