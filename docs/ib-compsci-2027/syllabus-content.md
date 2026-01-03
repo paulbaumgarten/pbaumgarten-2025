@@ -16,7 +16,8 @@ For the new IB Diploma Computer Science syllabus to start teaching in August 202
 
 ## A1 Computer fundamentals
 
-#### A1.1 Computer hardware and operation
+### A1.1 Computer hardware and operation
+{: .no_toc }
 
 A1.1.1 Describe the functions and interactions of the main CPU components.
 
@@ -70,7 +71,8 @@ A1.1.9 Describe the different types of services in cloud computing.
 * Services: software as a service (SaaS), platform as a service (PaaS), infrastructure as a service (IaaS)
 * The differences between the approaches of SaaS, PaaS, and IaaS in various real-world scenarios, recognizing that different degrees of control and flexibility influence resource management and resource availability
 
-#### A1.2 Data representation and computer logic
+### A1.2 Data representation and computer logic
+{: .no_toc }
 
 A1.2.1 Describe the principal methods of representing data.
 
@@ -106,7 +108,8 @@ A.1.2.5 Construct logic diagrams.
 * Combinations of these gates to perform more complex logical operations
 * Boolean algebra rules to simplify complex logic diagrams and expressions
 
-#### A1.3 Operating systems and control systems
+### A1.3 Operating systems and control systems
+{: .no_toc }
 
 A1.3.1 Describe the role of operating systems.
 
@@ -140,7 +143,8 @@ A1.3.7 Explain the use of control systems in a range of real-world applications.
 
 * Examples may include autonomous vehicles, home thermostats, automatic elevator controllers, automatic washing machines, traffic signal control systems, irrigation control systems, home security systems, automatic doors.
 
-#### A1.4 Translation (HL only)
+### A1.4 Translation (HL only)
+{: .no_toc }
 
 A1.4.1 Evaluate the translation processes of interpreters and compilers.
 
@@ -150,7 +154,8 @@ A1.4.1 Evaluate the translation processes of interpreters and compilers.
 
 ## A2 Networks
 
-#### A2.1 Network fundamentals
+### A2.1 Network fundamentals
+{: .no_toc }
 
 A2.1.1 Describe the purpose and characteristics of networks.
 
@@ -175,7 +180,8 @@ A2.1.5 Describe the function of the TCP/IP model. (HL only)
 * Application, transport, internet, network interface
 * The role of each layer and the interaction between these layers to ensure reliable data transmission over a network
 
-#### A2.2 Network architecture
+### A2.2 Network architecture
+{: .no_toc }
 
 A2.2.1 Describe the functions and practical applications of network topologies.
 
@@ -199,7 +205,8 @@ A2.2.4 Explain the concepts and applications of network segmentation.
 * Segmentation for network performance and security, to reduce congestion, to manage network resources efficiently
 * Network segmentation must include the uses and roles of segmenting, subnetting and virtual local area networks (VLANs).
 
-#### A2.3 Data transmissions
+### A2.3 Data transmissions
+{: .no_toc }
 
 A2.3.1 Describe different types of IP addressing.
 * The distinction between IPv4 and IPv6 addressing
@@ -223,7 +230,8 @@ A2.3.4 Explain how static routing and dynamic routing move data across local are
 * The process of dynamic routing, and its advantages and disadvantages (explanation of a specific routing protocol is not required)
 * Factors to consider must include configuration, maintenance, complexity, resource usage, convergence, scalability, network size.
 
-#### A2.4 Network security
+### A2.4 Network security
+{: .no_toc }
 
 A2.4.1 Discuss the effectiveness of firewalls at protecting a network.
 
@@ -250,7 +258,8 @@ A2.4.4 Describe the process of encryption and digital certificates.
 
 ## A3 Databases
 
-#### A3.1 Database fundamentals
+### A3.1 Database fundamentals
+{: .no_toc }
 
 A3.1.1 Explain the features, benefits and limitations of a relational database.
 
@@ -258,7 +267,8 @@ A3.1.1 Explain the features, benefits and limitations of a relational database.
 * Benefits of databases: community support, concurrency control, data consistency, data integrity, data retrieval, reduced data duplication, reduced redundancy, reliable transaction processing, scalability, security features
 * Limitations of databases: “big data” scalability issues, design complexity, hierarchical data handling, rigid schema, object-relational impedance mismatch, unstructured data handling
 
-#### A3.2 Database design
+### A3.2 Database design
+{: .no_toc }
 
 A3.2.1 Describe database schemas.
 
@@ -297,7 +307,8 @@ A3.2.7 Evaluate the need for denormalizing databases.
 * Situations where denormalization can enhance performance, particularly in read-intensive applications
 * The balance between straightforward query structures and the risk of data redundancy in denormalized schemas
 
-#### A3.3 Database programming
+### A3.3 Database programming
+{: .no_toc }
 
 A3.3.1 Outline the differences between data language types within SQL.
 
@@ -329,7 +340,8 @@ A3.3.6 Describe how transactions maintain data integrity in a database. (HL only
 * The role of atomicity, consistency, isolation and durability (ACID) to ensure reliable processing of transactions
 * Transaction control language (TCL) commands: BEGIN TRANSACTION, COMMIT, ROLLBACK
 
-#### A3.4 Alternative databases and data warehouses (HL only)
+### A3.4 Alternative databases and data warehouses (HL only)
+{: .no_toc }
 
 A3.4.1 Outline the different types of databases as approaches to storing data.
 
@@ -353,7 +365,8 @@ A3.4.4 Describe the features of distributed databases.
 
 ## A4 Machine learning
 
-#### A4.1 Machine learning fundamentals
+### A4.1 Machine learning fundamentals
+{: .no_toc }
 
 A4.1.1 Describe the types of machine learning and their applications in the real world.
 
@@ -367,7 +380,8 @@ A4.1.2 Describe the hardware requirements for various scenarios where machine le
 * Hardware configurations for machine learning ranging from standard laptops to advanced infrastructure
 * Advanced infrastructure must include application-specific integrated circuits (ASICs), edge devices, field-programmable gate arrays (FPGAs), GPUs, tensor processing units (TPUs), cloud-based platforms, high-performance computing (HPC) centres.
 
-#### A4.2 Data preprocessing (HL only)
+### A4.2 Data preprocessing (HL only)
+{: .no_toc }
 
 A4.2.1 Describe the significance of data cleaning.
 
@@ -385,7 +399,8 @@ A4.2.3 Describe the importance of dimensionality reduction.
 * The curse of dimensionality considerations may include overfitting, computational complexity, data sparsity, the effectiveness of distance metrics, data visualization, sample size increases, memory usage.
 * Dimensionality reduction of variables, while preserving the relevant aspects of the data. Note: Statistical techniques such as principal component analysis (PCA) and linear discriminant analysis (LDA) are beyond the scope of this course.
 
-#### A4.3 Machine learning approaches (HL only)
+### A4.3 Machine learning approaches (HL only)
+{: .no_toc }
 
 A4.3.1 Explain how linear regression is used to predict continuous outcomes.
 
@@ -441,7 +456,8 @@ A4.3.10 Explain the importance of model selection and comparison in machine lear
 * The reasons for selecting specific machine learning models over others, considering factors like the nature of the problem, its complexity and desired outcomes
 * The variability in algorithm performance based on the data’s characteristics
 
-#### A4.4 Ethical considerations
+### A4.4 Ethical considerations
+{: .no_toc }
 
 A4.4.1 Discuss the ethical implications of machine learning in real-world scenarios.
 
@@ -456,7 +472,8 @@ A4.4.2 Discuss ethical aspects of the increasing integration of computer technol
 
 ## B1 Computational thinking
 
-#### B1.1 Approaches to computational thinking
+### B1.1 Approaches to computational thinking
+{: .no_toc }
 
 B1.1.1 Construct a problem specification.
 
@@ -479,7 +496,8 @@ B1.1.4 Trace flowcharts for a range of programming algorithms.
 
 ## B2 Programming
 
-#### B2.1 Programming fundamentals
+### B2.1 Programming fundamentals
+{: .no_toc }
 
 B2.1.1 Construct and trace programs using a range of global and local variables of various data types.
 
@@ -499,7 +517,8 @@ B2.1.4 Construct and use common debugging techniques.
 
 * Debugging techniques may include trace tables, breakpoint debugging, print statements and step-by- step code execution.
 
-#### B2.2 Data structures
+### B2.2 Data structures
+{: .no_toc }
 
 B2.2.1 Compare static and dynamic data structures.
 
@@ -524,7 +543,8 @@ B2.2.4 Explain the concept of a queue as a “first in, first out” (FIFO) data
 * How queue operations impact both performance and memory usage
 * An appropriate queue for a specific problem
 
-#### B2.3 Programming constructs
+### B2.3 Programming constructs
+{: .no_toc }
 
 B2.3.1 Construct programs that implement the correct sequence of code instructions to meet program objectives.
 
@@ -548,7 +568,8 @@ B2.3.4 Construct functions and modularization.
 * The principles of scope (local versus global)
 * The benefits of code modularization, applying this concept to various programming scenarios
 
-#### B2.4 Programming algorithms
+### B2.4 Programming algorithms
+{: .no_toc }
 
 B2.4.1 Describe the efficiency of specific algorithms by calculating their Big O notation to analyse their scalability.
 
@@ -577,7 +598,8 @@ B2.4.5 Construct and trace recursive algorithms in a programming language. (HL o
 
 * Simple, non-branching recursive algorithms in programming only
 
-#### B2.5 File processing
+### B2.5 File processing
+{: .no_toc }
 
 B2.5.1 Construct code to perform file-processing operations.
 
@@ -589,7 +611,8 @@ B2.5.1 Construct code to perform file-processing operations.
 
 ## B3 Object oriented programming
 
-#### B3.1 Fundamentals of OOP for a single class
+### B3.1 Fundamentals of OOP for a single class
+{: .no_toc }
 
 B3.1.1 Evaluate the fundamentals of OOP.
 
@@ -618,7 +641,8 @@ B3.1.5 Explain and apply the concepts of encapsulation and information hiding in
 * Controlling access to class members
 * The importance of limiting access to maintain the integrity and security of an object's state
 
-#### B3.2 Fundamentals of OOP for multiple classes (HL only)
+### B3.2 Fundamentals of OOP for multiple classes (HL only)
+{: .no_toc }
 
 B3.2.1 Explain and apply the concept of inheritance in OOP to promote code reusability.
 
@@ -649,7 +673,8 @@ B3.2.5 Explain commonly used design patterns in OOP.
 
 ## B4 Abstract data types
 
-#### B4.1 Fundamentals of ADTs
+### B4.1 Fundamentals of ADTs
+{: .no_toc }
 
 B4.1.1 Explain the properties and purpose of ADTs in programming.
 
