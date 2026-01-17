@@ -20,11 +20,12 @@ Content will be updated gradually as developed in preparation for teaching the n
 ## Course overview
 <img style="float: right; width: 100px" src="/assets/ib-compsci-book.png">
 
-* [Course syllabus official PDF](/docs/ib-compsci-guide-en-2025.pdf) by the IBO
-* [Course syllabus text](syllabus-content.html)
+* [IBO course syllabus official PDF](/docs/ib-compsci-2027/ib-compsci-guide-en-2025.pdf) by the IBO
+* [IBO course syllabus (as text)](syllabus-content.html)
 * [IBO FAQ for Computer Science PDF](/docs/ib-compsci-2027/ib-compsci-faq.pdf) by the IBO
+* [IBO Teacher support material PDF](/docs/ib-compsci-2027/ib-compsci-tsm.pdf) by the IBO
 * [My FAQ about the new course](changes.html)
-* [Course poster](/assets/ib-compsci-poster-2025.pdf) poster
+* [Course poster for subject information night](/assets/ib-compsci-poster-2025.pdf) poster
 * **Computer Science for the IB Diploma** textbook<br/>By Baumgarten, Ganea, & Turland<br/>Published by Hachette Learning ISBN 9781036009007 and authorised by the IBO.<br/>Order from [Hachette](https://www.hachettelearning.com/computing-and-it/computer-science-for-the-ib-diploma) or [Amazon](https://www.amazon.com/Computer-Science-Diploma-Paul-Baumgarten/dp/1036009009/)
 
 ## Scope and sequence
