@@ -14,7 +14,7 @@ For the new IB Diploma Computer Science syllabus to start teaching in August 202
 - TOC
 {:toc} 
 
-**Welcome to the Computer Science Internal Assessment!**
+## Introducing the Internal Assessment
 
 I'm going to start with a controversial statement: The Computer Science Internal Assessment can be fun! 
 
@@ -69,7 +69,7 @@ Some general advice and tips that comes from having guided students through this
 
 ---
 
-## Understand the assessment crtieria
+## Assessment crtieria
 
 The Internal Assessment criteria are as follows:
 
@@ -156,7 +156,7 @@ For those familar with the Internal Assessment of the old syllabus, the followin
 * [Official samples and past student exemplars](exemplars.html) - learn from those who have gone before you
 * [Strategies to manage the IA](strategies.html) - tips for staying organised and managing your first real _large programming project_.
 * [Tips for teachers](https://docs.google.com/document/d/1e0hAIsGFJOCO6sFrl-bq4bJWCOZ51W3ey7dppZUwvlE/edit?tab=t.0) (based on the old IA - will be updated in due course for the new IA)
-
+* [Full guide to the IA]() - compilation of the above plus tips, checklists, etc. For STC students only.
 
 
 
