@@ -18,6 +18,24 @@ Computer Science is more than programming, and programming is more than coding. 
 
 Ultimately, Computer Science is about solving problems. It includes the study of algorithms and the structure of data to help model the problems we are working on. Programming languages are a tool used to help express our solution. While this guide is focused only on the latter, it is important to remember the bigger picture as you proceed. 
 
+## Is Computer Science still relevant in the age of AI?
+
+What does the rise of AI mean for the future of Computer Science?
+ 
+This has been a growing topic of discussion within my classes, our homes and in our social chatter. Globally, we have see the release of exciting tools and it has caused many to ponder: What does it all mean? Will there be any jobs in the future?
+
+Firstly, be careful with the hype. Yes; AI is going to bring considerable change. It may seem as though that pace is unrelenting; but meaningful substantive change will take time. Society is not going to completely change the way we live and work overnight. 
+ 
+Secondly, it is true that many "white collar" jobs are going to be impacted by advancements in AI. This means lawyers, teachers, doctors, accountants, writers, and journalists, not just Computer Scientists. The way these jobs do their “work” will look different in the years to come. Amongst them all, though, it is Computer Scientists who possess the background knowledge and skills to be able to see what's coming, and to be able to make the most of it.
+ 
+Rather than being fearful of innovation, I encourage you to view it through the historical lens of other ground-breaking changes. We no longer program computers using punch cards, machine code or assembly language (thank goodness!) because we created better and more powerful languages like C, Java and Python. Everything still uses machine code at the bare-metal level but we rarely have to worry about it. Modern languages allow us to work higher in the abstraction layer, focusing on the bigger issues. As every wave of innovation has made computers more powerful, it has resulted in more jobs not less. There are orders of magnitude more jobs in CS now than when everyone had to program in assembler a few decades ago.
+ 
+Yes, AI will change the nature of the day-to-day job of the Computer Scientist but this can be a good thing. No one becomes a Computer Scientist because they want to spend their day writing “for-loops and if-statements”. If an AI can help speed up the menial parts of the job, that sounds good to me! What AI will hopefully achieve is more time to think about problems and approaches to solving them. Computer Science is not, and has never been about "writing code" but using computational methods to solve problems. Mastery of computational thinking and design thinking will remain a highly sought after skill. 
+ 
+Tools like ChatGPT are only the starting point. Many companies are going to want their own AI, independent of companies like OpenAI. Samsung was an early example of a company that banned staff from using ChatGPT because of the risk of intellectual property being leaked. Companies take their data security extremely seriously, so will employ their own teams to create and develop their own internal AIs and it will be the Computer Scientist's job to develop those systems. The ethical use of AI tools and the implications on privacy are also fields that are going to see major resources allocated to.
+ 
+We, as Computer Scientists, are the ones who will be best placed to capitalise on the opportunities that will unfold. We are the ones who understand what these AIs are doing and how best to make use of them. Society is only going to become more reliant on computing, and therefore the people needed to make it work. It really is an exciting time to pick it for a career!
+
 ## Current projects
 
 ### Computer Science for the IB Diploma by Paul Baumgarten, Ioana Ganea, and Carl Turland
