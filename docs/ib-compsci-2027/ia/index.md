@@ -137,6 +137,11 @@ That said, the vast majority of the programming code should be your own independ
 
 AI tools can be used and are treated the same as any other resource that students may use. They should be fully and properly cited and referenced at all times. Failure to do so risks breaching the Academic Integrity Policy.
 
+**See also**
+
+* [IBO Academic integrity policy: Appendix 6 Guidance on the use of articial intelligence tools](/docs/ib-compsci-2027/ib-academic-integrity-ai.pdf)
+* [IBO Evaluating 13 scenarios of Artificial Intelligence (AI) in student course work](/docs/ib-compsci-2027/ib-use-of-ai-scenarios.pdf)
+
 ---
 
 ## Changes from old syllabus IA
