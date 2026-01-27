@@ -10,7 +10,7 @@ from tthelp import get_timetable_day
 ## Settings
 #########################################################
 
-NETWORKS = [("SCWiFi","wifi1234"),('BAUMG','91315689')]
+NETWORKS = [("SCWiFi","wifi1234"),('','')]
 API = "https://api.pbaumgarten.com/pets"
 
 PET_NAME = "" # Your personalised name for your pet
