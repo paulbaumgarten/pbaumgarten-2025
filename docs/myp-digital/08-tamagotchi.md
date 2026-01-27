@@ -303,3 +303,12 @@ response no response = {
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4SlD_HSgwCA?si=NerQ5gHs4QlKVo6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+## Finalise your virtual pet
+
+You will need your PET_ID and API_KEY from your teacher to proceed.
+
+* [Part 1 video](https://youtu.be/6-h9ejnIcTI)
+* Download the [complete main.py code](https://pbaumgarten.com/docs/myp-digital/tamagotchi/main.py)
+* [Part 2 video](https://youtu.be/12TRr0pGXbc)
+* Link to the [PNG 2 RAW converter](https://app.pbaumgarten.com/img2raw)
+
