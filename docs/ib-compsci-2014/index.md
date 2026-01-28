@@ -71,6 +71,7 @@ Archive of resources relevant to the old syllabus (for examination up to and inc
 * [IA technology stacks 2022](ia-technology-stacks-2022.pdf)
 * [IA client nomination form)](ia-client-nomination-stc.pdf)
 * [Past IA's](https://drive.google.com/drive/folders/1W8hzep6SnjHKay3i_A0lIBhgCrB7ZNs3?usp=sharing) (STC students only)
+* Download the [IA ZIP file template](ia-template.zip) and follow the instructions to [package your IA ZIP file](ia-packaging.html) here.
 
 ## Case study
 
