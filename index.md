@@ -67,13 +67,13 @@ Here is an [infographic](/assets/gender-equality-in-cs-why.png) that outlines th
 
 ### Coding Quest
 
-Coding Quest is an annual competition specifically for secondary students to showcase their knowledge and understanding of algorithm design, data structures and computational thinking.
+Coding Quest was an annual competition specifically for secondary students to showcase their knowledge and understanding of algorithm design, data structures and computational thinking.
 
-There are no prizes, just bragging rights. Coding Quest exists mostly for students to compete against themselves.
+It was a project I started during the Covid era. In 2024 it had over 800 students from 100 different schools had students participate! There were no prizes, just bragging rights. Coding Quest existed mostly for students to compete against themselves.
 
-Coding Quest was a project I started during the Covid era, and it has gathered pace since. Last year over 100 schools had students participate!
+An archive of the coding challenges from the project exists here:
 
-* [codingquest.io](https://codingquest.io).
+* [Archive of coding challenges](/docs/codingchallenges).
 
 ---
 
