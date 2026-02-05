@@ -1,7 +1,7 @@
 ---
 title: Coding challenges
 layout: default
-nav_order: 3
+nav_order: 10
 ---
 
 # Coding challenges
