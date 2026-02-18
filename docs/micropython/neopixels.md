@@ -10,19 +10,18 @@ nav_order: 20
 Using the MicroPython Neopixel library
 
 ```python
-from machine import Pin
+import machine
 import neopixel
 import time
 
-# Neopixel (Status LED)
-pixel = neopixel.NeoPixel(Pin(48), 1)  # GPIO48, 1 Neopixel
-
+led = neopixel.NeoPixel(machine.Pin(48), 1)
+print("Police lights!")
 while True:
-    pixel[0] = (0,0,255) # Blue
-    pixel.write()
-    time.sleep(0.3)
-    pixel[0] = (0,0,0) # Black
-    pixel.write()
-    time.sleep(0.3)
+    led[0] = (255,0,0)
+    led.write()
+    time.sleep(0.25)
+    led[0] = (0,0,255)
+    led.write()
+    time.sleep(0.25)
 ```
 
