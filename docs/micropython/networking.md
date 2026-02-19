@@ -18,7 +18,7 @@ nav_order: 20
 ```python
 from WIFI import WIFI
 
-networks = (("SCWiFi","wifi1234")) # Wifi network and password
+networks = (("SCWiFi","wifi1234"),) # Wifi network and password
 wifi = WIFI(networks)
 ip = wifi.connect()                # Connect to the wifi network
 wifi.ntptime()                     # Fetch current time
@@ -33,7 +33,7 @@ import time
 from WIFI import WIFI
 
 # Connect to Wifi and fetch the current time
-networks = (("SCWiFi","wifi1234")) # Wifi network and password
+networks = (("SCWiFi","wifi1234"),) # Wifi network and password
 wifi = WIFI(networks)
 ip = wifi.connect()                # Connect to the wifi network
 wifi.ntptime()                     # Fetch current time
@@ -60,7 +60,7 @@ import neopixel
 from WIFI import WIFI
 
 # Connect to Wifi and fetch the current time
-networks = (("SCWiFi","wifi1234")) # Wifi network and password
+networks = (("SCWiFi","wifi1234"),) # Wifi network and password
 wifi = WIFI(networks)
 ip = wifi.connect()                # Connect to the wifi network
 wifi.ntptime()                     # Fetch current time
@@ -102,7 +102,7 @@ import json
 from WIFI import WIFI
 
 # Connect to Wifi and fetch the current time
-networks = (("SCWiFi","wifi1234")) # Wifi network and password
+networks = (("SCWiFi","wifi1234"),) # Wifi network and password
 wifi = WIFI(networks)
 ip = wifi.connect()                # Connect to the wifi network
 wifi.ntptime()                     # Fetch current time
@@ -174,9 +174,6 @@ import espnow
 
 # Button
 button = machine.Pin(4, machine.Pin.IN, machine.Pin.PULL_DOWN)
-
-# Connect to wifi
-stc.connect_to_wifi([["SCWiFi","wifi1234"]])
 
 # Setup ESPNow
 e = espnow.ESPNow()

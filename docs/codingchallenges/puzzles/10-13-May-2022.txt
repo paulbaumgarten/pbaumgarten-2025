@@ -1,0 +1,4 @@
+
+Your input data is the image file in the main description. Download it to solve the challenge.
+
+https://codingquest.io/may2022/010-inputdata-327485957345.png

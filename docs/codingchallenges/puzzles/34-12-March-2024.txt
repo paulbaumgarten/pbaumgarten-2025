@@ -1,0 +1,5 @@
+
+Please download the input data from
+
+https://codingquest.io/2024/day07_files_to_scan.txt
+
