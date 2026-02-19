@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Solutions"
+nav_exclude: true
 ---
 
 # Puzzle Solutions
