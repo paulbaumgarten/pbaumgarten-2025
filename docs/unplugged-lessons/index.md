@@ -16,6 +16,10 @@ All lessons are 50 minutes, student-activity-focused, and deliverable by non-spe
 
 Students learn to think like a machine, building fluency in the fundamental building blocks of computation.
 
+**Theme:** Computers are literal — they do exactly what you tell them, nothing more.
+
+**Skills:** Algorithms, Sequence, Variables, Iteration, Selection, Flowcharts, Debugging, Nested Structures.
+
 ---
 
 ### Lesson 1 — The "Robot" Teacher
@@ -70,6 +74,11 @@ Students learn to think like a machine, building fluency in the fundamental buil
 
 Students learn to think like an engineer, shifting focus from executing instructions to planning and structuring solutions.
 
+**Theme:** Solving the problem before you write the code.
+
+**Skills:** Decomposition, Pattern Recognition, Abstraction, Boolean Logic, Evaluation, Functions.
+
+
 ---
 
 ### Lesson 1 — Zombie Survival Plan
@@ -123,6 +132,10 @@ Students learn to think like an engineer, shifting focus from executing instruct
 ## Year 9 — The Data Scientist
 
 Students learn to think like a computer scientist, engaging with how data is represented and how algorithmic choices affect performance.
+
+**Theme:** Representing information and making things fast.
+
+**Skills:** Data Representation (Binary), Compression, Searching, Sorting, Graph Theory, Algorithmic Complexity.
 
 ---
 
