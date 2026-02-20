@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Logic Tournament — Year 8 CS</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #1a1a2e; color: #e8e8f0; font-family: 'Segoe UI', Arial, sans-serif; height: 100vh; overflow: hidden; cursor: pointer; }
+.slide { display: none; height: 100vh; padding: 60px 80px; flex-direction: column; justify-content: center; }
+.slide.active { display: flex; }
+h1 { font-size: 3.5rem; color: #7ec8e3; margin-bottom: 1rem; }
+h2 { font-size: 2.6rem; color: #a8d8ea; margin-bottom: 1.5rem; }
+p { font-size: 1.9rem; line-height: 1.6; margin-bottom: 1rem; }
+ul li { font-size: 1.8rem; line-height: 1.6; margin-bottom: 0.8rem; }
+ul { padding-left: 2.5rem; }
+.subtitle { font-size: 2rem; color: #b8b8d0; margin-top: 0.5rem; }
+.highlight { color: #f9ca24; font-weight: bold; }
+.code-block { background: #0d0d1a; border-left: 4px solid #7ec8e3; padding: 1.5rem 2rem; font-family: 'Courier New', monospace; font-size: 1.6rem; margin: 1.5rem 0; border-radius: 4px; line-height: 2; }
+.takeaway { background: #16213e; border: 2px solid #7ec8e3; border-radius: 8px; padding: 2rem 3rem; font-size: 2rem; line-height: 1.6; font-style: italic; }
+.progress { position: fixed; bottom: 20px; right: 30px; color: #555; font-size: 1.2rem; }
+.nav-hint { position: fixed; bottom: 20px; left: 30px; color: #444; font-size: 1.1rem; }
+.big { font-size: 3.5rem; font-weight: bold; color: #7ec8e3; text-align: center; }
+.halving { display: flex; align-items: center; gap: 1rem; font-size: 1.8rem; font-family: 'Courier New', monospace; flex-wrap: wrap; }
+.step { background: #16213e; border-radius: 6px; padding: 0.5rem 1rem; }
+</style>
+</head>
+<body>
+
+<div class="slide active">
+  <h1>Logic Tournament</h1>
+  <p class="subtitle">Who is it? Use logic to find out.</p>
+  <br><p>Year 8 Computer Science — Boolean Logic Applied</p>
+</div>
+
+<div class="slide">
+  <h2>The Rules</h2>
+  <ul>
+    <li>Pick one character from the grid — keep it <span class="highlight">secret</span></li>
+    <li>Your partner asks yes/no questions about <span class="highlight">ATTRIBUTES</span> (not names!)</li>
+    <li>After each answer, <span class="highlight">cross off</span> eliminated characters</li>
+    <li>First to correctly identify partner's character wins</li>
+    <li>Count your questions — fewest wins!</li>
+  </ul>
+</div>
+
+<div class="slide">
+  <div class="big">Round 1 — PLAY!</div>
+  <br>
+  <p style="text-align:center">Pick your character. Start asking questions.</p>
+  <p style="text-align:center">Remember: ATTRIBUTES only, not names!</p>
+</div>
+
+<div class="slide">
+  <h2>Strategy Discussion</h2>
+  <p>What was your <span class="highlight">first question</span>? Why?</p>
+  <p>Did it eliminate lots of characters or just a few?</p>
+  <br>
+  <p>The ideal question eliminates exactly <span class="highlight">12 characters</span> — regardless of YES or NO.</p>
+  <p>That's a <span class="highlight">50/50 split</span>. Every answer eliminates half.</p>
+</div>
+
+<div class="slide">
+  <h2>The Maths of Elimination</h2>
+  <p>With perfect 50/50 questions:</p>
+  <div class="halving">
+    <div class="step">24</div><span>→</span>
+    <div class="step">12</div><span>→</span>
+    <div class="step">6</div><span>→</span>
+    <div class="step">3</div><span>→</span>
+    <div class="step">2</div><span>→</span>
+    <div class="step">1</div>
+  </div>
+  <br>
+  <p>5 questions maximum — for 24 characters!</p>
+  <p>This is <span class="highlight">binary search</span> in action.</p>
+</div>
+
+<div class="slide">
+  <h2>Analysis</h2>
+  <p>Use the Attribute Summary on your character sheet.</p>
+  <p>Complete the efficiency table on the <span class="highlight">worksheet</span>:</p>
+  <ul>
+    <li>If YES to "Has glasses?" → 14 characters remain</li>
+    <li>If NO to "Has glasses?" → 10 characters remain</li>
+    <li>Best case: 14 eliminated. Worst case: 10 eliminated.</li>
+  </ul>
+  <p>Which question is <span class="highlight">most efficient</span>?</p>
+</div>
+
+<div class="slide">
+  <h2>AND Queries</h2>
+  <p>Combine 3 attributes into one query:</p>
+  <div class="code-block">Hair = blonde AND Glasses = Yes AND Hat = No</div>
+  <p>How many characters match? Count them.</p>
+  <p>Is this a useful <span class="highlight">opening</span> query? Or is it too specific?</p>
+</div>
+
+<div class="slide">
+  <div class="big">Round 2 — Apply Your Strategy!</div>
+  <br>
+  <p style="text-align:center">Use your most efficient questions first.</p>
+  <p style="text-align:center">Did your question count go down?</p>
+</div>
+
+<div class="slide">
+  <h2>Key Takeaway</h2>
+  <div class="takeaway">
+    Efficient Boolean queries <span class="highlight">halve the search space</span> each time.<br><br>
+    That's binary search — and it's how databases filter millions of records instantly.<br><br>
+    Every SQL WHERE clause is a Boolean query.
+  </div>
+</div>
+
+<div class="progress" id="prog">1 / 9</div>
+<div class="nav-hint">← → or click to advance</div>
+<script>
+const slides = document.querySelectorAll('.slide');
+let cur = 0;
+function go(n) {
+  slides[cur].classList.remove('active');
+  cur = ((n % slides.length) + slides.length) % slides.length;
+  slides[cur].classList.add('active');
+  document.getElementById('prog').textContent = (cur+1) + ' / ' + slides.length;
+}
+document.addEventListener('keydown', e => {
+  if (e.key==='ArrowRight'||e.key==='ArrowDown'||e.key===' ') { e.preventDefault(); go(cur+1); }
+  if (e.key==='ArrowLeft'||e.key==='ArrowUp') { e.preventDefault(); go(cur-1); }
+});
+document.addEventListener('click', () => go(cur+1));
+</script>
+</body>
+</html>

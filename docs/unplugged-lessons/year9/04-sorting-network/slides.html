@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sorting Network — Year 9 CS</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #1a1a2e; color: #e8e8f0; font-family: 'Segoe UI', Arial, sans-serif; height: 100vh; overflow: hidden; cursor: pointer; }
+.slide { display: none; height: 100vh; padding: 60px 80px; flex-direction: column; justify-content: center; }
+.slide.active { display: flex; }
+h1 { font-size: 3.5rem; color: #7ec8e3; margin-bottom: 1rem; }
+h2 { font-size: 2.6rem; color: #a8d8ea; margin-bottom: 1.5rem; }
+p { font-size: 1.9rem; line-height: 1.6; margin-bottom: 1rem; }
+ul li { font-size: 1.8rem; line-height: 1.6; margin-bottom: 0.8rem; }
+ul { padding-left: 2.5rem; }
+.subtitle { font-size: 2rem; color: #b8b8d0; margin-top: 0.5rem; }
+.highlight { color: #f9ca24; font-weight: bold; }
+.code-block { background: #0d0d1a; border-left: 4px solid #7ec8e3; padding: 1.5rem 2rem; font-family: 'Courier New', monospace; font-size: 1.5rem; margin: 1.5rem 0; border-radius: 4px; line-height: 2; }
+.takeaway { background: #16213e; border: 2px solid #7ec8e3; border-radius: 8px; padding: 2rem 3rem; font-size: 2rem; line-height: 1.6; font-style: italic; }
+.progress { position: fixed; bottom: 20px; right: 30px; color: #555; font-size: 1.2rem; }
+.nav-hint { position: fixed; bottom: 20px; left: 30px; color: #444; font-size: 1.1rem; }
+.big { font-size: 3rem; font-weight: bold; color: #7ec8e3; text-align: center; }
+.compare { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin: 1rem 0; }
+.alg-box { background: #16213e; border-radius: 8px; padding: 1.5rem 2rem; }
+.alg-name { font-size: 1.7rem; color: #7ec8e3; font-weight: bold; margin-bottom: 0.8rem; }
+.alg-stat { font-size: 1.5rem; margin: 0.3rem 0; }
+</style>
+</head>
+<body>
+
+<div class="slide active">
+  <h1>Sorting Network</h1>
+  <p class="subtitle">What if multiple comparisons happened at the exact same instant?</p>
+  <br><p>Year 9 Computer Science — Parallel Sorting</p>
+</div>
+
+<div class="slide">
+  <h2>The Setup</h2>
+  <p>6 volunteers. Each holds a number card. Stand in starting positions.</p>
+  <br>
+  <p><strong>The rule at every comparator:</strong></p>
+  <p>When two people meet — <span class="highlight">lower number moves LEFT, higher number moves RIGHT</span>.</p>
+  <br>
+  <p>All comparators in the same LAYER fire <span class="highlight">simultaneously</span>.</p>
+</div>
+
+<div class="slide">
+  <h2>Layer by Layer</h2>
+  <div class="code-block">Layer 1: compare (1,2), (3,4), (5,6)  ← all at once<br>Layer 2: compare (1,3), (2,6)          ← all at once<br>Layer 3: compare (2,3), (4,5)          ← all at once<br>Layer 4: compare (1,4), (3,6)          ← all at once<br>Layer 5: compare (2,4), (3,5)          ← all at once</div>
+  <p>Follow each layer. After 5 layers — are you sorted?</p>
+</div>
+
+<div class="slide">
+  <div class="big">Walk the Network!</div>
+  <br>
+  <p style="text-align:center">Teacher calls each layer.</p>
+  <p style="text-align:center">All pairs in that layer move <span class="highlight">simultaneously</span>.</p>
+  <p style="text-align:center">After 5 layers — check your order!</p>
+</div>
+
+<div class="slide">
+  <h2>Count the Steps</h2>
+  <div class="compare">
+    <div class="alg-box">
+      <div class="alg-name">Bubble Sort (6 items)</div>
+      <div class="alg-stat">Comparisons: up to 15</div>
+      <div class="alg-stat">Sequential passes: 5</div>
+      <div class="alg-stat"><span class="highlight">Time steps: 5</span> (sequential)</div>
+    </div>
+    <div class="alg-box">
+      <div class="alg-name">Sorting Network</div>
+      <div class="alg-stat">Comparators: 12</div>
+      <div class="alg-stat">Layers: 5</div>
+      <div class="alg-stat"><span class="highlight">Time steps: 5</span> (parallel!)</div>
+    </div>
+  </div>
+  <p>Same time steps — but the network does <span class="highlight">multiple comparisons per step</span>!</p>
+</div>
+
+<div class="slide">
+  <h2>The Parallel Advantage</h2>
+  <p>The sorting network doesn't do fewer comparisons overall — it does them <span class="highlight">in parallel</span>.</p>
+  <br>
+  <p>Analogy: 5 people washing 5 plates simultaneously vs 1 person washing them one by one.</p>
+  <br>
+  <p>Same total work. <span class="highlight">Much less time.</span></p>
+</div>
+
+<div class="slide">
+  <h2>Real World: Hardware Sorting</h2>
+  <ul>
+    <li><span class="highlight">CPUs</span> — multiple cores execute simultaneously</li>
+    <li><span class="highlight">GPUs</span> — thousands of cores, sorting massive datasets in parallel</li>
+    <li><span class="highlight">Custom chips</span> — sorting networks wired directly in silicon; nanosecond speed</li>
+    <li><span class="highlight">Network switches</span> — route packets using fixed sorting logic</li>
+  </ul>
+</div>
+
+<div class="slide">
+  <h2>Extension: Design Your Own</h2>
+  <p>Design a sorting network for just <span class="highlight">4 inputs</span>.</p>
+  <ul>
+    <li>How many comparators do you need minimum?</li>
+    <li>How many layers?</li>
+    <li>Test it with input [4,3,2,1] — does it produce [1,2,3,4]?</li>
+  </ul>
+</div>
+
+<div class="slide">
+  <h2>Key Takeaway</h2>
+  <div class="takeaway">
+    Sorting networks run comparisons <span class="highlight">in parallel</span> — multiple at the exact same instant.<br><br>
+    Fewer <span class="highlight">time steps</span> — not fewer comparisons.<br><br>
+    This is how hardware sorts at nanosecond speeds.
+  </div>
+</div>
+
+<div class="progress" id="prog">1 / 9</div>
+<div class="nav-hint">← → or click to advance</div>
+<script>
+const slides = document.querySelectorAll('.slide');
+let cur = 0;
+function go(n) {
+  slides[cur].classList.remove('active');
+  cur = ((n % slides.length) + slides.length) % slides.length;
+  slides[cur].classList.add('active');
+  document.getElementById('prog').textContent = (cur+1) + ' / ' + slides.length;
+}
+document.addEventListener('keydown', e => {
+  if (e.key==='ArrowRight'||e.key==='ArrowDown'||e.key===' ') { e.preventDefault(); go(cur+1); }
+  if (e.key==='ArrowLeft'||e.key==='ArrowUp') { e.preventDefault(); go(cur-1); }
+});
+document.addEventListener('click', () => go(cur+1));
+</script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Function Machine — Year 8 CS</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #1a1a2e; color: #e8e8f0; font-family: 'Segoe UI', Arial, sans-serif; height: 100vh; overflow: hidden; cursor: pointer; }
+.slide { display: none; height: 100vh; padding: 60px 80px; flex-direction: column; justify-content: center; }
+.slide.active { display: flex; }
+h1 { font-size: 3.5rem; color: #7ec8e3; margin-bottom: 1rem; }
+h2 { font-size: 2.6rem; color: #a8d8ea; margin-bottom: 1.5rem; }
+p { font-size: 1.9rem; line-height: 1.6; margin-bottom: 1rem; }
+ul li { font-size: 1.8rem; line-height: 1.6; margin-bottom: 0.8rem; }
+ul { padding-left: 2.5rem; }
+.subtitle { font-size: 2rem; color: #b8b8d0; margin-top: 0.5rem; }
+.highlight { color: #f9ca24; font-weight: bold; }
+.code-block { background: #0d0d1a; border-left: 4px solid #7ec8e3; padding: 1.5rem 2rem; font-family: 'Courier New', monospace; font-size: 1.6rem; margin: 1.5rem 0; border-radius: 4px; line-height: 2; }
+.takeaway { background: #16213e; border: 2px solid #7ec8e3; border-radius: 8px; padding: 2rem 3rem; font-size: 2rem; line-height: 1.6; font-style: italic; }
+.progress { position: fixed; bottom: 20px; right: 30px; color: #555; font-size: 1.2rem; }
+.nav-hint { position: fixed; bottom: 20px; left: 30px; color: #444; font-size: 1.1rem; }
+.big { font-size: 3rem; font-weight: bold; color: #7ec8e3; text-align: center; }
+.machine { display: flex; align-items: center; gap: 1rem; font-size: 1.8rem; margin: 1.5rem 0; }
+.box { background: #16213e; border: 2px solid #7ec8e3; border-radius: 8px; padding: 1rem 2rem; text-align: center; }
+.arrow { color: #7ec8e3; font-size: 2rem; }
+</style>
+</head>
+<body>
+
+<div class="slide active">
+  <h1>Function Machine</h1>
+  <p class="subtitle">Define once. Use forever.</p>
+  <br><p>Year 8 Computer Science — Functions &amp; Parameters</p>
+</div>
+
+<div class="slide">
+  <h2>The Mystery Machine</h2>
+  <p>Give me a number. I give you a number back.</p>
+  <div class="machine">
+    <div class="box">2</div><div class="arrow">→</div>
+    <div class="box">?</div><div class="arrow">→</div>
+    <div class="box">7</div>
+  </div>
+  <div class="machine">
+    <div class="box">5</div><div class="arrow">→</div>
+    <div class="box">?</div><div class="arrow">→</div>
+    <div class="box">13</div>
+  </div>
+  <div class="machine">
+    <div class="box">0</div><div class="arrow">→</div>
+    <div class="box">?</div><div class="arrow">→</div>
+    <div class="box">3</div>
+  </div>
+  <p>What's the rule?</p>
+</div>
+
+<div class="slide">
+  <h2>Function Anatomy</h2>
+  <div class="code-block">DEFINE <span class="highlight">double_and_add_3</span> ( <span style="color:#2ecc71">x</span> ):<br>&nbsp;&nbsp;&nbsp;&nbsp;RETURN <span style="color:#e74c3c">2 × x + 3</span></div>
+  <ul>
+    <li><span class="highlight">double_and_add_3</span> — the name (descriptive!)</li>
+    <li><span style="color:#2ecc71">x</span> — the parameter (input)</li>
+    <li><span style="color:#e74c3c">2 × x + 3</span> — the rule</li>
+    <li>RETURN — sends the result back</li>
+  </ul>
+</div>
+
+<div class="slide">
+  <h2>Define vs Call</h2>
+  <div class="code-block">// DEFINE = write the recipe:<br>DEFINE double_and_add_3(x):<br>&nbsp;&nbsp;&nbsp;&nbsp;RETURN 2 × x + 3<br><br>// CALL = make the dish:<br>double_and_add_3(4)  → returns 11<br>double_and_add_3(10) → returns 23</div>
+  <p>Define once. Call with <span class="highlight">different inputs every time</span>.</p>
+</div>
+
+<div class="slide">
+  <h2>Design Your Machine</h2>
+  <ul>
+    <li>Group: secretly design a function — give it a name, a rule, test cases</li>
+    <li>Write it on the worksheet (Part 2) — keep the rule <span class="highlight">hidden</span></li>
+    <li>You will become "the machine" for other groups</li>
+  </ul>
+</div>
+
+<div class="slide">
+  <div class="big">Feed the Machine!</div>
+  <br>
+  <p style="text-align:center">Rotate groups. Send input slips to each machine.</p>
+  <p style="text-align:center">Machine group: compute and write the output.</p>
+  <p style="text-align:center">After 6 inputs: <span class="highlight">guess the rule!</span></p>
+</div>
+
+<div class="slide">
+  <h2>Guess the Rule!</h2>
+  <p>After seeing 6 input/output pairs, each group guesses the function rule.</p>
+  <br>
+  <p>Authors: reveal your rule. Were the guesses correct?</p>
+  <br>
+  <p>Discussion: what made some functions easier/harder to guess?</p>
+</div>
+
+<div class="slide">
+  <h2>Design More Functions</h2>
+  <p>Complete worksheet Parts 3 and 4:</p>
+  <ul>
+    <li>Function 2: one parameter, your rule</li>
+    <li>Function 3: <span class="highlight">two parameters</span></li>
+    <li>Function chaining: `f(g(x))` — inner first, then outer</li>
+  </ul>
+  <div class="code-block">double_and_add_3(double_and_add_3(2))<br>  → inner: 2×2+3 = 7<br>  → outer: 2×7+3 = 17</div>
+</div>
+
+<div class="slide">
+  <h2>Key Takeaway</h2>
+  <div class="takeaway">
+    A function is a named, reusable process.<br><br>
+    <span class="highlight">Parameters</span> make it flexible — different inputs, same logic.<br><br>
+    <span class="highlight">Define once</span> — call anywhere, with any arguments.
+  </div>
+</div>
+
+<div class="progress" id="prog">1 / 9</div>
+<div class="nav-hint">← → or click to advance</div>
+<script>
+const slides = document.querySelectorAll('.slide');
+let cur = 0;
+function go(n) {
+  slides[cur].classList.remove('active');
+  cur = ((n % slides.length) + slides.length) % slides.length;
+  slides[cur].classList.add('active');
+  document.getElementById('prog').textContent = (cur+1) + ' / ' + slides.length;
+}
+document.addEventListener('keydown', e => {
+  if (e.key==='ArrowRight'||e.key==='ArrowDown'||e.key===' ') { e.preventDefault(); go(cur+1); }
+  if (e.key==='ArrowLeft'||e.key==='ArrowUp') { e.preventDefault(); go(cur-1); }
+});
+document.addEventListener('click', () => go(cur+1));
+</script>
+</body>
+</html>

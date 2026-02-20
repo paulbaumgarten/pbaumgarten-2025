@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Human Fax Machine — Year 9 CS</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #1a1a2e; color: #e8e8f0; font-family: 'Segoe UI', Arial, sans-serif; height: 100vh; overflow: hidden; cursor: pointer; }
+.slide { display: none; height: 100vh; padding: 60px 80px; flex-direction: column; justify-content: center; }
+.slide.active { display: flex; }
+h1 { font-size: 3.5rem; color: #7ec8e3; margin-bottom: 1rem; }
+h2 { font-size: 2.6rem; color: #a8d8ea; margin-bottom: 1.5rem; }
+p { font-size: 1.9rem; line-height: 1.6; margin-bottom: 1rem; }
+ul li { font-size: 1.8rem; line-height: 1.6; margin-bottom: 0.8rem; }
+ul { padding-left: 2.5rem; }
+.subtitle { font-size: 2rem; color: #b8b8d0; margin-top: 0.5rem; }
+.highlight { color: #f9ca24; font-weight: bold; }
+.code-block { background: #0d0d1a; border-left: 4px solid #7ec8e3; padding: 1.5rem 2rem; font-family: 'Courier New', monospace; font-size: 1.6rem; margin: 1.5rem 0; border-radius: 4px; line-height: 2; }
+.takeaway { background: #16213e; border: 2px solid #7ec8e3; border-radius: 8px; padding: 2rem 3rem; font-size: 2rem; line-height: 1.6; font-style: italic; }
+.progress { position: fixed; bottom: 20px; right: 30px; color: #555; font-size: 1.2rem; }
+.nav-hint { position: fixed; bottom: 20px; left: 30px; color: #444; font-size: 1.1rem; }
+.pixel-row { font-family: 'Courier New', monospace; font-size: 2rem; letter-spacing: 0.5rem; margin: 0.3rem 0; }
+.filled { color: #f9ca24; }
+</style>
+</head>
+<body>
+
+<div class="slide active">
+  <h1>Human Fax Machine</h1>
+  <p class="subtitle">How does an image become numbers — and back again?</p>
+  <br><p>Year 9 Computer Science — Binary Encoding &amp; Compression</p>
+</div>
+
+<div class="slide">
+  <h2>Everything Is Numbers</h2>
+  <p>How does a photo travel across the internet?</p>
+  <p>How did fax machines work in the 1980s?</p>
+  <br>
+  <p>The image must become <span class="highlight">binary numbers</span> first.</p>
+  <br>
+  <p>Rule: <span class="highlight">■ = 1</span> (filled pixel) | <span class="highlight">□ = 0</span> (empty pixel)</p>
+</div>
+
+<div class="slide">
+  <h2>8×8 Encoding</h2>
+  <p>Read row by row, left to right:</p>
+  <div class="pixel-row"><span class="filled">■</span>□<span class="filled">■■</span>□□<span class="filled">■</span>□ → <span class="highlight">1 0 1 1 0 0 1 0</span></div>
+  <br>
+  <p>8 pixels per row × 8 rows = <span class="highlight">64 bits</span> per image.</p>
+  <br>
+  <p>That's the raw, uncompressed binary representation.</p>
+</div>
+
+<div class="slide">
+  <h2>Human Fax Machine</h2>
+  <p><strong>Transmitter</strong> — has the filled image. Reads bits aloud row by row.</p>
+  <p><strong>Receiver</strong> — has the blank grid. Fills in squares based on what they hear.</p>
+  <br>
+  <ul>
+    <li>1 = fill the square</li>
+    <li>0 = leave it blank</li>
+    <li>Any errors? Note which row!</li>
+  </ul>
+</div>
+
+<div class="slide">
+  <h2>Run-Length Encoding (RLE)</h2>
+  <p>Instead of listing every bit, describe <span class="highlight">runs</span> of identical values:</p>
+  <div class="code-block">0 0 0 1 1 1 1 0 0<br><br>→ (3,0)(4,1)(2,0)<br>   3 zeros, 4 ones, 2 zeros<br><br>Original: 9 values → RLE: 6 numbers<br>Compression ratio: 9/6 = 1.5:1</div>
+</div>
+
+<div class="slide">
+  <h2>Apply RLE to Images</h2>
+  <p>Use the worksheet to apply RLE to:</p>
+  <ul>
+    <li><span class="highlight">Checkerboard</span> — alternates every pixel</li>
+    <li><span class="highlight">Solid Block</span> — large areas of the same colour</li>
+  </ul>
+  <br>
+  <p>Calculate the compression ratio for each. Which is better? Why?</p>
+</div>
+
+<div class="slide">
+  <h2>Results Discussion</h2>
+  <p>Checkerboard: <span class="highlight">terrible compression</span> — every run length is 1. RLE makes it LARGER.</p>
+  <p>Solid Block: <span class="highlight">excellent compression</span> — long runs of 0s and 1s. Much smaller.</p>
+  <br>
+  <p>Key insight: RLE works when <span class="highlight">data has long runs of the same value</span>.</p>
+</div>
+
+<div class="slide">
+  <h2>Real World</h2>
+  <ul>
+    <li><span class="highlight">Fax machines</span> — use RLE; blank pages transmit much faster than dense text</li>
+    <li><span class="highlight">BMP files</span> — can use RLE compression</li>
+    <li><span class="highlight">JPEG/PNG/GIF</span> — use more sophisticated compression algorithms</li>
+    <li><span class="highlight">Lossless vs lossy</span> — RLE is lossless (perfect reconstruction). JPEG is lossy (some data discarded).</li>
+  </ul>
+</div>
+
+<div class="slide">
+  <h2>Key Takeaway</h2>
+  <div class="takeaway">
+    All digital images are binary numbers.<br><br>
+    Compression removes <span class="highlight">redundancy</span> — repeated patterns compress well, varied patterns don't.<br><br>
+    RLE is one of the simplest and most elegant compression algorithms.
+  </div>
+</div>
+
+<div class="progress" id="prog">1 / 9</div>
+<div class="nav-hint">← → or click to advance</div>
+<script>
+const slides = document.querySelectorAll('.slide');
+let cur = 0;
+function go(n) {
+  slides[cur].classList.remove('active');
+  cur = ((n % slides.length) + slides.length) % slides.length;
+  slides[cur].classList.add('active');
+  document.getElementById('prog').textContent = (cur+1) + ' / ' + slides.length;
+}
+document.addEventListener('keydown', e => {
+  if (e.key==='ArrowRight'||e.key==='ArrowDown'||e.key===' ') { e.preventDefault(); go(cur+1); }
+  if (e.key==='ArrowLeft'||e.key==='ArrowUp') { e.preventDefault(); go(cur-1); }
+});
+document.addEventListener('click', () => go(cur+1));
+</script>
+</body>
+</html>

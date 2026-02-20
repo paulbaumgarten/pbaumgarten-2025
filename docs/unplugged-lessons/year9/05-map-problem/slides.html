@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Map Problem — Year 9 CS</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #1a1a2e; color: #e8e8f0; font-family: 'Segoe UI', Arial, sans-serif; height: 100vh; overflow: hidden; cursor: pointer; }
+.slide { display: none; height: 100vh; padding: 60px 80px; flex-direction: column; justify-content: center; }
+.slide.active { display: flex; }
+h1 { font-size: 3.5rem; color: #7ec8e3; margin-bottom: 1rem; }
+h2 { font-size: 2.6rem; color: #a8d8ea; margin-bottom: 1.5rem; }
+p { font-size: 1.9rem; line-height: 1.6; margin-bottom: 1rem; }
+ul li { font-size: 1.8rem; line-height: 1.6; margin-bottom: 0.8rem; }
+ul { padding-left: 2.5rem; }
+.subtitle { font-size: 2rem; color: #b8b8d0; margin-top: 0.5rem; }
+.highlight { color: #f9ca24; font-weight: bold; }
+.code-block { background: #0d0d1a; border-left: 4px solid #7ec8e3; padding: 1.5rem 2rem; font-family: 'Courier New', monospace; font-size: 1.5rem; margin: 1.5rem 0; border-radius: 4px; line-height: 2; }
+.takeaway { background: #16213e; border: 2px solid #7ec8e3; border-radius: 8px; padding: 2rem 3rem; font-size: 2rem; line-height: 1.6; font-style: italic; }
+.progress { position: fixed; bottom: 20px; right: 30px; color: #555; font-size: 1.2rem; }
+.nav-hint { position: fixed; bottom: 20px; left: 30px; color: #444; font-size: 1.1rem; }
+.vocab { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 1rem 0; }
+.v { background: #16213e; border-radius: 6px; padding: 1rem 1.5rem; font-size: 1.6rem; }
+.vt { color: #7ec8e3; font-weight: bold; }
+</style>
+</head>
+<body>
+
+<div class="slide active">
+  <h1>Map Problem</h1>
+  <p class="subtitle">How does sat-nav find the fastest route?</p>
+  <br><p>Year 9 Computer Science — Graphs &amp; Shortest Path</p>
+</div>
+
+<div class="slide">
+  <h2>The Challenge</h2>
+  <p>You're a delivery driver on <span class="highlight">Computia Island</span>.</p>
+  <p>Start at Port Alpha. Deliver to three towns. Return home.</p>
+  <br>
+  <p>What route minimises your total distance?</p>
+  <br>
+  <p>Look at the map. 30 seconds — first impressions?</p>
+</div>
+
+<div class="slide">
+  <h2>Graph Vocabulary</h2>
+  <div class="vocab">
+    <div class="v"><div class="vt">Node</div>A town — a point in the graph</div>
+    <div class="v"><div class="vt">Edge</div>A road — a connection between nodes</div>
+    <div class="v"><div class="vt">Weight</div>The distance on each road</div>
+    <div class="v"><div class="vt">Path</div>A sequence of connected nodes</div>
+    <div class="v"><div class="vt">Shortest path</div>Path with minimum total weight</div>
+    <div class="v"><div class="vt">Graph</div>The whole structure: nodes + edges</div>
+  </div>
+</div>
+
+<div class="slide">
+  <h2>Draw the Graph</h2>
+  <p>In the box on your worksheet: draw circles for towns, lines for roads.</p>
+  <p>Write the distance on each line.</p>
+  <br>
+  <p>The map and the graph show the <span class="highlight">same information</span> — just in different forms.</p>
+</div>
+
+<div class="slide">
+  <h2>Systematic Shortest Path</h2>
+  <p>Process (Dijkstra's approach):</p>
+  <ul>
+    <li>Start: Alpha = distance <span class="highlight">0</span></li>
+    <li>Look at all connected nodes — note their distances</li>
+    <li>Visit the <span class="highlight">closest unvisited</span> node</li>
+    <li>Update distances to its neighbours if you found a shorter route</li>
+    <li>Repeat until you've visited all nodes</li>
+  </ul>
+</div>
+
+<div class="slide">
+  <h2>Work Through It Together</h2>
+  <p><strong>From Alpha:</strong> Betaville = 8km, Gammaford = 15km, Delta Bay = 12km</p>
+  <p>Closest unvisited: <span class="highlight">Betaville (8km)</span></p>
+  <p>From Betaville: Gammaford via β = 8+6=14km ← shorter than 15! Update.</p>
+  <p>Epsilon via β = 8+10=18km. Note this.</p>
+  <br>
+  <p>Continue on your worksheet until all towns are found.</p>
+</div>
+
+<div class="slide">
+  <h2>The Delivery Tour</h2>
+  <p>Visit: Epsilon, Etaville, Iota, Kappa End — then return.</p>
+  <p>Try two different orderings. Which is shorter?</p>
+  <br>
+  <p>Is "always go to the nearest unvisited town" always optimal?</p>
+  <p><span class="highlight">Spoiler: no. This is the Travelling Salesman Problem — one of CS's hardest.</span></p>
+</div>
+
+<div class="slide">
+  <h2>Point-to-Point vs Tour</h2>
+  <p><span class="highlight">Shortest path</span> (α to κ): Dijkstra's gives the exact correct answer. Efficient.</p>
+  <br>
+  <p><span class="highlight">Shortest tour</span> (visit all towns, return to start): No efficient algorithm is known. It's NP-hard — the number of possible routes explodes with n.</p>
+  <br>
+  <p>For 10 towns: 181,440 possible tours. For 20 towns: ~60 trillion.</p>
+</div>
+
+<div class="slide">
+  <h2>Key Takeaway</h2>
+  <div class="takeaway">
+    Graphs model connections and distances.<br><br>
+    Systematic exploration <span class="highlight">always finds shortest paths</span> — this is how sat-nav, Google Maps, and network routing work.<br><br>
+    Not all path problems are equally easy to solve.
+  </div>
+</div>
+
+<div class="progress" id="prog">1 / 9</div>
+<div class="nav-hint">← → or click to advance</div>
+<script>
+const slides = document.querySelectorAll('.slide');
+let cur = 0;
+function go(n) {
+  slides[cur].classList.remove('active');
+  cur = ((n % slides.length) + slides.length) % slides.length;
+  slides[cur].classList.add('active');
+  document.getElementById('prog').textContent = (cur+1) + ' / ' + slides.length;
+}
+document.addEventListener('keydown', e => {
+  if (e.key==='ArrowRight'||e.key==='ArrowDown'||e.key===' ') { e.preventDefault(); go(cur+1); }
+  if (e.key==='ArrowLeft'||e.key==='ArrowUp') { e.preventDefault(); go(cur-1); }
+});
+document.addEventListener('click', () => go(cur+1));
+</script>
+</body>
+</html>

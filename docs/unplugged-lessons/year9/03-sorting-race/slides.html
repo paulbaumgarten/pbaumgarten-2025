@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sorting Race — Year 9 CS</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #1a1a2e; color: #e8e8f0; font-family: 'Segoe UI', Arial, sans-serif; height: 100vh; overflow: hidden; cursor: pointer; }
+.slide { display: none; height: 100vh; padding: 60px 80px; flex-direction: column; justify-content: center; }
+.slide.active { display: flex; }
+h1 { font-size: 3.5rem; color: #7ec8e3; margin-bottom: 1rem; }
+h2 { font-size: 2.6rem; color: #a8d8ea; margin-bottom: 1.5rem; }
+p { font-size: 1.9rem; line-height: 1.6; margin-bottom: 1rem; }
+ul li { font-size: 1.8rem; line-height: 1.6; margin-bottom: 0.8rem; }
+ul { padding-left: 2.5rem; }
+.subtitle { font-size: 2rem; color: #b8b8d0; margin-top: 0.5rem; }
+.highlight { color: #f9ca24; font-weight: bold; }
+.code-block { background: #0d0d1a; border-left: 4px solid #7ec8e3; padding: 1.5rem 2rem; font-family: 'Courier New', monospace; font-size: 1.5rem; margin: 1.5rem 0; border-radius: 4px; line-height: 2; }
+.takeaway { background: #16213e; border: 2px solid #7ec8e3; border-radius: 8px; padding: 2rem 3rem; font-size: 2rem; line-height: 1.6; font-style: italic; }
+.progress { position: fixed; bottom: 20px; right: 30px; color: #555; font-size: 1.2rem; }
+.nav-hint { position: fixed; bottom: 20px; left: 30px; color: #444; font-size: 1.1rem; }
+.algos { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; margin: 1rem 0; }
+.algo { background: #16213e; border-radius: 8px; padding: 1.5rem; }
+.algo-name { font-size: 1.6rem; color: #7ec8e3; font-weight: bold; margin-bottom: 0.8rem; }
+.algo-idea { font-size: 1.4rem; color: #b8b8d0; }
+</style>
+</head>
+<body>
+
+<div class="slide active">
+  <h1>Sorting Race</h1>
+  <p class="subtitle">Three algorithms. Same data. Which wins?</p>
+  <br><p>Year 9 Computer Science — Sorting Algorithms</p>
+</div>
+
+<div class="slide">
+  <h2>Warm-Up Challenge</h2>
+  <p>You have 10 shuffled numbered cards.</p>
+  <p>Sort them in order. <span class="highlight">30 seconds. GO.</span></p>
+  <br>
+  <p>What method did you use?</p>
+  <p>Was it the same across all groups?</p>
+  <br>
+  <p>Today: we'll compare 3 specific, mechanical algorithms.</p>
+</div>
+
+<div class="slide">
+  <h2>Three Algorithms</h2>
+  <div class="algos">
+    <div class="algo">
+      <div class="algo-name">Bubble Sort</div>
+      <div class="algo-idea">Compare adjacent pairs; swap if wrong order. Repeat.</div>
+    </div>
+    <div class="algo">
+      <div class="algo-name">Selection Sort</div>
+      <div class="algo-idea">Find the minimum remaining; place it in position. Repeat.</div>
+    </div>
+    <div class="algo">
+      <div class="algo-name">Insertion Sort</div>
+      <div class="algo-idea">Take each card; slide it left into correct position among sorted cards.</div>
+    </div>
+  </div>
+  <p>Use the <span class="highlight">Algorithm Reference Card</span> — follow it exactly!</p>
+</div>
+
+<div class="slide">
+  <h2>Round 1: Bubble Sort</h2>
+  <p>Shuffle your cards to the starting order.</p>
+  <p>Follow the reference card step by step.</p>
+  <p>Count every <span class="highlight">comparison</span> and every <span class="highlight">swap</span> on the tally sheet.</p>
+  <br>
+  <p>Complete all passes until no swaps happen in a full pass.</p>
+</div>
+
+<div class="slide">
+  <h2>Round 2: Selection Sort</h2>
+  <p>Re-shuffle to the <span class="highlight">same starting order</span>.</p>
+  <p>Follow the Selection Sort rules on the reference card.</p>
+  <p>Count comparisons and swaps.</p>
+  <br>
+  <p>Note: Selection Sort always makes exactly <span class="highlight">n−1 selections</span> and at most n−1 swaps.</p>
+</div>
+
+<div class="slide">
+  <h2>Round 3: Insertion Sort</h2>
+  <p>Re-shuffle to the <span class="highlight">same starting order</span> again.</p>
+  <p>Follow the Insertion Sort rules.</p>
+  <p>Count comparisons and shifts/swaps.</p>
+  <br>
+  <p>Watch: what happens with a card that's already in the right place?</p>
+</div>
+
+<div class="slide">
+  <h2>Compare Results</h2>
+  <p>Fill in the summary table on your worksheet.</p>
+  <p>Compare across the class:</p>
+  <ul>
+    <li>Which had fewest <span class="highlight">comparisons</span>?</li>
+    <li>Which had fewest <span class="highlight">swaps</span>?</li>
+    <li>Which was <span class="highlight">easiest</span> to follow without mistakes?</li>
+  </ul>
+</div>
+
+<div class="slide">
+  <h2>Does Starting Order Matter?</h2>
+  <p>Try a <span class="highlight">nearly-sorted</span> starting order: 1,2,3,4,<span class="highlight">6,5</span>,7,8,9,10</p>
+  <p>Which algorithm handles this most efficiently?</p>
+  <br>
+  <p>Try <span class="highlight">reverse-sorted</span>: 10,9,8,7,6,5,4,3,2,1</p>
+  <p>Which is now worst?</p>
+</div>
+
+<div class="slide">
+  <h2>Key Takeaway</h2>
+  <div class="takeaway">
+    Different sorting algorithms take different numbers of steps.<br><br>
+    The <span class="highlight">best choice depends on your data</span> — its size, its initial order, and whether swaps or comparisons are more costly.<br><br>
+    Algorithm selection matters as much as correctness.
+  </div>
+</div>
+
+<div class="progress" id="prog">1 / 9</div>
+<div class="nav-hint">← → or click to advance</div>
+<script>
+const slides = document.querySelectorAll('.slide');
+let cur = 0;
+function go(n) {
+  slides[cur].classList.remove('active');
+  cur = ((n % slides.length) + slides.length) % slides.length;
+  slides[cur].classList.add('active');
+  document.getElementById('prog').textContent = (cur+1) + ' / ' + slides.length;
+}
+document.addEventListener('keydown', e => {
+  if (e.key==='ArrowRight'||e.key==='ArrowDown'||e.key===' ') { e.preventDefault(); go(cur+1); }
+  if (e.key==='ArrowLeft'||e.key==='ArrowUp') { e.preventDefault(); go(cur-1); }
+});
+document.addEventListener('click', () => go(cur+1));
+</script>
+</body>
+</html>
