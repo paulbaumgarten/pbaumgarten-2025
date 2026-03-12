@@ -5662,6 +5662,35 @@ Blockly.Python['neopixel_write'] = function(block) {
   return code;
 };
 
+Blockly.Python['neopixel_fill'] = function(block) {
+  var value_color = Blockly.Python.valueToCode(block, 'color', Blockly.Python.ORDER_NONE);
+  var code = `np.fill(${value_color})\n`;
+  return code;
+};
+
+Blockly.Python['neopixel_xy'] = function(block) {
+  var value_x = Blockly.Python.valueToCode(block, 'x', Blockly.Python.ORDER_NONE);
+  var value_y = Blockly.Python.valueToCode(block, 'y', Blockly.Python.ORDER_NONE);
+  var value_color = Blockly.Python.valueToCode(block, 'color', Blockly.Python.ORDER_NONE);
+  var code = `np[${value_x}*8+(${value_y} if ${value_x}%2==0 else 7-${value_y})]=${value_color}\n`;
+  return code;
+};
+
+Blockly.Python['neopixel_8x8'] = function(block) {
+  var code = '';
+  var rows = 8, cols = 8;
+  for (var col = 0; col < cols; col++) {
+    for (var row = 0; row < rows; row++) {
+      var hex = block.getFieldValue('R' + row + 'C' + col);
+      var rgb = Tool.HEX2RGB(hex);
+      var pixel = col * 8 + (col % 2 === 0 ? row : 7 - row);
+      code += `np[${pixel}]=(${rgb.r},${rgb.g},${rgb.b})\n`;
+    }
+  }
+  code += 'np.write()\n';
+  return code;
+};
+
 Blockly.Python['bipes_plot'] = function(block) {
    var x = Blockly.Python.valueToCode(block, 'values', Blockly.Python.ORDER_NONE) || '\'\'';
    var id = Blockly.Python.valueToCode(block, 'id', Blockly.Python.ORDER_NONE) || '\'\'';

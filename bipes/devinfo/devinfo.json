@@ -155,7 +155,7 @@
 			"title":"<b>ESP32-S3</b><br>",
 			"speed":"115200",
 			"boardID":"ESP32S3",
-			"img":"devinfo/media/ESP32-Pinout.jpg",
+			"img":"devinfo/media/ESP32-S3-Pinout.jpg",
 			"description":"ESP32-S3-DevKitC-1 (Xtensa dual-core LX7, 240 MHz). Native USB-CDC on GPIO19/20. Note: ADC2 (GPIO11-20) is unavailable when WiFi is active. No DAC. BLE 5.0 only (no Classic BT).",
 			"toolbox":"esp32s3.xml",
 			"pinout": [

@@ -621,7 +621,26 @@
       </block>
 
       <block type="neopixel_write"></block>
-      
+
+      <block type="neopixel_fill">
+        <value name="color">
+          <shadow type="neopixel_color_colors"></shadow>
+        </value>
+      </block>
+
+      <block type="neopixel_xy">
+        <value name="x">
+          <shadow type="math_number"><field name="NUM">0</field></shadow>
+        </value>
+        <value name="y">
+          <shadow type="math_number"><field name="NUM">0</field></shadow>
+        </value>
+        <value name="color">
+          <shadow type="neopixel_color_colors"></shadow>
+        </value>
+      </block>
+
+      <block type="neopixel_8x8"></block>
 
 </category>
 
