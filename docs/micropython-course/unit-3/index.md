@@ -16,9 +16,9 @@ Computers are brilliant at doing the same thing over and over — infinitely fas
 
 | Lesson | Title | Key Concepts |
 |--------|-------|-------------|
-| [Lesson 8](lesson-08-while-loops.md) | While Loops | while, counter variables, infinite loops, +=, break preview |
-| [Lesson 9](lesson-09-for-loops.md) | For Loops and range() | for, range(start, stop, step), nested loops, enumerate() |
-| [Lesson 10](lesson-10-ir-sensor.md) | IR Sensor, break, and continue | IR sensor wiring, break, continue, loop control |
+| [Lesson 8](lesson-08-while-loops.html) | While Loops | while, counter variables, infinite loops, +=, break preview |
+| [Lesson 9](lesson-09-for-loops.html) | For Loops and range() | for, range(start, stop, step), nested loops, enumerate() |
+| [Lesson 10](lesson-10-ir-sensor.html) | IR Sensor, break, and continue | IR sensor wiring, break, continue, loop control |
 
 ## New Hardware: IR Proximity Sensor
 

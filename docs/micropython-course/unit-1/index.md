@@ -16,10 +16,10 @@ Welcome to your first unit! In this unit you'll write your very first programs, 
 
 | Lesson | Title | Key Concepts |
 |--------|-------|-------------|
-| [Lesson 1](lesson-01-hello-micropython.md) | Hello MicroPython | print(), comments, the REPL, first NeoPixel |
-| [Lesson 2](lesson-02-variables-and-data-types.md) | Variables and Data Types | variables, int, float, bool, str, type() |
-| [Lesson 3](lesson-03-strings.md) | Working with Strings | concatenation, f-strings, .upper(), .lower(), .find(), len(), slicing, input() |
-| [Lesson 4](lesson-04-expressions-and-types.md) | Expressions and Type Conversion | arithmetic operators, precedence, int(), float(), str() |
+| [Lesson 1](lesson-01-hello-micropython.html) | Hello MicroPython | print(), comments, the REPL, first NeoPixel |
+| [Lesson 2](lesson-02-variables-and-data-types.html) | Variables and Data Types | variables, int, float, bool, str, type() |
+| [Lesson 3](lesson-03-strings.html) | Working with Strings | concatenation, f-strings, .upper(), .lower(), .find(), len(), slicing, input() |
+| [Lesson 4](lesson-04-expressions-and-types.html) | Expressions and Type Conversion | arithmetic operators, precedence, int(), float(), str() |
 
 ## What Hardware You'll Use
 

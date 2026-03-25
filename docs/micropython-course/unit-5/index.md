@@ -16,9 +16,9 @@ Until now, you've written code from top to bottom — one big block. Functions l
 
 | Lesson | Title | Key Concepts |
 |--------|-------|-------------|
-| [Lesson 14](lesson-14-functions-intro.md) | Writing Your Own Functions | def, function body, calling functions, DRY principle |
-| [Lesson 15](lesson-15-parameters-and-return.md) | Parameters and Return Values | parameters, arguments, return, None |
-| [Lesson 16](lesson-16-servos-and-scope.md) | Servos and Variable Scope | Servo motor, PWM, local vs global scope, global keyword |
+| [Lesson 14](lesson-14-functions-intro.html) | Writing Your Own Functions | def, function body, calling functions, DRY principle |
+| [Lesson 15](lesson-15-parameters-and-return.html) | Parameters and Return Values | parameters, arguments, return, None |
+| [Lesson 16](lesson-16-servos-and-scope.html) | Servos and Variable Scope | Servo motor, PWM, local vs global scope, global keyword |
 
 ## New Hardware: 9G Servo Motor
 

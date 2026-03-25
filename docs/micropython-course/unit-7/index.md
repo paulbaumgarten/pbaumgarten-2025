@@ -16,9 +16,9 @@ You've used the single built-in NeoPixel since Lesson 1. Now it's time to upgrad
 
 | Lesson | Title | Key Concepts |
 |--------|-------|-------------|
-| [Lesson 19](lesson-19-2d-lists.md) | Two-Dimensional Lists | 2D lists, double indexing, nested loops, creating grids |
-| [Lesson 20](lesson-20-neopixel-grid.md) | The 8×8 NeoPixel Grid | Grid wiring, framebuffer, row×col to index, pixel art |
-| [Lesson 21](lesson-21-grid-animations.md) | Grid Animations | Animation loops, velocity, bouncing, rain, spinner patterns |
+| [Lesson 19](lesson-19-2d-lists.html) | Two-Dimensional Lists | 2D lists, double indexing, nested loops, creating grids |
+| [Lesson 20](lesson-20-neopixel-grid.html) | The 8×8 NeoPixel Grid | Grid wiring, framebuffer, row×col to index, pixel art |
+| [Lesson 21](lesson-21-grid-animations.html) | Grid Animations | Animation loops, velocity, bouncing, rain, spinner patterns |
 
 ## New Hardware: WS2812B 8×8 NeoPixel Grid
 

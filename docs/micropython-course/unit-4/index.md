@@ -16,9 +16,9 @@ So far, each variable has held one value. What if you want to store 20 sensor re
 
 | Lesson | Title | Key Concepts |
 |--------|-------|-------------|
-| [Lesson 11](lesson-11-lists-intro.md) | Introduction to Lists | Creating lists, indexing, slicing, len(), iterating |
-| [Lesson 12](lesson-12-list-operations.md) | List Operations | .append(), .remove(), .pop(), in, .sort(), sorted(), max/min/sum |
-| [Lesson 13](lesson-13-ultrasonic-sensor.md) | Ultrasonic Sensor and Sensor Logging | HC-SR04 wiring, timing functions, storing sensor data |
+| [Lesson 11](lesson-11-lists-intro.html) | Introduction to Lists | Creating lists, indexing, slicing, len(), iterating |
+| [Lesson 12](lesson-12-list-operations.html) | List Operations | .append(), .remove(), .pop(), in, .sort(), sorted(), max/min/sum |
+| [Lesson 13](lesson-13-ultrasonic-sensor.html) | Ultrasonic Sensor and Sensor Logging | HC-SR04 wiring, timing functions, storing sensor data |
 
 ## New Hardware: HC-SR04 Ultrasonic Distance Sensor
 

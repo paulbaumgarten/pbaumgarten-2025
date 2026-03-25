@@ -26,9 +26,9 @@ Dodge is a game where:
 
 | Lesson | Title | What You Build |
 |--------|-------|---------------|
-| [Lesson 22](lesson-22-capstone-setup.md) | Capstone Setup | Static display, player movement (Milestones 1–2) |
-| [Lesson 23](lesson-23-capstone-game.md) | The Game Loop | Falling obstacles, collision, scoring (Milestones 3–4) |
-| [Lesson 24](lesson-24-capstone-polish.md) | Polish and Beyond | High scores, title screen, difficulty, full code review |
+| [Lesson 22](lesson-22-capstone-setup.html) | Capstone Setup | Static display, player movement (Milestones 1–2) |
+| [Lesson 23](lesson-23-capstone-game.html) | The Game Loop | Falling obstacles, collision, scoring (Milestones 3–4) |
+| [Lesson 24](lesson-24-capstone-polish.html) | Polish and Beyond | High scores, title screen, difficulty, full code review |
 
 ## How This Unit Works
 

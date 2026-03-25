@@ -16,8 +16,8 @@ Variables disappear when your program stops. Files don't. This unit teaches you 
 
 | Lesson | Title | Key Concepts |
 |--------|-------|-------------|
-| [Lesson 17](lesson-17-reading-files.md) | Reading Files | open(), read/readline/readlines, with statement, parsing CSV |
-| [Lesson 18](lesson-18-writing-files.md) | Writing Files and Data Logging | write mode, append mode, CSV logging, relay + motor |
+| [Lesson 17](lesson-17-reading-files.html) | Reading Files | open(), read/readline/readlines, with statement, parsing CSV |
+| [Lesson 18](lesson-18-writing-files.html) | Writing Files and Data Logging | write mode, append mode, CSV logging, relay + motor |
 
 ## New Hardware: Relay Module + DC Motor
 

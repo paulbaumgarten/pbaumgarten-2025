@@ -78,11 +78,11 @@ This course is designed to be worked through **independently at your own pace**.
 
 ## Before You Start
 
-Read the **[Setup Guide](SETUP-GUIDE.md)** first — it walks you through installing Thonny and getting MicroPython running on your ESP32-S3.
+Read the **[Setup Guide](SETUP-GUIDE.html)** first — it walks you through installing Thonny and getting MicroPython running on your ESP32-S3.
 
 Once setup is done, jump straight into **[Unit 1: Getting Started](unit-1/)**.
 
-The **[Hardware Reference](HARDWARE-REFERENCE.md)** is a quick-reference wiring guide for all components — useful whenever you're connecting new hardware.
+The **[Hardware Reference](HARDWARE-REFERENCE.html)** is a quick-reference wiring guide for all components — useful whenever you're connecting new hardware.
 
 ---
 

@@ -16,9 +16,9 @@ Your programs so far have run the same way every time. This unit changes that â€
 
 | Lesson | Title | Key Concepts |
 |--------|-------|-------------|
-| [Lesson 5](lesson-05-selection.md) | Selection with if and else | if, else, comparison operators (==, !=, <, >, <=, >=) |
-| [Lesson 6](lesson-06-buttons-and-elif.md) | Buttons and elif | elif, push button wiring, active-low inputs, debouncing |
-| [Lesson 7](lesson-07-logical-operators.md) | Logical Operators | and, or, not, truth tables, complex conditions |
+| [Lesson 5](lesson-05-selection.html) | Selection with if and else | if, else, comparison operators (==, !=, <, >, <=, >=) |
+| [Lesson 6](lesson-06-buttons-and-elif.html) | Buttons and elif | elif, push button wiring, active-low inputs, debouncing |
+| [Lesson 7](lesson-07-logical-operators.html) | Logical Operators | and, or, not, truth tables, complex conditions |
 
 ## New Hardware: Push Buttons
 
