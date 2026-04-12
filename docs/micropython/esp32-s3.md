@@ -9,7 +9,10 @@ nav_order: 10
 
 ![](/docs/micropython/esp32-s3-image.png)
 
-## Specifications
+- TOC
+{:toc} 
+
+# Specifications
 
 * Based on the ESP32-S3-WROOM-1 module 
 * Working voltage: 3.3~5V
@@ -21,7 +24,7 @@ nav_order: 10
 * Onboard WS2818RGB, at pin 48. 
 * Two Type-C interfaces: one can be used directly with a COM tag, and the other USB can be powered on using OTG or by holding down BOOT to display the port and download the program.
 
-## Pin out diagram
+# Pin out diagram
 
 ![](/docs/micropython/esp32-s3-pinout-cropped.jpg)
 
