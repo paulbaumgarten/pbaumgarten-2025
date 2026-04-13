@@ -26,7 +26,7 @@ nav_order: 10
 
 # Pin out diagram
 
-![](/docs/micropython/esp32-s3-pinout-cropped.jpg)
+![](/docs/micropython/esp32-s3-pinout.png)
 
 # Setup instructions
 
