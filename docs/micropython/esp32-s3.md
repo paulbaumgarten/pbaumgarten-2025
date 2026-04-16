@@ -32,7 +32,7 @@ nav_order: 10
 
 Install MicroPython onto an ESP32:
 
-* Using [web-based ESPTool](https://code.pbaumgarten.com/esptool/)
+* Using [web-based ESPTool](https://code.pbaumgarten.com/esptool) with [instructions here](/docs/micropython/ESP32-S3-MicroPython-web-setup-procedure.pdf)
 * Using [Thonny](/docs/micropython/ESP32-S3-MicroPython-Thonny-setup-procedure.pdf)
 
 # Using GPIO
