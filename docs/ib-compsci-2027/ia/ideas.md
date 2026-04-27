@@ -3,6 +3,7 @@ title: Project ideas
 parent: Internal assessment
 layout: default
 nav_order: 3
+private: true
 ---
 
 # Project ideas and algorithms for the IA
