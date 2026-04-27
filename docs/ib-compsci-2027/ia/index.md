@@ -3,6 +3,7 @@ title: Internal assessment
 parent: IB Computer Science 2027
 layout: default
 nav_order: 3
+private: true
 ---
 
 # Internal assessment
