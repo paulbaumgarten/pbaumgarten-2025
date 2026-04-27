@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Hints"
+parent: Coding challenges
 nav_exclude: true
 ---
 

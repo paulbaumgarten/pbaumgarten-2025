@@ -56,7 +56,7 @@ def find_private_pages():
 def encrypt_file(output_path, password):
     with tempfile.TemporaryDirectory() as tmpdir:
         result = subprocess.run(
-            ["npx", "--yes", "staticrypt@3", output_path, "-p", password, "-d", tmpdir],
+            ["npx", "--yes", "staticrypt@3", output_path, "-p", password, "-d", tmpdir, "--short"],
         )
         if result.returncode != 0:
             print(f"ERROR: staticrypt exited {result.returncode} for {output_path}", file=sys.stderr)
