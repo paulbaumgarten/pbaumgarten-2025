@@ -2,7 +2,7 @@
 title: Python notes
 layout: default
 nav_order: 10
-has_children:true
+has_children: true 
 ---
 
 # Python notes
