@@ -26,11 +26,14 @@ nav_order: 10
 
 # Pin out diagram
 
-![](/docs/micropython/esp32-s3-pinout-cropped.jpg)
+![](/docs/micropython/esp32-s3-pinout.png)
 
 # Setup instructions
 
-* [Install MicroPython using Thonny](/docs/micropython/ESP32-S3-MicroPython-Thonny-setup-procedure.pdf)
+Install MicroPython onto an ESP32:
+
+* Using [web-based ESPTool](https://code.pbaumgarten.com/esptool) with [instructions here](/docs/micropython/ESP32-S3-MicroPython-web-setup-procedure.pdf)
+* Using [Thonny](/docs/micropython/ESP32-S3-MicroPython-Thonny-setup-procedure.pdf)
 
 # Using GPIO
 
