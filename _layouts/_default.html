@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="{{ '/' | relative_url }}" class="site-title">{{ site.title }}</a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- Overlay for mobile sidebar -->
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <!-- Page wrapper -->
+  <div class="site-wrapper">
+
+    <!-- Sidebar -->
+    <aside class="site-sidebar" id="site-sidebar">
+      {% include nav.html %}
+    </aside>
+
+    <!-- Main -->
+    <main class="site-content">
+      <div class="content-wrapper">
+
+        {% if page.parent %}
+        <div class="breadcrumbs">
+          {% if page.grand_parent %}
+            {% assign gp = site.html_pages | where: "title", page.grand_parent | first %}
+            {% if gp %}<a href="{{ gp.url | relative_url }}">{{ page.grand_parent }}</a>{% endif %}
+            <span class="separator">/</span>
+          {% endif %}
+          {% assign par = site.html_pages | where: "title", page.parent | first %}
+          {% if par %}<a href="{{ par.url | relative_url }}">{{ page.parent }}</a>{% endif %}
+          <span class="separator">/</span>
+          <span class="current">{{ page.title }}</span>
+        </div>
+        {% endif %}
+
+        {% if page.title %}
+          <h1>{{ page.title }}</h1>
+        {% endif %}
+
+        {{ content }}
+
+        <footer class="site-footer">
+          &copy; {{ site.time | date: "%Y" }} {{ site.title }}
+        </footer>
+      </div>
+
+      {% include toc.html %}
+    </main>
+  </div>
+
+  <!-- Mobile sidebar toggle script -->
+  <script>
+    (function () {
+      var toggle = document.getElementById('menu-toggle');
+      var sidebar = document.getElementById('site-sidebar');
+      var overlay = document.getElementById('sidebar-overlay');
+
+      if (!toggle) return;
+
+      toggle.addEventListener('click', function () {
+        sidebar.classList.toggle('open');
+        overlay.classList.toggle('visible');
+      });
+
+      overlay.addEventListener('click', function () {
+        sidebar.classList.remove('open');
+        overlay.classList.remove('visible');
+      });
+    })();
+  </script>
+
+</body>
+</html>

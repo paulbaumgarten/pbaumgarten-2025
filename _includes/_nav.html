@@ -1,0 +1,68 @@
+{% comment %}
+  Build top-level pages (no parent, not excluded, not the homepage)
+{% endcomment %}
+{% assign top_pages = site.html_pages
+    | where_exp: "item", "item.parent == nil"
+    | where_exp: "item", "item.nav_exclude != true"
+    | where_exp: "item", "item.title != nil"
+    | where_exp: "item", "item.url != '/'"
+    | sort: "nav_order" %}
+
+<nav class="nav-list-container" aria-label="Main navigation">
+  <ul class="nav-list">
+    {% for node in top_pages %}
+      {% assign is_active = false %}
+      {% if page.url == node.url %}{% assign is_active = true %}{% endif %}
+      {% if page.parent == node.title %}{% assign is_active = true %}{% endif %}
+      {% if page.grand_parent == node.title %}{% assign is_active = true %}{% endif %}
+
+      <li class="nav-item">
+        <a href="{{ node.url | relative_url }}"
+           class="{% if page.url == node.url %}active{% endif %}">
+          {{ node.title }}
+        </a>
+
+        {% if node.has_children %}
+          {% assign children = site.html_pages
+              | where: "parent", node.title
+              | where_exp: "item", "item.nav_exclude != true"
+              | sort: "nav_order" %}
+
+          {% if children.size > 0 %}
+            <ul class="nav-children{% unless is_active %} collapsed{% endunless %}">
+              {% for child in children %}
+                <li class="nav-item">
+                  <a href="{{ child.url | relative_url }}"
+                     class="{% if page.url == child.url %}active{% endif %}">
+                    {{ child.title }}
+                  </a>
+
+                  {% if child.has_children %}
+                    {% assign grandchildren = site.html_pages
+                        | where: "parent", child.title
+                        | where_exp: "item", "item.nav_exclude != true"
+                        | sort: "nav_order" %}
+                    {% if grandchildren.size > 0 %}
+                      {% assign child_active = false %}
+                      {% if page.parent == child.title or page.url == child.url %}{% assign child_active = true %}{% endif %}
+                      <ul class="nav-children{% unless child_active %} collapsed{% endunless %}">
+                        {% for gc in grandchildren %}
+                          <li class="nav-item">
+                            <a href="{{ gc.url | relative_url }}"
+                               class="{% if page.url == gc.url %}active{% endif %}">
+                              {{ gc.title }}
+                            </a>
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    {% endif %}
+                  {% endif %}
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

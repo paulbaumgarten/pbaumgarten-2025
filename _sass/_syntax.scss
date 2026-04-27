@@ -1,0 +1,29 @@
+// ============================================
+// Rouge syntax highlighting — dark theme
+// ============================================
+
+.highlight {
+  .c, .cm, .c1, .cs, .cp { color: $gray-600; font-style: italic; } // Comments
+  .k, .kc, .kd, .kn, .kp, .kr, .kt { color: $purple-400; }        // Keywords
+  .s, .sb, .sc, .sd, .s2, .sh, .s1, .sx { color: $green-400; }     // Strings
+  .si { color: $cyan-400; }                                          // String interpolation
+  .sr { color: $red-400; }                                           // Regex
+  .na { color: $blue-400; }                                          // Attribute names
+  .nb, .bp { color: $cyan-400; }                                     // Builtins
+  .nc, .nn { color: $yellow-400; }                                   // Class / module names
+  .nf, .fm { color: $blue-400; }                                     // Function names
+  .no { color: $orange-400; }                                        // Constants
+  .ni { color: $gray-300; }                                          // Entity
+  .ne { color: $red-400; }                                           // Exceptions
+  .nv, .vc, .vg, .vi { color: $red-400; }                           // Variables
+  .nt { color: $pink-400; }                                          // HTML tags
+  .o, .ow { color: $gray-300; }                                     // Operators
+  .p { color: $gray-400; }                                           // Punctuation
+  .m, .mf, .mh, .mi, .mo, .il { color: $orange-400; }              // Numbers
+  .ge { font-style: italic; }
+  .gs { font-weight: bold; }
+  .gh { color: $gray-200; font-weight: bold; }
+  .gp { color: $gray-500; font-weight: bold; }
+  .w { color: $gray-600; }
+  .err { color: $red-400; }
+}

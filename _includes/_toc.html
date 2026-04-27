@@ -1,0 +1,23 @@
+{% if page.toc != false %}
+<aside class="page-toc" id="page-toc">
+  <div class="toc-title">On this page</div>
+  <ul>
+    {% assign headers = content | split: '<h' %}
+    {% for header in headers %}
+      {% if header contains 'id="' %}
+        {% assign level = header | slice: 0, 1 %}
+        {% if level == '2' or level == '3' or level == '4' %}
+          {% assign id = header | split: 'id="' | last | split: '"' | first %}
+          {% assign title_raw = header | split: '">' | last | split: '</h' | first %}
+          {% assign title_clean = title_raw | strip_html | strip %}
+          {% if title_clean != "" %}
+            <li class="toc-h{{ level }}">
+              <a href="#{{ id }}">{{ title_clean }}</a>
+            </li>
+          {% endif %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </ul>
+</aside>
+{% endif %}

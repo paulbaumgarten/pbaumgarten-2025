@@ -1,0 +1,44 @@
+// ============================================
+// Color palette — dark indigo
+// ============================================
+
+$gray-950: #030712;
+$gray-900: #111827;
+$gray-800: #1f2937;
+$gray-700: #374151;
+$gray-600: #4b5563;
+$gray-500: #6b7280;
+$gray-400: #9ca3af;
+$gray-300: #d1d5db;
+$gray-200: #e5e7eb;
+$gray-100: #f3f4f6;
+$gray-50:  #f9fafb;
+
+$indigo-400: #818cf8;
+$indigo-500: #6366f1;
+$indigo-600: #4f46e5;
+$indigo-700: #4338ca;
+$indigo-900: #312e81;
+
+$red-400: #f87171;
+$green-400: #4ade80;
+$yellow-400: #facc15;
+$blue-400: #60a5fa;
+$purple-400: #c084fc;
+$cyan-400: #22d3ee;
+$orange-400: #fb923c;
+$pink-400: #f472b6;
+
+// Layout
+$sidebar-width: 17rem;
+$toc-width: 14rem;
+$content-max-width: 52rem;
+$header-height: 3.5rem;
+
+// Fonts
+$font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+$font-mono: "JetBrains Mono", ui-monospace, "Cascadia Code", "Fira Code", monospace;
+
+// Transitions
+$transition-fast: 150ms ease;
+$transition-normal: 250ms ease;

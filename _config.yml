@@ -1,11 +1,38 @@
 title: Paul Baumgarten
 description: Computer Scientist, teacher, published author, freelance programmer and self confessed geek
-theme: just-the-docs
+# theme: just-the-docs
 favicon_ico: "/assets/favicon.ico"
 # url: "https://paulbaumgarten.github.io/pbaumgarten-2025/"
 url: "https://pbaumgarten.com"
 layout: default
 
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
+
+highlighter: rouge
+
+permalink: pretty
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - README.md
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+collections_dir: .
+
+plugins:
+  - jekyll-seo-tag
 
 color_scheme: dark_indigo
 # Optional: add the Inter font and improve the look

@@ -1,0 +1,226 @@
+// ============================================
+// Reset & base typography
+// ============================================
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: $font-body;
+  background-color: $gray-950;
+  color: $gray-400;
+  line-height: 1.7;
+}
+
+::selection {
+  background-color: rgba($indigo-500, 0.3);
+  color: $gray-100;
+}
+
+// Scrollbar
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: $gray-950; }
+::-webkit-scrollbar-thumb { background: $gray-800; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: $gray-700; }
+
+// --- Headings ---
+h1, h2, h3, h4, h5, h6 {
+  color: $gray-100;
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+h1 { font-size: 2rem; font-weight: 800; }
+h2 { font-size: 1.5rem; font-weight: 700; border-bottom: 1px solid $gray-800; padding-bottom: 0.5rem; }
+h3 { font-size: 1.25rem; font-weight: 600; }
+h4 { font-size: 1.1rem; font-weight: 600; }
+h5, h6 { font-size: 1rem; font-weight: 600; }
+
+h1:first-child, h2:first-child, h3:first-child {
+  margin-top: 0;
+}
+
+// --- Paragraphs & inline ---
+p {
+  margin-bottom: 1rem;
+}
+
+strong { color: $gray-200; font-weight: 600; }
+em { color: $gray-300; }
+
+a {
+  color: $indigo-400;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: rgba($indigo-400, 0.3);
+  transition: color $transition-fast, text-decoration-color $transition-fast;
+
+  &:hover {
+    color: lighten($indigo-400, 10%);
+    text-decoration-color: rgba($indigo-400, 0.7);
+  }
+}
+
+// --- Lists ---
+ul, ol {
+  margin-bottom: 1rem;
+  padding-left: 1.75rem;
+}
+
+li {
+  margin-bottom: 0.35rem;
+}
+
+li > ul, li > ol {
+  margin-top: 0.35rem;
+  margin-bottom: 0;
+}
+
+// --- Images ---
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+// --- Blockquotes ---
+blockquote {
+  border-left: 3px solid $indigo-600;
+  background-color: rgba($indigo-600, 0.05);
+  padding: 0.75rem 1.25rem;
+  margin: 1rem 0;
+  border-radius: 0 0.5rem 0.5rem 0;
+  color: $gray-300;
+
+  p:last-child { margin-bottom: 0; }
+}
+
+// --- Horizontal rules ---
+hr {
+  border: none;
+  border-top: 1px solid $gray-800;
+  margin: 2rem 0;
+}
+
+// --- Tables ---
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+th {
+  background-color: $gray-900;
+  color: $gray-200;
+  font-weight: 600;
+  text-align: left;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid $gray-800;
+}
+
+td {
+  padding: 0.55rem 0.75rem;
+  border: 1px solid $gray-800;
+  background-color: $gray-950;
+}
+
+tr:nth-child(even) td {
+  background-color: rgba($gray-900, 0.5);
+}
+
+// --- Inline code ---
+code {
+  font-family: $font-mono;
+  font-size: 0.85em;
+  background-color: $gray-800;
+  color: $gray-300;
+  padding: 0.15em 0.4em;
+  border-radius: 0.25rem;
+}
+
+// --- Code blocks ---
+pre {
+  margin: 1.5rem 0;
+  padding: 1.25rem;
+  background-color: $gray-900;
+  border: 1px solid $gray-800;
+  border-radius: 0.75rem;
+  overflow-x: auto;
+  font-size: 0.875rem;
+  line-height: 1.65;
+
+  code {
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    color: $gray-300;
+    font-size: inherit;
+  }
+}
+
+div.highlighter-rouge {
+  margin: 1.5rem 0;
+}
+
+// --- Definition lists ---
+dl {
+  margin-bottom: 1rem;
+}
+dt {
+  color: $gray-200;
+  font-weight: 600;
+  margin-top: 0.75rem;
+}
+dd {
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+// --- Keyboard ---
+kbd {
+  font-family: $font-mono;
+  font-size: 0.85em;
+  background-color: $gray-800;
+  color: $gray-200;
+  padding: 0.1em 0.4em;
+  border: 1px solid $gray-700;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 0 $gray-700;
+}
+
+// --- Details / summary ---
+details {
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  background-color: $gray-900;
+  border: 1px solid $gray-800;
+  border-radius: 0.5rem;
+
+  summary {
+    cursor: pointer;
+    color: $gray-200;
+    font-weight: 600;
+    &:hover { color: $indigo-400; }
+  }
+}
+
+// --- Footnotes ---
+.footnotes {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid $gray-800;
+  font-size: 0.875rem;
+  color: $gray-500;
+}

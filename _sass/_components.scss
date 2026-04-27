@@ -1,0 +1,97 @@
+// ============================================
+// Reusable components & utility classes
+// ============================================
+
+// --- Callout boxes (use with blockquote + class) ---
+// Usage in markdown:
+// > **Note:** something important
+// {: .callout .callout-info }
+
+.callout {
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  border-left: 3px solid;
+
+  &.callout-info {
+    border-color: $blue-400;
+    background-color: rgba($blue-400, 0.05);
+  }
+  &.callout-warning {
+    border-color: $yellow-400;
+    background-color: rgba($yellow-400, 0.05);
+  }
+  &.callout-danger {
+    border-color: $red-400;
+    background-color: rgba($red-400, 0.05);
+  }
+  &.callout-success {
+    border-color: $green-400;
+    background-color: rgba($green-400, 0.05);
+  }
+}
+
+// --- Labels / badges ---
+.label {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.15em 0.5em;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+
+  &.label-blue { background-color: rgba($blue-400, 0.15); color: $blue-400; }
+  &.label-green { background-color: rgba($green-400, 0.15); color: $green-400; }
+  &.label-red { background-color: rgba($red-400, 0.15); color: $red-400; }
+  &.label-yellow { background-color: rgba($yellow-400, 0.15); color: $yellow-400; }
+  &.label-purple { background-color: rgba($purple-400, 0.15); color: $purple-400; }
+}
+
+// --- Breadcrumbs ---
+.breadcrumbs {
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+  color: $gray-600;
+
+  a {
+    color: $gray-500;
+    text-decoration: none;
+    &:hover { color: $indigo-400; }
+  }
+
+  .separator {
+    margin: 0 0.4rem;
+    color: $gray-700;
+  }
+
+  .current {
+    color: $gray-400;
+  }
+}
+
+// --- Back to top ---
+.back-to-top {
+  display: inline-block;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: $gray-500;
+  text-decoration: none;
+  &:hover { color: $indigo-400; }
+}
+
+// --- Print styles ---
+@media print {
+  .site-header, .site-sidebar, .page-toc, .sidebar-overlay, .menu-toggle {
+    display: none !important;
+  }
+  .site-content {
+    margin-left: 0 !important;
+  }
+  body {
+    background: white;
+    color: black;
+  }
+  a { color: black; text-decoration: underline; }
+  pre { border: 1px solid #ccc; }
+}

@@ -1,0 +1,251 @@
+// ============================================
+// Page layout — header, sidebar, content
+// ============================================
+
+// --- Site header ---
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: $header-height;
+  background-color: rgba($gray-950, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid $gray-800;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.site-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: $gray-100;
+  text-decoration: none;
+
+  &:hover {
+    color: $indigo-400;
+    text-decoration: none;
+  }
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: 1px solid $gray-700;
+  border-radius: 0.375rem;
+  padding: 0.35rem 0.5rem;
+  color: $gray-400;
+  cursor: pointer;
+  font-size: 1.25rem;
+  line-height: 1;
+
+  &:hover {
+    color: $gray-100;
+    border-color: $gray-600;
+  }
+}
+
+// --- Layout wrapper ---
+.site-wrapper {
+  display: flex;
+  min-height: 100vh;
+  padding-top: $header-height;
+}
+
+// --- Sidebar ---
+.site-sidebar {
+  position: fixed;
+  top: $header-height;
+  left: 0;
+  bottom: 0;
+  width: $sidebar-width;
+  background-color: $gray-900;
+  border-right: 1px solid $gray-800;
+  overflow-y: auto;
+  padding: 1.5rem 0;
+  z-index: 90;
+  transition: transform $transition-normal;
+}
+
+.nav-section-title {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: $gray-500;
+  padding: 0 1.5rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.5rem 0;
+}
+
+.nav-item a {
+  display: block;
+  padding: 0.4rem 1.5rem;
+  color: $gray-400;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-left: 2px solid transparent;
+  transition: color $transition-fast, background-color $transition-fast, border-color $transition-fast;
+
+  &:hover {
+    color: $gray-100;
+    background-color: rgba($indigo-500, 0.05);
+  }
+
+  &.active {
+    color: $indigo-400;
+    border-left-color: $indigo-400;
+    background-color: rgba($indigo-500, 0.08);
+    font-weight: 600;
+  }
+}
+
+.nav-children {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  .nav-item a {
+    padding-left: 2.5rem;
+    font-size: 0.85rem;
+    font-weight: 400;
+  }
+}
+
+// --- Main content area ---
+.site-content {
+  margin-left: $sidebar-width;
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: $content-max-width;
+  padding: 2.5rem 2rem 4rem;
+}
+
+// --- Table of contents ---
+.page-toc {
+  position: fixed;
+  top: calc(#{$header-height} + 2rem);
+  right: 2rem;
+  width: $toc-width;
+  max-height: calc(100vh - #{$header-height} - 4rem);
+  overflow-y: auto;
+  font-size: 0.8rem;
+  display: none; // shown on wide screens
+
+  @media (min-width: 80rem) {
+    display: block;
+  }
+
+  .toc-title {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: $gray-500;
+    margin-bottom: 0.75rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    margin-bottom: 0.25rem;
+  }
+
+  a {
+    color: $gray-500;
+    text-decoration: none;
+    display: block;
+    padding: 0.2rem 0;
+    border-left: 1px solid $gray-800;
+    padding-left: 0.75rem;
+    transition: color $transition-fast, border-color $transition-fast;
+
+    &:hover {
+      color: $gray-200;
+      border-color: $gray-600;
+    }
+  }
+
+  .toc-h3 a { padding-left: 1.5rem; }
+  .toc-h4 a { padding-left: 2.25rem; }
+}
+
+// --- Footer ---
+.site-footer {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid $gray-800;
+  font-size: 0.8rem;
+  color: $gray-600;
+  text-align: center;
+}
+
+// --- Responsive ---
+@media (max-width: 48rem) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .site-sidebar {
+    transform: translateX(-100%);
+
+    &.open {
+      transform: translateX(0);
+    }
+  }
+
+  .site-content {
+    margin-left: 0;
+  }
+
+  .content-wrapper {
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  // Overlay when sidebar is open
+  .sidebar-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 80;
+
+    &.visible {
+      display: block;
+    }
+  }
+}
+
+.nav-children.collapsed {
+  display: none;
+}
