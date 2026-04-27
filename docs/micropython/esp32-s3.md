@@ -1,9 +1,8 @@
 ---
 title: ESP32-S3
-parent: Hardware Reference
-grand_parent: MicroPython
+parent: MicroPython
 layout: default
-nav_order: 1
+nav_order: 10
 ---
 
 # ESP32-S3

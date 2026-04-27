@@ -3,7 +3,7 @@ title: Pico W
 parent: Hardware Reference
 grand_parent: MicroPython
 layout: default
-nav_order: 3
+nav_order: 10
 ---
 
 # Raspberry Pi Pico W

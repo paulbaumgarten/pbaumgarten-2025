@@ -18,6 +18,20 @@ Every lesson involves real hardware — LEDs that light up, sensors that detect 
 
 ---
 
+## What is MicroPython?
+
+Python is a programming language that normally runs on computers — laptops, desktops, servers. When you run a Python script on your laptop, the laptop's operating system (Windows, macOS, Linux) handles loading the program, managing memory, and talking to the hardware.
+
+A **microcontroller** like the ESP32-S3 is a different kind of computer. It has no operating system, no keyboard, no screen, and a tiny amount of memory (kilobytes, not gigabytes). It's designed to run *one program* repeatedly and efficiently — perfect for controlling hardware.
+
+**MicroPython** is a stripped-down version of Python that fits on a microcontroller. It speaks almost exactly the same language as regular Python, but with some differences:
+- No `tkinter` or other desktop GUI libraries
+- No access to your computer's filesystem — instead, it uses a small filesystem in the chip's flash memory
+- Some modules are different (e.g., `machine` instead of system-level hardware access)
+- `input()` works when connected to Thonny, but not when the board is running standalone
+
+---
+
 ## What You Will Learn
 
 | Unit | Lessons | Programming Concept | New Hardware |
@@ -54,6 +68,25 @@ Every lesson involves real hardware — LEDs that light up, sensors that detect 
 
 - **Thonny IDE** — a beginner-friendly Python editor with built-in MicroPython support. Free download from [thonny.org](https://thonny.org).
 - **MicroPython firmware** for ESP32-S3 — installed via Thonny (see the Setup Guide).
+
+---
+
+## How to Use This Course
+
+This course is designed to be worked through **independently at your own pace**. A reasonable pace is 2–3 lessons per week, giving you about 10–12 weeks to complete the full course.
+
+**Each lesson includes:**
+1. Clear concept explanations with code examples
+2. A step-by-step guided project you build yourself
+3. Challenges (⭐ Core / ⭐⭐ Extension / ⭐⭐⭐ Stretch) to test yourself
+4. Common mistakes and debugging tips
+5. Key vocabulary definitions
+
+**Tips for success:**
+- **Type the code yourself** rather than copy-pasting. It sounds tedious but typing helps you notice every detail and builds muscle memory.
+- **Make mistakes on purpose.** Change a value, remove a bracket, misspell something — see what error appears. This is how experienced programmers learn to debug.
+- **Read the error messages.** Python's error messages are actually quite helpful once you know how to read them.
+- **If you get stuck**, check the Common Mistakes section, reread the concept explanation, then check the challenge solutions.
 
 ---
 
@@ -106,26 +139,3 @@ Every lesson involves real hardware — LEDs that light up, sensors that detect 
   </a>
 </div>
 
----
-
-## How to Use This Course
-
-This course is designed to be worked through **independently at your own pace**. A reasonable pace is 2–3 lessons per week, giving you about 10–12 weeks to complete the full course.
-
-**Each lesson includes:**
-1. Clear concept explanations with code examples
-2. A step-by-step guided project you build yourself
-3. Challenges (⭐ Core / ⭐⭐ Extension / ⭐⭐⭐ Stretch) to test yourself
-4. Common mistakes and debugging tips
-5. Key vocabulary definitions
-
-**Tips for success:**
-- **Type the code yourself** rather than copy-pasting. It sounds tedious but typing helps you notice every detail and builds muscle memory.
-- **Make mistakes on purpose.** Change a value, remove a bracket, misspell something — see what error appears. This is how experienced programmers learn to debug.
-- **Read the error messages.** Python's error messages are actually quite helpful once you know how to read them.
-- **If you get stuck**, check the Common Mistakes section, reread the concept explanation, then check the challenge solutions.
-
----
-
-{: .highlight }
-**A note on making mistakes:** Every programmer — including professionals — makes mistakes constantly. Debugging (finding and fixing mistakes) is not a sign of failure; it's a fundamental programming skill. The only way to get better at debugging is to practise it. Be patient with yourself, and remember that a program that finally works after ten failed attempts feels just as good as one that works first time.

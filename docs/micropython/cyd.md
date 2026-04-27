@@ -1,9 +1,8 @@
 ---
 title: ESP32 CYD
-parent: Hardware Reference
-grand_parent: MicroPython
+parent: MicroPython
 layout: default
-nav_order: 2
+nav_order: 10
 ---
 
 # ESP32 Cheap Yellow Display
