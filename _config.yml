@@ -6,6 +6,11 @@ favicon_ico: "/assets/favicon.ico"
 url: "https://pbaumgarten.com"
 layout: default
 
+
+color_scheme: dark_indigo
+# Optional: add the Inter font and improve the look
+heading_anchors: true
+
 aux_links:
   "Get my book": "https://www.amazon.com/Computer-Science-Diploma-Paul-Baumgarten/dp/1036009009"
   "Code Hers HK": "https://codehershk.org"

@@ -1,0 +1,63 @@
+// ============================================
+// Dark Indigo — custom just-the-docs scheme
+// Matches the homepage design
+// ============================================
+
+// Base palette
+$gray-950: #030712;
+$gray-900: #111827;
+$gray-800: #1f2937;
+$gray-700: #374151;
+$gray-600: #4b5563;
+$gray-500: #6b7280;
+$gray-400: #9ca3af;
+$gray-300: #d1d5db;
+$gray-200: #e5e7eb;
+$gray-100: #f3f4f6;
+
+$indigo-400: #818cf8;
+$indigo-500: #6366f1;
+$indigo-600: #4f46e5;
+$indigo-700: #4338ca;
+
+// Body
+$body-background-color: $gray-950;
+$body-text-color: $gray-400;
+$body-heading-color: $gray-100;
+
+// Links
+$link-color: $indigo-400;
+
+// Sidebar / navigation
+$sidebar-color: $gray-900;
+$nav-child-link-color: $gray-400;
+$search-background-color: $gray-800;
+$search-result-preview-color: $gray-400;
+
+// Border
+$border-color: $gray-800;
+
+// Code
+$code-background-color: $gray-900;
+$code-text-color: $gray-300;
+$code-linenumber-color: $gray-600;
+
+// Feedback / footer
+$feedback-color: $gray-600;
+$footer-background-color: $gray-950;
+
+// Tables
+$table-background-color: $gray-900;
+
+// Buttons
+$btn-primary-color: $indigo-600;
+
+// Search
+$search-background-color: $gray-800;
+
+// Content
+$content-width: 900px;
+
+// Base font stack — we'll load Inter via head_custom.html
+$body-font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+$mono-font-family: "JetBrains Mono", ui-monospace, "Cascadia Code", "Fira Code", monospace;

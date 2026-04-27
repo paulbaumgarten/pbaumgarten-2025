@@ -1,0 +1,231 @@
+// ============================================
+// Additional style overrides for dark_indigo
+// ============================================
+
+// --- Scrollbar ---
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: #030712; }
+::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #374151; }
+
+// --- Sidebar ---
+.site-nav {
+  background-color: #111827;
+  border-right: 1px solid #1f2937;
+}
+
+.site-header {
+  background-color: #111827;
+  border-bottom: 1px solid #1f2937;
+}
+
+.site-title {
+  color: #f3f4f6 !important;
+  font-weight: 700;
+}
+
+.nav-list .nav-list-item .nav-list-link {
+  color: #9ca3af;
+  &:hover,
+  &.active {
+    color: #f3f4f6;
+    background-color: rgba(99, 102, 241, 0.1);
+  }
+}
+
+.nav-list .nav-list-item .nav-list-link.active {
+  border-left: 2px solid #818cf8;
+  font-weight: 600;
+}
+
+// --- Main content area ---
+.main-content {
+  h1, h2, h3, h4, h5, h6 {
+    color: #f3f4f6;
+  }
+
+  h1 { font-weight: 800; }
+  h2 { font-weight: 700; }
+  h3, h4, h5, h6 { font-weight: 600; }
+
+  p, li, td, dd {
+    color: #9ca3af;
+    line-height: 1.75;
+  }
+
+  strong {
+    color: #d1d5db;
+  }
+
+  em {
+    color: #d1d5db;
+  }
+
+  a {
+    color: #818cf8;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-color: rgba(129, 140, 248, 0.3);
+    &:hover {
+      color: #a5b4fc;
+      text-decoration-color: rgba(129, 140, 248, 0.7);
+    }
+  }
+}
+
+// --- Code blocks ---
+.highlight,
+pre.highlight {
+  background-color: #111827 !important;
+  border: 1px solid #1f2937;
+  border-radius: 0.75rem;
+}
+
+code {
+  background-color: #1f2937;
+  color: #d1d5db;
+  border-radius: 0.25rem;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.875em;
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+// --- Tables ---
+table {
+  border-color: #1f2937;
+}
+
+th {
+  background-color: #111827;
+  color: #d1d5db;
+  border-color: #1f2937;
+  font-weight: 600;
+}
+
+td {
+  border-color: #1f2937;
+  background-color: #030712;
+}
+
+tr:nth-child(even) td {
+  background-color: rgba(17, 24, 39, 0.5);
+}
+
+// --- Blockquotes ---
+blockquote {
+  border-left: 3px solid #4f46e5;
+  background-color: rgba(79, 70, 229, 0.05);
+  padding: 1rem 1.25rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  color: #d1d5db;
+}
+
+// --- Horizontal rules ---
+hr {
+  border-color: #1f2937;
+}
+
+// --- Search ---
+.search-input {
+  background-color: #1f2937;
+  color: #d1d5db;
+  border: 1px solid #374151;
+  border-radius: 0.5rem;
+  &:focus {
+    border-color: #818cf8;
+    box-shadow: 0 0 0 2px rgba(129, 140, 248, 0.2);
+  }
+  &::placeholder {
+    color: #6b7280;
+  }
+}
+
+.search-results {
+  background-color: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 0.75rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.search-results-list-item {
+  border-bottom: 1px solid #1f2937;
+}
+
+.search-result-title {
+  color: #f3f4f6;
+}
+
+.search-result-doc-title {
+  color: #818cf8;
+}
+
+.search-result-preview {
+  color: #9ca3af;
+}
+
+// --- Breadcrumbs ---
+.breadcrumb-nav-list-item {
+  color: #6b7280;
+  a {
+    color: #818cf8;
+  }
+}
+
+// --- Footer ---
+.site-footer {
+  border-top: 1px solid #1f2937;
+  color: #4b5563;
+}
+
+// --- Table of contents (right side) ---
+.toc-list .toc-list-item a {
+  color: #6b7280;
+  &:hover, &.active {
+    color: #818cf8;
+  }
+}
+
+// --- Back to top button ---
+.back-to-top {
+  background-color: #1f2937;
+  color: #9ca3af;
+  border: 1px solid #374151;
+  border-radius: 0.5rem;
+  &:hover {
+    background-color: #374151;
+    color: #f3f4f6;
+  }
+}
+
+// --- Callouts (if using just-the-docs callouts) ---
+.callout {
+  border-radius: 0.75rem;
+  border-width: 1px;
+}
+
+// --- Labels ---
+.label {
+  border-radius: 9999px;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+}
+
+// --- Selection ---
+::selection {
+  background-color: rgba(99, 102, 241, 0.3);
+  color: #f3f4f6;
+}
+
+// --- Smooth scroll ---
+html {
+  scroll-behavior: smooth;
+}
+
+// --- Custom "back to homepage" styling in header ---
+.site-title::before {
+  content: "";
+}

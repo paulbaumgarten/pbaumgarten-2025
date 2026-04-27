@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwindcss.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    html { font-family: 'Inter', system-ui, sans-serif; }
+    .card-expand-content { display: none; }
+    .card-expand-content.active { display: block; }
+    .chevron-icon { transition: transform 0.2s; }
+    .chevron-icon.rotated { transform: rotate(90deg); }
+  </style>
+</head>
+<body class="min-h-screen bg-gray-950 text-gray-100">
+
+  <!-- NAV -->
+  <nav class="sticky top-0 z-50 bg-gray-950/90 backdrop-blur border-b border-gray-800">
+    <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-14">
+      <a href="/" class="text-lg font-bold tracking-tight text-white flex items-center gap-2">
+        <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        pbaumgarten<span class="text-indigo-400">.com</span>
+      </a>
+      <div class="hidden md:flex gap-6 text-sm text-gray-400">
+        <a href="#projects" class="hover:text-white transition">Projects</a>
+        <a href="#resources" class="hover:text-white transition">Resources</a>
+        <a href="#ai" class="hover:text-white transition">CS &amp; AI</a>
+        <a href="#about" class="hover:text-white transition">About</a>
+      </div>
+      <button id="mobile-menu-btn" class="md:hidden text-gray-400">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-800 bg-gray-950 px-4 py-3 flex flex-col gap-3 text-sm text-gray-400">
+      <a href="#projects" class="hover:text-white">Projects</a>
+      <a href="#resources" class="hover:text-white">Resources</a>
+      <a href="#ai" class="hover:text-white">CS &amp; AI</a>
+      <a href="#about" class="hover:text-white">About</a>
+    </div>
+  </nav>
+
+  <!-- PAGE CONTENT (from front matter or markdown) -->
+  {{ content }}
+
+  <!-- FOOTER -->
+  <footer class="border-t border-gray-800 bg-gray-950">
+    <div class="max-w-6xl mx-auto px-4 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-600">
+      <p>&copy; 2026 Paul Baumgarten</p>
+      <div class="flex gap-4">
+        <a href="#projects" class="hover:text-gray-400 transition">Projects</a>
+        <a href="#resources" class="hover:text-gray-400 transition">Resources</a>
+        <a href="#about" class="hover:text-gray-400 transition">About</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+
+    // Expandable project cards
+    document.querySelectorAll('[data-card-toggle]').forEach(function(card) {
+      card.addEventListener('click', function() {
+        const target = document.getElementById(card.dataset.cardToggle);
+        const chevron = card.querySelector('.chevron-icon');
+        const isActive = target.classList.contains('active');
+
+        // Close all others
+        document.querySelectorAll('.card-expand-content').forEach(c => c.classList.remove('active'));
+        document.querySelectorAll('.chevron-icon').forEach(c => c.classList.remove('rotated'));
+
+        if (!isActive) {
+          target.classList.add('active');
+          if (chevron) chevron.classList.add('rotated');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

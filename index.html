@@ -1,0 +1,462 @@
+---
+layout: homepage
+title: Paul Baumgarten — Computer Science Educator
+description: Teaching CS at Sha Tin College, Hong Kong. Author, community builder, tool maker.
+nav_exclude: true
+---
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paul Baumgarten — Computer Science Educator</title>
+  <meta name="description" content="Teaching CS at Sha Tin College, Hong Kong. Author, community builder, tool maker." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background-color: #030712;
+      color: #e5e7eb;
+    }
+    .card-expand-content {
+      display: none;
+    }
+    .card-expand-content.open {
+      display: block;
+    }
+    [data-card-toggle] .chevron-icon {
+      transition: transform 0.2s ease;
+    }
+    [data-card-toggle].expanded .chevron-icon {
+      transform: rotate(90deg);
+    }
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #030712; }
+    ::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #374151; }
+  </style>
+</head>
+<body class="min-h-screen">
+
+  <!-- NAV -->
+  <nav class="sticky top-0 z-50 bg-gray-950/80 backdrop-blur-xl border-b border-gray-800/60">
+    <div class="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
+      <a href="#" class="text-white font-bold text-sm tracking-tight">pbaumgarten<span class="text-indigo-400">.com</span></a>
+      <div class="hidden sm:flex items-center gap-6">
+        <a href="#projects" class="text-sm text-gray-400 hover:text-white transition">Projects</a>
+        <a href="#resources" class="text-sm text-gray-400 hover:text-white transition">Resources</a>
+        <a href="#ai" class="text-sm text-gray-400 hover:text-white transition">CS &amp; AI</a>
+        <a href="#about" class="text-sm text-gray-400 hover:text-white transition">About</a>
+      </div>
+      <!-- Mobile menu button -->
+      <button id="mobileMenuBtn" class="sm:hidden text-gray-400 hover:text-white transition" aria-label="Menu">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="sm:hidden hidden border-t border-gray-800/60 bg-gray-950/95 backdrop-blur-xl">
+      <div class="px-4 py-3 flex flex-col gap-3">
+        <a href="#projects" class="text-sm text-gray-400 hover:text-white transition mobile-link">Projects</a>
+        <a href="#resources" class="text-sm text-gray-400 hover:text-white transition mobile-link">Resources</a>
+        <a href="#ai" class="text-sm text-gray-400 hover:text-white transition mobile-link">CS &amp; AI</a>
+        <a href="#about" class="text-sm text-gray-400 hover:text-white transition mobile-link">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-indigo-900/30 via-gray-950 to-gray-950"></div>
+    <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(circle, #fff 1px, transparent 1px); background-size: 32px 32px;"></div>
+    <div class="relative max-w-6xl mx-auto px-4 py-20 md:py-28 text-center">
+      <p class="text-indigo-400 font-medium text-sm tracking-widest uppercase mb-3">Computer Science Educator</p>
+      <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">Paul Baumgarten</h1>
+      <p class="mt-4 text-lg md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
+        Teaching CS at Sha Tin College, Hong Kong &middot; Author &middot; Building tools &amp; communities that make Computer Science accessible to all.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="#projects" class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          View Projects
+        </a>
+        <a href="#resources" class="inline-flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-gray-200 font-semibold px-5 py-2.5 rounded-lg text-sm transition">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+          Curriculum Resources
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold text-white mb-2">Projects</h2>
+    <p class="text-gray-400 mb-10 max-w-xl">Initiatives aimed at improving CS education, representation, and student engagement.</p>
+
+    <div class="grid gap-6 md:grid-cols-2">
+
+      <!-- Card 1: IB Textbook -->
+      <div class="group bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-gray-700 transition cursor-pointer" data-card-toggle="card1">
+        <div class="h-1.5 bg-gradient-to-r from-blue-600 to-indigo-700"></div>
+        <div class="p-6">
+          <div class="flex items-start gap-4">
+            <div class="shrink-0 w-11 h-11 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-700 flex items-center justify-center shadow-lg">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 flex-wrap">
+                <h3 class="text-lg font-bold text-white leading-snug">Computer Science for the IB Diploma</h3>
+                <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-gray-800 text-gray-300 border border-gray-700">NEW &mdash; Out Now</span>
+              </div>
+              <p class="text-sm text-gray-500 mt-0.5">Published by Hachette &middot; Approved by the IB</p>
+            </div>
+            <svg class="chevron-icon w-5 h-5 text-gray-600 shrink-0 mt-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+          <p class="mt-4 text-sm text-gray-400 leading-relaxed">The textbook fully addresses both SL and HL content, caters to either Python or Java as the language of instruction, and includes a thorough 40 page guide to the IA filled with exemplar work from former students, top tips, common mistakes, and checklists.</p>
+          <div id="card1" class="card-expand-content mt-4 pt-4 border-t border-gray-800 space-y-3">
+            <p class="text-xs text-gray-500"><span class="text-gray-400 font-medium">Authors:</span> Paul Baumgarten, Ioana Ganea &amp; Carl Turland</p>
+            <p class="text-xs text-gray-500"><span class="text-gray-400 font-medium">ISBN:</span> 9781036009007 &middot; Published 24 April 2025</p>
+            <p class="text-xs text-gray-500">A big thank you to my co-authors Ioana Ganea and Carl Turland &mdash; it was a lot of fun doing this project together.</p>
+            <div class="flex flex-wrap gap-2 pt-1">
+              <a href="https://www.youtube.com/watch?v=tN0SKH9EMXM" target="_blank" class="inline-flex items-center gap-1 text-xs font-medium text-indigo-400 bg-indigo-400/10 hover:bg-indigo-400/20 px-3 py-1.5 rounded-lg transition" onclick="event.stopPropagation()">Launch Webinar ↗</a>
+              <a href="https://www.hachettelearning.com/computing-and-it/computer-science-for-the-ib-diploma" target="_blank" class="inline-flex items-center gap-1 text-xs font-medium text-indigo-400 bg-indigo-400/10 hover:bg-indigo-400/20 px-3 py-1.5 rounded-lg transition" onclick="event.stopPropagation()">Order from Hachette ↗</a>
+              <a href="https://www.amazon.com/Computer-Science-Diploma-Paul-Baumgarten/dp/1036009009" target="_blank" class="inline-flex items-center gap-1 text-xs font-medium text-indigo-400 bg-indigo-400/10 hover:bg-indigo-400/20 px-3 py-1.5 rounded-lg transition" onclick="event.stopPropagation()">Order from Amazon ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: CodeHers HK -->
+      <div class="group bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-gray-700 transition cursor-pointer" data-card-toggle="card2">
+        <div class="h-1.5 bg-gradient-to-r from-pink-500 to-rose-600"></div>
+        <div class="p-6">
+          <div class="flex items-start gap-4">
+            <div class="shrink-0 w-11 h-11 rounded-xl bg-gradient-to-br from-pink-500 to-rose-600 flex items-center justify-center shadow-lg">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 flex-wrap">
+                <h3 class="text-lg font-bold text-white leading-snug">CodeHers HK</h3>
+                <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-pink-900/50 text-pink-300 border border-pink-800">300+ girls &middot; 42 schools</span>
+              </div>
+              <p class="text-sm text-gray-500 mt-0.5">Girls in Computer Science &middot; 11 International Schools collaboration</p>
+            </div>
+            <svg class="chevron-icon w-5 h-5 text-gray-600 shrink-0 mt-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+          <p class="mt-4 text-sm text-gray-400 leading-relaxed">Computer Science remains heavily male dominated. CodeHers is a collaboration of 11 International Schools within Hong Kong that provides a safe, supporting and encouraging environment for girls to have a go. The ultimate aim is to normalise the presence of women in tech, making the need for such events obsolete.</p>
+          <div id="card2" class="card-expand-content mt-4 pt-4 border-t border-gray-800 space-y-3">
+            <p class="text-xs text-gray-500">The inaugural event in 2024 attracted over 300 girls in attendance. The 2025 event also saw over 300 girls, coming from 42 schools across all of Hong Kong.</p>
+            <div class="flex flex-wrap gap-2 pt-1">
+              <a href="https://codehershk.org/" target="_blank" class="inline-flex items-center gap-1 text-xs font-medium text-indigo-400 bg-indigo-400/10 hover:bg-indigo-400/20 px-3 py-1.5 rounded-lg transition" onclick="event.stopPropagation()">Website ↗</a>
+              <a href="https://www.instagram.com/codehershk" target="_blank" class="inline-flex items-center gap-1 text-xs font-medium text-indigo-400 bg-indigo-400/10 hover:bg-indigo-400/20 px-3 py-1.5 rounded-lg transition" onclick="event.stopPropagation()">Instagram ↗</a>
+              <a href="https://www.youtube.com/watch?v=4yTva9Ncbrs" target="_blank" class="inline-flex items-center gap-1 text-xs font-medium text-indigo-400 bg-indigo-400/10 hover:bg-indigo-400/20 px-3 py-1.5 rounded-lg transition" onclick="event.stopPropagation()">Promo Video ↗</a>
+              <a href="https://codehershk.org/marketing/2025intro-letter.pdf" target="_blank" class="inline-flex items-center gap-1 text-xs font-medium text-indigo-400 bg-indigo-400/10 hover:bg-indigo-400/20 px-3 py-1.5 rounded-lg transition" onclick="event.stopPropagation()">Info Letter ↗</a>
+              <a href="https://codehershk.org/marketing/2025poster.pdf" target="_blank" class="inline-flex items-center gap-1 text-xs font-medium text-indigo-400 bg-indigo-400/10 hover:bg-indigo-400/20 px-3 py-1.5 rounded-lg transition" onclick="event.stopPropagation()">Poster ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: code.pbaumgarten.com -->
+      <div class="group bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-gray-700 transition cursor-pointer" data-card-toggle="card3">
+        <div class="h-1.5 bg-gradient-to-r from-emerald-500 to-teal-600"></div>
+        <div class="p-6">
+          <div class="flex items-start gap-4">
+            <div class="shrink-0 w-11 h-11 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center shadow-lg">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 flex-wrap">
+                <h3 class="text-lg font-bold text-white leading-snug">code.pbaumgarten.com</h3>
+              </div>
+              <p class="text-sm text-gray-500 mt-0.5">Online Python learning environment</p>
+            </div>
+            <svg class="chevron-icon w-5 h-5 text-gray-600 shrink-0 mt-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+          <p class="mt-4 text-sm text-gray-400 leading-relaxed">An online Python learning environment built for CS educators and their students. No installation. No distraction. Just code.</p>
+          <div id="card3" class="card-expand-content mt-4 pt-4 border-t border-gray-800 space-y-3">
+            <p class="text-xs text-gray-500">Designed to remove every barrier between a student and writing their first line of Python. Works in the browser, requires no setup, and stays out of the way so students can focus on learning.</p>
+            <div class="flex flex-wrap gap-2 pt-1">
+              <a href="https://code.pbaumgarten.com" target="_blank" class="inline-flex items-center gap-1 text-xs font-medium text-indigo-400 bg-indigo-400/10 hover:bg-indigo-400/20 px-3 py-1.5 rounded-lg transition" onclick="event.stopPropagation()">Launch Environment ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: Coding Quest -->
+      <div class="group bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-gray-700 transition cursor-pointer" data-card-toggle="card4">
+        <div class="h-1.5 bg-gradient-to-r from-amber-500 to-orange-600"></div>
+        <div class="p-6">
+          <div class="flex items-start gap-4">
+            <div class="shrink-0 w-11 h-11 rounded-xl bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center shadow-lg">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center gap-2 flex-wrap">
+                <h3 class="text-lg font-bold text-white leading-snug">Coding Quest</h3>
+                <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-amber-900/50 text-amber-300 border border-amber-800">800+ students &middot; 100 schools</span>
+              </div>
+              <p class="text-sm text-gray-500 mt-0.5">Annual coding competition for secondary students</p>
+            </div>
+            <svg class="chevron-icon w-5 h-5 text-gray-600 shrink-0 mt-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+          <p class="mt-4 text-sm text-gray-400 leading-relaxed">An annual competition specifically for secondary students to showcase their knowledge and understanding of algorithm design, data structures and computational thinking. No prizes, just bragging rights &mdash; students compete against themselves.</p>
+          <div id="card4" class="card-expand-content mt-4 pt-4 border-t border-gray-800 space-y-3">
+            <p class="text-xs text-gray-500">Started during the Covid era, Coding Quest grew to over 800 students from 100 different schools by 2024. An archive of all the coding challenges from the project is available on GitHub.</p>
+            <div class="flex flex-wrap gap-2 pt-1">
+              <a href="https://pbaumgarten.com/codingchallenges/" class="inline-flex items-center gap-1 text-xs font-medium text-indigo-400 bg-indigo-400/10 hover:bg-indigo-400/20 px-3 py-1.5 rounded-lg transition" onclick="event.stopPropagation()">Challenge Archive →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CURRICULUM RESOURCES -->
+  <section id="resources" class="border-t border-gray-800">
+    <div class="max-w-6xl mx-auto px-4 py-16">
+      <h2 class="text-3xl font-bold text-white mb-2">Curriculum Resources</h2>
+      <p class="text-gray-400 mb-10 max-w-xl">Open teaching materials for secondary Computer Science courses. All resources are freely available.</p>
+
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+        <!-- IB Diploma -->
+        <a href="/docs/ib-compsci-2027/" class="group bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-indigo-500/50 hover:bg-gray-900/80 transition block">
+          <div class="w-10 h-10 rounded-lg bg-indigo-600/20 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 10 3 12 0v-5"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-1 group-hover:text-indigo-300 transition">IB Diploma CS (2025 syllabus)</h3>
+          <p class="text-sm text-gray-500 leading-relaxed">Complete SL &amp; HL course notes, lesson plans, worksheets, and exam preparation material for the IB Computer Science course.</p>
+          <span class="inline-flex items-center gap-1 text-xs font-medium text-indigo-400 mt-4">
+            Browse resources
+            <svg class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+          </span>
+        </a>
+
+        <!-- IGCSE -->
+        <a href="/docs/igcse-compsci/" class="group bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-emerald-500/50 hover:bg-gray-900/80 transition block">
+          <div class="w-10 h-10 rounded-lg bg-emerald-600/20 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-1 group-hover:text-emerald-300 transition">IGCSE Computer Science</h3>
+          <p class="text-sm text-gray-500 leading-relaxed">Theory and practical programming resources aligned to the Cambridge IGCSE Computer Science syllabus (0478/0984).</p>
+          <span class="inline-flex items-center gap-1 text-xs font-medium text-emerald-400 mt-4">
+            Browse resources
+            <svg class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+          </span>
+        </a>
+
+        <!-- MYP -->
+        <a href="/myp-digital/" class="group bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-amber-500/50 hover:bg-gray-900/80 transition block">
+          <div class="w-10 h-10 rounded-lg bg-amber-600/20 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-1 group-hover:text-amber-300 transition">MYP Design / CS</h3>
+          <p class="text-sm text-gray-500 leading-relaxed">Project-based units and programming exercises for the IB Middle Years Programme, covering computational thinking and design cycle.</p>
+          <span class="inline-flex items-center gap-1 text-xs font-medium text-amber-400 mt-4">
+            Browse resources
+            <svg class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+          </span>
+        </a>
+
+        <!-- Python -->
+        <a href="/docs/python/" class="group bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-sky-500/50 hover:bg-gray-900/80 transition block">
+          <div class="w-10 h-10 rounded-lg bg-sky-600/20 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-sky-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-1 group-hover:text-sky-300 transition">Python</h3>
+          <p class="text-sm text-gray-500 leading-relaxed">From first steps to advanced topics &mdash; tutorials, exercises, and reference material for teaching and learning Python.</p>
+          <span class="inline-flex items-center gap-1 text-xs font-medium text-sky-400 mt-4">
+            Browse resources
+            <svg class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+          </span>
+        </a>
+
+        <!-- MicroPython -->
+        <a href="/docs/micropython/" class="group bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-red-500/50 hover:bg-gray-900/80 transition block">
+          <div class="w-10 h-10 rounded-lg bg-red-600/20 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-red-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 8l4 4-4 4"/><path d="M7 8l-4 4 4 4"/><path d="M14 4l-4 16"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-1 group-hover:text-red-300 transition">MicroPython</h3>
+          <p class="text-sm text-gray-500 leading-relaxed">Use MicroPython to create interactive computing devices using ESP32s, Raspberry Pi Picos, or Microbits.</p>
+          <span class="inline-flex items-center gap-1 text-xs font-medium text-red-400 mt-4">
+            Browse resources
+            <svg class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+          </span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CS & AI IN EDUCATION -->
+  <section id="ai" class="border-t border-gray-800">
+    <div class="max-w-6xl mx-auto px-4 py-16">
+      <h2 class="text-3xl font-bold text-white mb-2">Computer Science in the Age of AI</h2>
+      <p class="text-gray-400 mb-10 max-w-2xl leading-relaxed">The rise of AI is remarkable but unlocking its full potential still demands a strong foundation in logic, computational thinking, abstract reasoning, algorithms, and data structures.</p>
+
+      <div class="grid gap-6 md:grid-cols-2">
+
+        <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-gray-700 transition">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="w-2 h-2 rounded-full bg-indigo-500"></span>
+            <span class="text-xs text-gray-500 font-medium uppercase tracking-wider">Fundamentals</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">The Fundamentals Still Matter</h3>
+          <p class="text-sm text-gray-400 leading-relaxed">Just as calculators never eliminated the need to understand arithmetic, AI won&rsquo;t eliminate the need to understand programming. Computer Science is everywhere, rapidly changing every industry. Whether pursuing a career or just exploring it, a solid foundation will be valuable.</p>
+        </div>
+
+        <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-gray-700 transition">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            <span class="text-xs text-gray-500 font-medium uppercase tracking-wider">Perspective</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">More Than Programming</h3>
+          <p class="text-sm text-gray-400 leading-relaxed">It&rsquo;s more than programming, and programming is more than coding. As Dr. Leslie Lamport notes, coding alone is like just learning to type. Programming languages are the tools we use to express solutions. Ultimately, Computer Science is about solving problems.</p>
+        </div>
+
+        <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-gray-700 transition md:col-span-2">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+            <span class="text-xs text-gray-500 font-medium uppercase tracking-wider">Opportunity</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">An Exciting Time for Computer Science</h3>
+          <p class="text-sm text-gray-400 leading-relaxed">We, as Computer Scientists, are the ones who will be best placed to capitalise on the opportunities that will unfold. We are the ones who understand what these AIs are doing and how best to make use of them. Society is only going to become more reliant on computing, and therefore the people needed to make it work. It really is an exciting time to pick it for a career!</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="border-t border-gray-800">
+    <div class="max-w-6xl mx-auto px-4 py-16">
+      <div class="grid gap-12 md:grid-cols-5">
+
+        <div class="md:col-span-3">
+          <h2 class="text-3xl font-bold text-white mb-6">About</h2>
+          <div class="space-y-4 text-gray-400 leading-relaxed">
+            <p>I&rsquo;m a Secondary Computer Science teacher, currently working at Sha Tin College, an international school in Hong Kong where I teach Computer Science through the IB Diploma, IGCSE and MYP. Previously I have also lived and worked in Lausanne, Switzerland, and Perth, Australia, which is where I was raised.</p>
+            <p>I&rsquo;m the co-author of <em class="text-gray-300">Computer Science for the IB Diploma</em>, published by Hachette in April 2025. I also co-organise CodeHers HK, run an online Python coding environment at <a href="https://code.pbaumgarten.com" class="text-indigo-400 hover:text-indigo-300 transition underline underline-offset-2">code.pbaumgarten.com</a>, and maintain this collection of open teaching resources.</p>
+          </div>
+        </div>
+
+        <div class="md:col-span-2">
+          <h3 class="text-lg font-bold text-white mb-4">Connect</h3>
+          <div class="space-y-3">
+            <a href="mailto:pbaumgarten@gmail.com" class="flex items-center gap-3 bg-gray-900 border border-gray-800 rounded-xl px-4 py-3 hover:border-gray-700 transition group">
+              <div class="w-9 h-9 rounded-lg bg-gray-800 flex items-center justify-center">
+                <svg class="w-4 h-4 text-gray-400 group-hover:text-white transition" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <p class="text-sm font-medium text-white">Email</p>
+                <p class="text-xs text-gray-500">pbaumgarten@gmail.com</p>
+              </div>
+            </a>
+            <a href="https://github.com/paulbaumgarten" target="_blank" class="flex items-center gap-3 bg-gray-900 border border-gray-800 rounded-xl px-4 py-3 hover:border-gray-700 transition group">
+              <div class="w-9 h-9 rounded-lg bg-gray-800 flex items-center justify-center">
+                <svg class="w-4 h-4 text-gray-400 group-hover:text-white transition" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </div>
+              <div>
+                <p class="text-sm font-medium text-white">GitHub</p>
+                <p class="text-xs text-gray-500">paulbaumgarten</p>
+              </div>
+            </a>
+            <a href="https://www.youtube.com/@pbaumgarten" target="_blank" class="flex items-center gap-3 bg-gray-900 border border-gray-800 rounded-xl px-4 py-3 hover:border-gray-700 transition group">
+              <div class="w-9 h-9 rounded-lg bg-gray-800 flex items-center justify-center">
+                <svg class="w-4 h-4 text-gray-400 group-hover:text-white transition" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </div>
+              <div>
+                <p class="text-sm font-medium text-white">YouTube</p>
+                <p class="text-xs text-gray-500">@pbaumgarten</p>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/paulbaumgarten" target="_blank" class="flex items-center gap-3 bg-gray-900 border border-gray-800 rounded-xl px-4 py-3 hover:border-gray-700 transition group">
+              <div class="w-9 h-9 rounded-lg bg-gray-800 flex items-center justify-center">
+                <svg class="w-4 h-4 text-gray-400 group-hover:text-white transition" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </div>
+              <div>
+                <p class="text-sm font-medium text-white">LinkedIn</p>
+                <p class="text-xs text-gray-500">paulbaumgarten</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-gray-800">
+    <div class="max-w-6xl mx-auto px-4 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-xs text-gray-600">&copy; 2025 Paul Baumgarten. All rights reserved.</p>
+      <div class="flex items-center gap-4">
+        <a href="https://github.com/paulbaumgarten" target="_blank" class="text-gray-600 hover:text-gray-400 transition">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@pbaumgarten" target="_blank" class="text-gray-600 hover:text-gray-400 transition">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/paulbaumgarten" target="_blank" class="text-gray-600 hover:text-gray-400 transition">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    // Card expand/collapse
+    document.querySelectorAll('[data-card-toggle]').forEach(card => {
+      card.addEventListener('click', () => {
+        const targetId = card.getAttribute('data-card-toggle');
+        const content = document.getElementById(targetId);
+        const isOpen = content.classList.contains('open');
+
+        // Close all other cards
+        document.querySelectorAll('.card-expand-content.open').forEach(el => {
+          el.classList.remove('open');
+          el.closest('[data-card-toggle]').classList.remove('expanded');
+        });
+
+        // Toggle current card
+        if (!isOpen) {
+          content.classList.add('open');
+          card.classList.add('expanded');
+        }
+      });
+    });
+
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu on link click
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  </script>
+
+</body>
+</html>
