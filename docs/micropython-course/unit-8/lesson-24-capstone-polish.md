@@ -3,7 +3,7 @@ title: "Lesson 24 - Polish and Beyond"
 layout: default
 nav_order: 3
 parent: "Unit 8: Capstone Project"
-grand_parent: MicroPython Course
+grand_parent: MicroPython
 ---
 
 # Lesson 24 — Polish and Beyond

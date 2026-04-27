@@ -2,7 +2,7 @@
 title: "Unit 1: Getting Started"
 layout: default
 nav_order: 1
-parent: MicroPython Course
+parent: MicroPython
 has_children: true
 has_toc: false
 ---

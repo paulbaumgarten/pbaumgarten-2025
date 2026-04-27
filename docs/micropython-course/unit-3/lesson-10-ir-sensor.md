@@ -3,7 +3,7 @@ title: "Lesson 10 - IR Sensor, break, and continue"
 layout: default
 nav_order: 3
 parent: "Unit 3: Loops and Repetition"
-grand_parent: MicroPython Course
+grand_parent: MicroPython
 ---
 
 # Lesson 10 — IR Sensor, break, and continue

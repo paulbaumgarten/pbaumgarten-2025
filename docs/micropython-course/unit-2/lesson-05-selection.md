@@ -3,7 +3,7 @@ title: "Lesson 5 - Selection with if and else"
 layout: default
 nav_order: 1
 parent: "Unit 2: Making Decisions"
-grand_parent: MicroPython Course
+grand_parent: MicroPython
 ---
 
 # Lesson 5 — Selection with if and else

@@ -2,7 +2,7 @@
 title: "Unit 3: Loops and Repetition"
 layout: default
 nav_order: 3
-parent: MicroPython Course
+parent: MicroPython
 has_children: true
 has_toc: false
 ---

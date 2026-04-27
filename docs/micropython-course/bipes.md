@@ -1,8 +1,9 @@
 ---
 title: BIPES
-parent: MicroPython notes
+parent: Hardware Reference
+grand_parent: MicroPython
 layout: default
-nav_order: 10
+nav_order: 4
 ---
 
 # BIPES

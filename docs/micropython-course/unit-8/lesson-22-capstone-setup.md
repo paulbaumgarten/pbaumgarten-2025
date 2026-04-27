@@ -3,7 +3,7 @@ title: "Lesson 22 - Capstone Setup"
 layout: default
 nav_order: 1
 parent: "Unit 8: Capstone Project"
-grand_parent: MicroPython Course
+grand_parent: MicroPython
 ---
 
 # Lesson 22 — Capstone Setup

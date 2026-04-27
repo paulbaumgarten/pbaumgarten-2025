@@ -3,7 +3,7 @@ title: "Lesson 7 - Logical Operators"
 layout: default
 nav_order: 3
 parent: "Unit 2: Making Decisions"
-grand_parent: MicroPython Course
+grand_parent: MicroPython
 ---
 
 # Lesson 7 — Logical Operators

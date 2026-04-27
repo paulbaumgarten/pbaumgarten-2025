@@ -3,7 +3,7 @@ title: "Lesson 18 - Writing Files and Data Logging"
 layout: default
 nav_order: 2
 parent: "Unit 6: Working with Files"
-grand_parent: MicroPython Course
+grand_parent: MicroPython
 ---
 
 # Lesson 18 — Writing Files and Data Logging

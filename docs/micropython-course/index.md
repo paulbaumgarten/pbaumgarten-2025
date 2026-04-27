@@ -1,12 +1,12 @@
 ---
-title: MicroPython Course
+title: MicroPython
 layout: default
 nav_order: 11
 has_children: true
 has_toc: false
 ---
 
-# MicroPython Course
+# MicroPython
 {: .no_toc }
 
 Welcome! This is a complete, self-paced programming course that teaches Python fundamentals through hands-on hardware projects using the ESP32-S3 microcontroller and MicroPython.

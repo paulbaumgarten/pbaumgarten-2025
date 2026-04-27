@@ -3,7 +3,7 @@ title: "Lesson 1 - Hello MicroPython"
 layout: default
 nav_order: 1
 parent: "Unit 1: Getting Started"
-grand_parent: MicroPython Course
+grand_parent: MicroPython
 ---
 
 # Lesson 1 — Hello MicroPython

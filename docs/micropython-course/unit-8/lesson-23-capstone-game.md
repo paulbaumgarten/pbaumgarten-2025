@@ -3,7 +3,7 @@ title: "Lesson 23 - The Game Loop"
 layout: default
 nav_order: 2
 parent: "Unit 8: Capstone Project"
-grand_parent: MicroPython Course
+grand_parent: MicroPython
 ---
 
 # Lesson 23 — The Game Loop

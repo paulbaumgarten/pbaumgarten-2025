@@ -3,7 +3,7 @@ title: "Lesson 12 - List Operations and Methods"
 layout: default
 nav_order: 2
 parent: "Unit 4: Collections of Data"
-grand_parent: MicroPython Course
+grand_parent: MicroPython
 ---
 
 # Lesson 12 — List Operations and Methods

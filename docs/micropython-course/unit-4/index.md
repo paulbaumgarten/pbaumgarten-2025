@@ -2,7 +2,7 @@
 title: "Unit 4: Collections of Data"
 layout: default
 nav_order: 4
-parent: MicroPython Course
+parent: MicroPython
 has_children: true
 has_toc: false
 ---

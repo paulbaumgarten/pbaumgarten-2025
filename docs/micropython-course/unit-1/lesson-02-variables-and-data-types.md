@@ -3,7 +3,7 @@ title: "Lesson 2 - Variables and Data Types"
 layout: default
 nav_order: 2
 parent: "Unit 1: Getting Started"
-grand_parent: MicroPython Course
+grand_parent: MicroPython
 ---
 
 # Lesson 2 — Variables and Data Types

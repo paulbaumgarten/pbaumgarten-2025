@@ -3,7 +3,7 @@ title: "Lesson 20 - The 8×8 NeoPixel Grid"
 layout: default
 nav_order: 2
 parent: "Unit 7: The Grid"
-grand_parent: MicroPython Course
+grand_parent: MicroPython
 ---
 
 # Lesson 20 — The 8×8 NeoPixel Grid

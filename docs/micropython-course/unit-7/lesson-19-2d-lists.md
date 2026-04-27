@@ -3,7 +3,7 @@ title: "Lesson 19 - Two-Dimensional Lists"
 layout: default
 nav_order: 1
 parent: "Unit 7: The Grid"
-grand_parent: MicroPython Course
+grand_parent: MicroPython
 ---
 
 # Lesson 19 — Two-Dimensional Lists

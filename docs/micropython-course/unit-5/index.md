@@ -2,7 +2,7 @@
 title: "Unit 5: Functions and Modularity"
 layout: default
 nav_order: 5
-parent: MicroPython Course
+parent: MicroPython
 has_children: true
 has_toc: false
 ---

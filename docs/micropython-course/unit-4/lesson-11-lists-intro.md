@@ -3,7 +3,7 @@ title: "Lesson 11 - Introduction to Lists"
 layout: default
 nav_order: 1
 parent: "Unit 4: Collections of Data"
-grand_parent: MicroPython Course
+grand_parent: MicroPython
 ---
 
 # Lesson 11 — Introduction to Lists

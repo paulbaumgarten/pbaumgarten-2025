@@ -3,7 +3,7 @@ title: "Lesson 15 - Parameters and Return Values"
 layout: default
 nav_order: 2
 parent: "Unit 5: Functions and Modularity"
-grand_parent: MicroPython Course
+grand_parent: MicroPython
 ---
 
 # Lesson 15 — Parameters and Return Values

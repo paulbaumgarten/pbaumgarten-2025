@@ -3,7 +3,7 @@ title: "Lesson 6 - Buttons and elif"
 layout: default
 nav_order: 2
 parent: "Unit 2: Making Decisions"
-grand_parent: MicroPython Course
+grand_parent: MicroPython
 ---
 
 # Lesson 6 — Buttons and elif

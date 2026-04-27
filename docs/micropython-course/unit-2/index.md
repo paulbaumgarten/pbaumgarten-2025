@@ -2,7 +2,7 @@
 title: "Unit 2: Making Decisions"
 layout: default
 nav_order: 2
-parent: MicroPython Course
+parent: MicroPython
 has_children: true
 has_toc: false
 ---

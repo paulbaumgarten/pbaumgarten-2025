@@ -3,7 +3,7 @@ title: "Lesson 16 - Servos and Variable Scope"
 layout: default
 nav_order: 3
 parent: "Unit 5: Functions and Modularity"
-grand_parent: MicroPython Course
+grand_parent: MicroPython
 ---
 
 # Lesson 16 — Servos and Variable Scope

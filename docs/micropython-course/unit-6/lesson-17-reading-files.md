@@ -3,7 +3,7 @@ title: "Lesson 17 - Reading Files"
 layout: default
 nav_order: 1
 parent: "Unit 6: Working with Files"
-grand_parent: MicroPython Course
+grand_parent: MicroPython
 ---
 
 # Lesson 17 — Reading Files

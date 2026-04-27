@@ -3,7 +3,7 @@ title: "Lesson 21 - Grid Animations"
 layout: default
 nav_order: 3
 parent: "Unit 7: The Grid"
-grand_parent: MicroPython Course
+grand_parent: MicroPython
 ---
 
 # Lesson 21 — Grid Animations

@@ -3,7 +3,7 @@ title: "Lesson 4 - Expressions and Type Conversion"
 layout: default
 nav_order: 4
 parent: "Unit 1: Getting Started"
-grand_parent: MicroPython Course
+grand_parent: MicroPython
 ---
 
 # Lesson 4 — Expressions and Type Conversion

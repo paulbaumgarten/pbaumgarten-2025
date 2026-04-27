@@ -3,7 +3,7 @@ title: "Lesson 9 - For Loops and range()"
 layout: default
 nav_order: 2
 parent: "Unit 3: Loops and Repetition"
-grand_parent: MicroPython Course
+grand_parent: MicroPython
 ---
 
 # Lesson 9 — For Loops and range()

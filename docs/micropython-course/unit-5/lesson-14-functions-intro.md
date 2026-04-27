@@ -3,7 +3,7 @@ title: "Lesson 14 - Writing Your Own Functions"
 layout: default
 nav_order: 1
 parent: "Unit 5: Functions and Modularity"
-grand_parent: MicroPython Course
+grand_parent: MicroPython
 ---
 
 # Lesson 14 — Writing Your Own Functions

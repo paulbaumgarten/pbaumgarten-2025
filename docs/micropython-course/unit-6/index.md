@@ -2,7 +2,7 @@
 title: "Unit 6: Working with Files"
 layout: default
 nav_order: 6
-parent: MicroPython Course
+parent: MicroPython
 has_children: true
 has_toc: false
 ---

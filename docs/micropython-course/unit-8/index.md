@@ -2,7 +2,7 @@
 title: "Unit 8: Capstone Project"
 layout: default
 nav_order: 8
-parent: MicroPython Course
+parent: MicroPython
 has_children: true
 has_toc: false
 ---

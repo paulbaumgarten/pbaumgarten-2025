@@ -2,7 +2,7 @@
 title: "Unit 7: The Grid"
 layout: default
 nav_order: 7
-parent: MicroPython Course
+parent: MicroPython
 has_children: true
 has_toc: false
 ---

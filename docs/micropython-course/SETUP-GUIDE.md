@@ -1,8 +1,8 @@
 ---
 title: Setup Guide
 layout: default
-nav_order: 100
-parent: MicroPython Course
+nav_order: 8
+parent: MicroPython
 ---
 
 # Setup Guide

@@ -3,7 +3,7 @@ title: "Lesson 13 - Ultrasonic Sensor and Sensor Logging"
 layout: default
 nav_order: 3
 parent: "Unit 4: Collections of Data"
-grand_parent: MicroPython Course
+grand_parent: MicroPython
 ---
 
 # Lesson 13 — Ultrasonic Sensor and Sensor Logging

@@ -1,8 +1,9 @@
 ---
 title: Hardware Reference
 layout: default
-nav_order: 101
-parent: MicroPython Course
+nav_order: 9
+parent: MicroPython
+has_children: true
 ---
 
 # Hardware Reference

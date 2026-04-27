@@ -3,7 +3,7 @@ title: "Lesson 8 - While Loops"
 layout: default
 nav_order: 1
 parent: "Unit 3: Loops and Repetition"
-grand_parent: MicroPython Course
+grand_parent: MicroPython
 ---
 
 # Lesson 8 — While Loops

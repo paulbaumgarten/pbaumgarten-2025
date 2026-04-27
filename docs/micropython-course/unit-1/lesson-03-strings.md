@@ -3,7 +3,7 @@ title: "Lesson 3 - Working with Strings"
 layout: default
 nav_order: 3
 parent: "Unit 1: Getting Started"
-grand_parent: MicroPython Course
+grand_parent: MicroPython
 ---
 
 # Lesson 3 — Working with Strings
