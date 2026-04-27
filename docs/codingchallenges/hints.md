@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Hints"
+nav_exclude: true
 ---
 
 # Hints

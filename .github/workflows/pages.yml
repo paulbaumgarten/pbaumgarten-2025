@@ -49,6 +49,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+      - name: Install Python dependencies
+        run: pip install pyyaml
       - name: Encrypt private pages
         run: python encrypt_private_pages.py
         env:

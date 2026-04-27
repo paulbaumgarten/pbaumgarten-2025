@@ -4,9 +4,12 @@ Post-build script: encrypts Jekyll pages marked with `private: true` in frontmat
 Run after `jekyll build`. Requires SITE_PASSWORD environment variable.
 Uses staticrypt v3 (installed via npx).
 """
+import glob
 import os
+import shutil
 import subprocess
 import sys
+import tempfile
 import yaml
 
 SITE_DIR = "_site"
@@ -51,15 +54,24 @@ def find_private_pages():
 
 
 def encrypt_file(output_path, password):
-    out_dir = os.path.dirname(output_path)
-    result = subprocess.run(
-        ["npx", "--yes", "staticrypt@3", output_path, "-p", password, "-d", out_dir],
-        capture_output=True,
-        text=True,
-    )
-    if result.returncode != 0:
-        print(f"ERROR encrypting {output_path}:\n{result.stderr}", file=sys.stderr)
-        return False
+    with tempfile.TemporaryDirectory() as tmpdir:
+        result = subprocess.run(
+            ["npx", "--yes", "staticrypt@3", output_path, "-p", password, "-d", tmpdir],
+        )
+        if result.returncode != 0:
+            print(f"ERROR: staticrypt exited {result.returncode} for {output_path}", file=sys.stderr)
+            return False
+        # Find the generated file — staticrypt may write just the basename or preserve dirs
+        expected = os.path.join(tmpdir, os.path.basename(output_path))
+        if os.path.exists(expected):
+            encrypted_file = expected
+        else:
+            matches = glob.glob(os.path.join(tmpdir, "**", "*.html"), recursive=True)
+            if not matches:
+                print(f"ERROR: staticrypt produced no output for {output_path}", file=sys.stderr)
+                return False
+            encrypted_file = matches[0]
+        shutil.move(encrypted_file, output_path)
     return True
 
 
