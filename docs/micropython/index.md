@@ -57,6 +57,57 @@ Every lesson involves real hardware — LEDs that light up, sensors that detect 
 
 ---
 
+## Hardware Reference
+
+<div class="hw-card-grid">
+  <a href="esp32-s3.html" class="hw-card">
+    <div class="hw-card-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z" />
+      </svg>
+    </div>
+    <div>
+      <p class="hw-card-title">ESP32-S3</p>
+      <p class="hw-card-desc">Pinout &amp; board reference</p>
+    </div>
+  </a>
+  <a href="pico.html" class="hw-card">
+    <div class="hw-card-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z" />
+      </svg>
+    </div>
+    <div>
+      <p class="hw-card-title">Pico W</p>
+      <p class="hw-card-desc">Pinout &amp; board reference</p>
+    </div>
+  </a>
+  <a href="cyd.html" class="hw-card">
+    <div class="hw-card-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25A2.25 2.25 0 0 1 5.25 3h13.5A2.25 2.25 0 0 1 21 5.25Z" />
+      </svg>
+    </div>
+    <div>
+      <p class="hw-card-title">CYD</p>
+      <p class="hw-card-desc">Cheap Yellow Display</p>
+    </div>
+  </a>
+  <a href="HARDWARE-REFERENCE.html" class="hw-card">
+    <div class="hw-card-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
+      </svg>
+    </div>
+    <div>
+      <p class="hw-card-title">Sensors &amp; actuators</p>
+      <p class="hw-card-desc">Wiring &amp; component guide</p>
+    </div>
+  </a>
+</div>
+
+---
+
 ## How to Use This Course
 
 This course is designed to be worked through **independently at your own pace**. A reasonable pace is 2–3 lessons per week, giving you about 10–12 weeks to complete the full course.
@@ -73,16 +124,6 @@ This course is designed to be worked through **independently at your own pace**.
 - **Make mistakes on purpose.** Change a value, remove a bracket, misspell something — see what error appears. This is how experienced programmers learn to debug.
 - **Read the error messages.** Python's error messages are actually quite helpful once you know how to read them.
 - **If you get stuck**, check the Common Mistakes section, reread the concept explanation, then check the challenge solutions.
-
----
-
-## Before You Start
-
-Read the **[Setup Guide](SETUP-GUIDE.html)** first — it walks you through installing Thonny and getting MicroPython running on your ESP32-S3.
-
-Once setup is done, jump straight into **[Unit 1: Getting Started](unit-1/)**.
-
-The **[Hardware Reference](HARDWARE-REFERENCE.html)** is a quick-reference wiring guide for all components — useful whenever you're connecting new hardware.
 
 ---
 
