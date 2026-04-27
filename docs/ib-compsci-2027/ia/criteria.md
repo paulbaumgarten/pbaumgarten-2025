@@ -3,7 +3,6 @@ title: Assessment criteria
 parent: Internal assessment
 layout: default
 nav_order: 3
-private: true
 ---
 
 # Assessment criteria for the IA
