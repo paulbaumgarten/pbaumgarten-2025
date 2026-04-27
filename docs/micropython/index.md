@@ -5,7 +5,10 @@ nav_order: 10
 ---
 
 # MicroPython notes
-{: .no_toc }
+
+- TOC
+{:toc}
+
 
 
 
