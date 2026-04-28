@@ -65,7 +65,7 @@ Some general advice and tips that comes from having guided students through this
 
 * **Avoid CRUD based projects**: Webapps / apps that are little more than a front-end to a CRUD (create-read-update-delete) database. These have all been done to death. This includes: Blogs, To do / task management apps, Room booking / appointment booking apps, Inventory / equipment loans / library apps. There is little algorithmically going on here. Be more creative than that.
 
-* [Ideas and algorithms to consider](ideas.html) - if you are lost for ideas
+* [Ideas and algorithms to consider](ideas/) - if you are lost for ideas
 
 ---
 
@@ -82,7 +82,7 @@ The Internal Assessment criteria are as follows:
 | Criteria D | Demonstration video (functionality, algorithms demonstrated, testing highlights) | 5 minute video |
 | Criteria E | Evaluation and recommendations | 400 words |
 
-Be sure to study the detailed [Assessment criteria rubrics](criteria.html) to understand how you will be assessed.
+Be sure to study the detailed [Assessment criteria rubrics](criteria/) to understand how you will be assessed.
 
 For detailed **checklists, tips, common mistakes** and so forth, along with exemplar work from previous students, please consider purchasing the Hachette book, ["Computer Science for the IB Diploma"](https://www.hachettelearning.com/computing-and-it/computer-science-for-the-ib-diploma).
 
@@ -158,8 +158,8 @@ For those familar with the Internal Assessment of the old syllabus, the followin
 
 ## Other resources
 
-* [Official samples and past student exemplars](exemplars.html) - learn from those who have gone before you
-* [Strategies to manage the IA](strategies.html) - tips for staying organised and managing your first real _large programming project_.
+* [Official samples and past student exemplars](exemplars/) - learn from those who have gone before you
+* [Strategies to manage the IA](strategies/) - tips for staying organised and managing your first real _large programming project_.
 * [Tips for teachers](https://docs.google.com/document/d/1e0hAIsGFJOCO6sFrl-bq4bJWCOZ51W3ey7dppZUwvlE/edit?tab=t.0) (based on the old IA - will be updated in due course for the new IA)
 * [Full guide to the IA]() - compilation of the above plus tips, checklists, etc. For STC students only.
 

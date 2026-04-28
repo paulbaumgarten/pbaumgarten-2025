@@ -21,10 +21,10 @@ Content will be updated gradually as developed in preparation for teaching the n
 <img style="float: right; width: 100px" src="/assets/ib-compsci-book.png">
 
 * [IBO course syllabus official PDF](/docs/ib-compsci-2027/ib-compsci-guide-en-2025.pdf) by the IBO
-* [IBO course syllabus (as text)](syllabus-content.html)
+* [IBO course syllabus (as text)](syllabus-content/)
 * [IBO FAQ for Computer Science PDF](/docs/ib-compsci-2027/ib-compsci-faq.pdf) by the IBO
 * [IBO Teacher support material PDF](/docs/ib-compsci-2027/ib-compsci-tsm.pdf) by the IBO
-* [My FAQ about the new course](changes.html)
+* [My FAQ about the new course](changes/)
 * [Course poster for subject information night](/assets/ib-compsci-poster-2025.pdf) poster
 * **Computer Science for the IB Diploma** textbook<br/>By Baumgarten, Ganea, & Turland<br/>Published by Hachette Learning ISBN 9781036009007 and authorised by the IBO.<br/>Order from [Hachette](https://www.hachettelearning.com/computing-and-it/computer-science-for-the-ib-diploma) or [Amazon](https://www.amazon.com/Computer-Science-Diploma-Paul-Baumgarten/dp/1036009009/)
 
@@ -32,21 +32,21 @@ Content will be updated gradually as developed in preparation for teaching the n
 
 I will be teaching a topic based scope and sequence at Sha Tin College.
 
-* [Scope and sequence - Overview](sequence-overview.html)
+* [Scope and sequence - Overview](sequence-overview/)
 * [Scope and sequence - Calendar](calendar-2025-2027.pdf) for the STC class of 2027
 * [Scope and sequence - Detailed](https://docs.google.com/document/d/1MNst1Cdf2V6nCwC61gSUE6G9zhHyAM0oIbup-7-2evM/edit?usp=sharing) - Teaching schedule for STC class of 2027.
 
 ## Units of learning
 
-* [A1: Computer fundamentals](a1.html)
-* [A2: Networks](a2.html)
-* [A3: Databases](a3.html)
-* [A4: Machine learning](a4.html)
-* [B1: Computational thinking](b1.html)
-* [B2: Programming](b2.html)
-* [B3: Object oriented programming](b3.html)
-* [B4: Abstract data types](b4.html)
-* [Case study](case-study.html)
+* [A1: Computer fundamentals](a1/)
+* [A2: Networks](a2/)
+* [A3: Databases](a3/)
+* [A4: Machine learning](a4/)
+* [B1: Computational thinking](b1/)
+* [B2: Programming](b2/)
+* [B3: Object oriented programming](b3/)
+* [B4: Abstract data types](b4/)
+* [Case study](case-study/)
 
 ## Internal assessment
 
